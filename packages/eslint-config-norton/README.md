@@ -3,7 +3,7 @@
 
 ## Installation
 ```sh
-$ npm install --save-dev eslint@3.19 git+ssh://git@gitlab.com:wwnorton/eslint-config-norton.git#v1.0.0-beta.2
+$ npm install --save-dev eslint@3.19 git+ssh://git@gitlab.com:wwnorton/eslint-config-norton.git#v1.0.0-rc.1
 ```
 
 ## Usage
