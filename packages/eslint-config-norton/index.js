@@ -7,7 +7,7 @@ module.exports = {
             objects: 'always-multiline',
             imports: 'always-multiline',
             exports: 'always-multiline',
-            functions: 'never',
+            functions: 'never',             // function trailing commas are only supported in Node 8+
         }],
         indent: ['error', 4],
     },
