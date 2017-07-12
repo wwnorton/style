@@ -1,5 +1,5 @@
 # stylelint-config-norton
-![[Build Status](https://gitlab.com/wwnorton/stylelint-config-norton/badges/master/build.svg)](https://gitlab.com/wwnorton/stylelint-config-norton/commits/master)
+[![Build Status](https://gitlab.com/wwnorton/stylelint-config-norton/badges/master/build.svg)](https://gitlab.com/wwnorton/stylelint-config-norton/commits/master)
 > [Stylelint](https://github.com/stylelint/stylelint) shareable [config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md) for the [Norton stylesheet guide](https://gitlab.com/wwnorton/style)
 
 
