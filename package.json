@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/wwnorton/eslint-config-norton.git"
+    "url": "git+ssh://git@gitlab.com/wwnorton/style/eslint-config-norton.git"
   },
   "keywords": [
     "eslint",
@@ -22,9 +22,9 @@
   "author": "Evan Yamanishi",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://gitlab.com/wwnorton/eslint-config-norton/issues"
+    "url": "https://gitlab.com/wwnorton/style/eslint-config-norton/issues"
   },
-  "homepage": "https://gitlab.com/wwnorton/eslint-config-norton#README",
+  "homepage": "https://gitlab.com/wwnorton/style/eslint-config-norton#README",
   "peerDependencies": {
     "eslint": "^3.19.0"
   },
