@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://gitlab.com/wwnorton/style/eslint-config-norton/issues"
   },
-  "homepage": "https://gitlab.com/wwnorton/style/eslint-config-norton#README",
+  "homepage": "https://gitlab.com/wwnorton/style/eslint-config-norton",
   "peerDependencies": {
     "eslint": "^3.19.0"
   },
