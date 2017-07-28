@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-norton",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint shareable config for the Norton JavaScript style guide",
   "main": "index.js",
   "scripts": {
