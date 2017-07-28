@@ -11,7 +11,7 @@ yo norton-style
 
 Alternatively, you can install this repository directly and then install its peer dependencies:
 ```bash
-npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.0
+npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.1
 ```
 
 The easiest way to install peer dependencies is with [install-peerdeps](https://github.com/nathanhleung/install-peerdeps), which you'll need to install globally (`npm install -g install-peerdeps`). Once installed, you can install [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)'s peer dependencies:
