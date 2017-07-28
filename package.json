@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/wwnorton/style/eslint-config-norton.git"
+    "url": "git@gitlab.com:wwnorton/style/eslint-config-norton.git"
   },
   "keywords": [
     "eslint",
