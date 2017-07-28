@@ -2,9 +2,9 @@
   "name": "stylelint-config-norton",
   "version": "1.0.0-rc.0",
   "description": "Stylelint shareable config for the Norton stylesheet guide",
-  "homepage": "https://gitlab.com/wwnorton/stylelint-config-norton",
+  "homepage": "https://gitlab.com/wwnorton/style/stylelint-config-norton",
   "bugs": {
-    "url": "https://gitlab.com/wwnorton/stylelint-config-norton/issues"
+    "url": "https://gitlab.com/wwnorton/style/stylelint-config-norton/issues"
   },
   "author": "Evan Yamanishi",
   "main": "index.js",
@@ -39,6 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:wwnorton/stylelint-config-norton.git"
+    "url": "git@gitlab.com:wwnorton/style/stylelint-config-norton.git"
   }
 }
