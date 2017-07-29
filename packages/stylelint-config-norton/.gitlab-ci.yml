@@ -1,6 +1,12 @@
 .node_test: &test
     stage: test
     before_script:
+        # add the private ssh key so that the repository can access platform repositories
+        - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+        - eval $(ssh-agent -s)
+        - ssh-add <(echo "$NORTON_KEY_GLOBAL")
+        - mkdir -p ~/.ssh
+        - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
         # install dependencies
         - npm install
     script:
