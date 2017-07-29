@@ -1,23 +1,43 @@
-before_script:
-  - npm install
-
-# This folder is cached between builds
-# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
-cache:
-  paths:
-    - node_modules/
-
-test:node:4:
-    image: node:4
+.node_test: &test
+    stage: test
+    before_script:
+        # add the private ssh key so that the repository can access platform repositories
+        - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+        - eval $(ssh-agent -s)
+        - ssh-add <(echo "$NORTON_KEY_GLOBAL")
+        - mkdir -p ~/.ssh
+        - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+        # install dependencies
+        - npm install
     script:
         - npm test
+
+cache:
+    paths:
+        - node_modules/
 
 test:node:6:
     image: node:6
-    script:
-        - npm test
+    <<: *test
+    after_script:
+        - npm run report
+    artifacts:
+        paths:
+            - coverage/
 
 test:node:8:
     image: node:8
+    <<: *test
+
+pages:
+    stage: deploy
+    dependencies:
+        - test:node:6
     script:
-        - npm test
+        - mv coverage/ public/
+    artifacts:
+        paths:
+            - public
+        expire_in: 30 days
+    only:
+        - master
