@@ -8,6 +8,9 @@
   },
   "author": "Evan Yamanishi",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "license": "UNLICENSED",
   "private": true,
   "keywords": [
@@ -19,26 +22,39 @@
     "style"
   ],
   "dependencies": {
+    "stylelint": "^7.8.0",
     "stylelint-config-standard": "^16.0.0"
   },
   "devDependencies": {
+    "ava": "^0.21.0",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-norton": "git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.0",
+    "eslint-config-norton": "git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "stylelint": "^7.8.0"
-  },
-  "peerDependencies": {
-    "stylelint": "^7.8.0"
+    "nyc": "^11.0.3",
+    "stylelint": "^7.8.0",
+    "stylelint-config-norton": "git+ssh://git@gitlab.com:wwnorton/style/stylelint-config-norton.git#v1.0.0"
   },
   "scripts": {
-    "lint": "eslint . --fix",
-    "pretest": "npm run lint"
+    "lint": "npm run lint:es && npm run lint:style",
+    "lint:es": "eslint . --fix",
+    "lint:style": "stylelint . --fix",
+    "preversion": "npm run lint",
+    "report": "nyc report --reporter=html",
+    "test": "nyc ava"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:wwnorton/style/stylelint-config-norton.git"
+  },
+  "ava": {
+    "files": [
+      "test"
+    ],
+    "failWithoutAssertions": false,
+    "serial": true,
+    "verbose": true
   }
 }
