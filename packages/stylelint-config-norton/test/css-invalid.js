@@ -3,7 +3,7 @@ import test from 'ava';
 import stylelint from 'stylelint';
 import config from '../';
 
-const invalidCss = fs.readFileSync('./test/css-invalid.css', 'utf-8');
+const invalidCss = fs.readFileSync('./test/fixtures/css-invalid.css', 'utf-8');
 let result;
 
 test.beforeEach(() => {
@@ -15,7 +15,7 @@ test.beforeEach(() => {
 
 test('did error', async (t) => {
 	const data = await Promise.resolve(result);
-	t.truthy(await data.errored);
+	t.truthy(data.errored);
 });
 
 test('flags one warning', async (t) => {
