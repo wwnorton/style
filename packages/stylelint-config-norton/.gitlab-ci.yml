@@ -1,0 +1,37 @@
+.node_test: &test
+    stage: test
+    before_script:
+        # install dependencies
+        - npm install
+    script:
+        - npm test
+
+cache:
+    paths:
+        - node_modules/
+
+test:node:6:
+    image: node:6
+    <<: *test
+    after_script:
+        - npm run report
+    artifacts:
+        paths:
+            - coverage/
+
+test:node:8:
+    image: node:8
+    <<: *test
+
+pages:
+    stage: deploy
+    dependencies:
+        - test:node:6
+    script:
+        - mv coverage/ public/
+    artifacts:
+        paths:
+            - public
+        expire_in: 30 days
+    only:
+        - master
