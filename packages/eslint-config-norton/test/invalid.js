@@ -4,7 +4,10 @@ import eslint from 'eslint';
 const files = [
 	'./test/fixtures/invalid.js',
 ];
-const cli = new eslint.CLIEngine({ useEslintrc: true });
+const cli = new eslint.CLIEngine({
+	ignore: false,
+	useEslintrc: true,
+});
 let result;
 
 test.beforeEach(() => {
