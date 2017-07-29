@@ -2,37 +2,37 @@
   "name": "eslint-config-norton",
   "version": "1.1.2",
   "description": "ESLint shareable config for the Norton JavaScript style guide",
-  "main": "index.js",
+  "keywords": [
+    "code",
+    "eslint",
+    "lint",
+    "linter",
+    "quality",
+    "style"
+  ],
+  "homepage": "https://gitlab.com/wwnorton/style/eslint-config-norton",
+  "bugs": {
+    "url": "https://gitlab.com/wwnorton/style/eslint-config-norton/issues"
+  },
+  "license": "UNLICENSED",
+  "author": "Evan Yamanishi",
   "files": [
     ".eslintignore",
     ".eslintrc.js",
     "index.js",
     "test"
   ],
-  "scripts": {
-    "lint": "eslint . --fix",
-    "preversion": "npm run lint",
-    "report": "nyc report --reporter=html",
-    "test": "nyc ava"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:wwnorton/style/eslint-config-norton.git"
   },
-  "keywords": [
-    "eslint",
-    "style",
-    "lint",
-    "linter",
-    "code",
-    "quality"
-  ],
-  "author": "Evan Yamanishi",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://gitlab.com/wwnorton/style/eslint-config-norton/issues"
+  "scripts": {
+    "lint": "eslint . --fix",
+    "report": "nyc report --reporter=html",
+    "test": "nyc ava",
+    "preversion": "npm run lint"
   },
-  "homepage": "https://gitlab.com/wwnorton/style/eslint-config-norton",
   "dependencies": {
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
