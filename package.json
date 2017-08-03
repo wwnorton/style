@@ -29,9 +29,11 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
+    "prepublishOnly": "nsp check",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags",
     "report": "nyc report --reporter=html",
-    "test": "nyc ava",
-    "preversion": "npm run lint"
+    "test": "nyc ava"
   },
   "dependencies": {
     "eslint": "^4.3.0",
