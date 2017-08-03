@@ -11,7 +11,7 @@ yo norton-style
 
 Alternatively, you can install this repository directly. You'll also need a compatible version of ESLint:
 ```bash
-npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.2
+npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.3
 npm install --save-dev eslint@^4.3.0
 ```
 
