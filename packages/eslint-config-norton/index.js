@@ -1,5 +1,8 @@
-/** @see https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb */
 module.exports = {
+	/**
+	 * use airbnb's well-reasoned style guide as base
+	 * @see https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+	 */
 	extends: ['airbnb'],
 	rules: {
 		'comma-dangle': ['error', {
@@ -8,11 +11,15 @@ module.exports = {
 			imports: 'always-multiline',
 			exports: 'always-multiline',
 			/**
-             * trailing function commas are only supported in ES2017 (& Node 8+)
-             * @see https://github.com/tc39/proposal-trailing-function-commas
-             */
+			 * trailing function commas are only supported in ES2017 (& Node 8+)
+			 * @see https://github.com/tc39/proposal-trailing-function-commas
+			 */
 			functions: 'never',
 		}],
+		/**
+		 * use tabs, not spaces
+		 * @see https://gitlab.com/wwnorton/style/guide/issues/1
+		 */
 		indent: ['error', 'tab'],
 		'no-tabs': 0,
 	},
