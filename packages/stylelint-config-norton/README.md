@@ -11,8 +11,8 @@ yo norton-style
 
 Alternatively, you can install this repository directly. You'll also need a compatible version of stylelint:
 ```bash
-npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/stylelint-config-norton.git#v1.0.2
-npm install --save-dev stylelint@^8.0.0
+npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/stylelint-config-norton.git#v1.1.1
+npm install --save-dev stylelint@^8
 ```
 
 
@@ -32,9 +32,10 @@ module.exports = {
 
 
 ## Rules
-This configuration extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard). It overrides the following rules:
+This configuration extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) and [stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines). It overrides the following rules:
 
 * [Tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
+* `function-parentheses-space-inside` is `never-single-line` instead of `never`.
 
 [gitlab-ci-image]: https://gitlab.com/wwnorton/style/stylelint-config-norton/badges/master/build.svg
 [gitlab-ci-url]: https://gitlab.com/wwnorton/style/stylelint-config-norton/commits/master
