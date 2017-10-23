@@ -3,7 +3,7 @@ import test from 'ava';
 import stylelint from 'stylelint';
 import config from '../';
 
-const validCss = fs.readFileSync('./test/fixtures/css-valid.css', 'utf-8');
+const validCss = fs.readFileSync('./test/fixtures/scss-valid.scss', 'utf-8');
 let result;
 
 test.beforeEach(() => {
