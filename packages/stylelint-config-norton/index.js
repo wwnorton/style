@@ -4,6 +4,7 @@ module.exports = {
 		'stylelint-config-sass-guidelines',
 	],
 	rules: {
+		'at-rule-no-unknown': null,
 		'declaration-property-unit-blacklist': {
 			'font-size': ['px'],
 		},
