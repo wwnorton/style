@@ -19,45 +19,67 @@ test('did error', async (t) => {
 });
 
 
-/** function-parentheses-space-inside: never-single-line */
-test('function-parentheses-space-inside rule flagged', async (t) => {
+/** no px on font-size */
+test('no px: correct rule flagged', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[0].rule, 'function-parentheses-space-inside');
+	t.is(data.results[0].warnings[0].rule, 'declaration-property-unit-blacklist');
 });
 
-test('function-parentheses-space-inside severity flagged', async (t) => {
+test('no px: correct severity flagged', async (t) => {
 	const data = await Promise.resolve(result);
 	t.is(data.results[0].warnings[0].severity, 'error');
 });
 
+test('no px: correct line number', async (t) => {
+	const data = await Promise.resolve(result);
+	t.is(data.results[0].warnings[0].line, 6);
+});
+
+test('no px: correct column number', async (t) => {
+	const data = await Promise.resolve(result);
+	t.is(data.results[0].warnings[0].column, 13);
+});
+
+
+/** function-parentheses-space-inside: never-single-line */
+test('function-parentheses-space-inside rule flagged', async (t) => {
+	const data = await Promise.resolve(result);
+	t.is(data.results[0].warnings[1].rule, 'function-parentheses-space-inside');
+});
+
+test('function-parentheses-space-inside severity flagged', async (t) => {
+	const data = await Promise.resolve(result);
+	t.is(data.results[0].warnings[1].severity, 'error');
+});
+
 test('function-parentheses-space-inside line number', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[0].line, 2);
+	t.is(data.results[0].warnings[1].line, 2);
 });
 
 test('function-parentheses-space-inside column number', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[0].column, 15);
+	t.is(data.results[0].warnings[1].column, 15);
 });
 
 
 /** indentation: 'tab' */
 test('indentation rule flagged', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[1].rule, 'indentation');
+	t.is(data.results[0].warnings[2].rule, 'indentation');
 });
 
 test('indentation severity flagged', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[1].severity, 'error');
+	t.is(data.results[0].warnings[2].severity, 'error');
 });
 
 test('indentation line number', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[1].line, 2);
+	t.is(data.results[0].warnings[2].line, 2);
 });
 
 test('indentation column number', async (t) => {
 	const data = await Promise.resolve(result);
-	t.is(data.results[0].warnings[1].column, 3);
+	t.is(data.results[0].warnings[2].column, 3);
 });
