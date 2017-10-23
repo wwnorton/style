@@ -11,7 +11,7 @@ yo norton-style
 
 Alternatively, you can install this repository directly. You'll also need a compatible version of stylelint:
 ```bash
-npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/stylelint-config-norton.git#v1.1.1
+npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/stylelint-config-norton.git#v1.1.2
 npm install --save-dev stylelint@^8
 ```
 
