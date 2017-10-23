@@ -2,6 +2,24 @@
 @import url('y.css');
 
 /**
+ * Sass at-rules
+ */
+
+@function add($x, $y) {
+	@return calc(#{$x} + #{$y});
+}
+
+@mixin my-mixin() {
+	font-size: 1.2rem;
+}
+
+.selector-m {
+	@include my-mixin();
+
+	width: add(2px, 0.5em);
+}
+
+/**
  * Multi-line comment
  */
 
