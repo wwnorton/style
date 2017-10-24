@@ -3,12 +3,12 @@ import test from 'ava';
 import stylelint from 'stylelint';
 import config from '../';
 
-const validCss = fs.readFileSync('./test/fixtures/scss-valid.scss', 'utf-8');
+const valid = fs.readFileSync('./test/fixtures/valid.scss', 'utf-8');
 let result;
 
 test.beforeEach(() => {
 	result = stylelint.lint({
-		code: validCss,
+		code: valid,
 		config,
 	});
 });

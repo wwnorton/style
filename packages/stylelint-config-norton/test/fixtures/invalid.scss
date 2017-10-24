@@ -1,0 +1,19 @@
+a {
+  color: rgba( 255, 255, 255, 1);
+}
+
+h1 {
+	font-size: 32px;
+}
+
+
+
+@mixin if-else($var) {
+	@if ($var) {
+		width: 100%;
+	}
+
+	@else {
+		width: 0;
+	}
+}
