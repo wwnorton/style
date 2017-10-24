@@ -20,7 +20,7 @@
   "author": "Evan Yamanishi",
   "files": [
     ".stylelintignore",
-    ".stylelintrc.json",
+    "build.js",
     "index.js",
     "test"
   ],
@@ -30,7 +30,9 @@
     "url": "git@gitlab.com:wwnorton/style/stylelint-config-norton.git"
   },
   "scripts": {
-    "lint": "eslint . --fix",
+    "build": "node build",
+    "lint:es": "eslint . --fix",
+    "lint:style": "node build && stylelint test/fixtures/*.scss",
     "prepublishOnly": "nsp check",
     "report": "nyc report --reporter=html",
     "test": "nyc ava",
