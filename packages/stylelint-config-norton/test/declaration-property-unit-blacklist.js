@@ -8,22 +8,23 @@ test.beforeEach(() => {
 	result = lint(invalid);
 });
 
+/** font-size */
 test(`${rule}: rule flagged`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.rule, rule);
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].rule, rule);
 });
 
 test(`${rule}: correct severity flagged`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.severity, 'error');
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].severity, 'error');
 });
 
 test(`${rule}: correct line number`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.line, 6);
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].line, 6);
 });
 
 test(`${rule}: correct column number`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.column, 13);
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].column, 13);
 });

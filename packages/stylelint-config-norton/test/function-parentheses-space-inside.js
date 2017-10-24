@@ -8,22 +8,22 @@ test.beforeEach(() => {
 	result = lint(invalid);
 });
 
-test(`${rule}: rule flagged`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.rule, rule);
+test.only(`${rule}: rule flagged`, async (t) => {
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].rule, rule);
 });
 
 test(`${rule}: correct severity flagged`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.severity, 'error');
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].severity, 'error');
 });
 
 test(`${rule}: correct line number`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.line, 2);
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].line, 2);
 });
 
 test(`${rule}: correct column number`, async (t) => {
-	const warning = await getWarnings(result, rule);
-	t.is(warning.column, 15);
+	const warnings = await getWarnings(result, rule);
+	t.is(warnings[0].column, 15);
 });
