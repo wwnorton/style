@@ -41,7 +41,8 @@
   },
   "dependencies": {
     "stylelint-config-sass-guidelines": "^3.1.0",
-    "stylelint-config-standard": "^17.0.0"
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-scss": "^2.1.0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
