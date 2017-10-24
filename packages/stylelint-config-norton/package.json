@@ -36,7 +36,7 @@
     "prepublishOnly": "nsp check",
     "report": "nyc report --reporter=html",
     "test": "nyc ava",
-    "preversion": "npm run lint",
+    "preversion": "npm run lint:es",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
