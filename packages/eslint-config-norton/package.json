@@ -36,21 +36,16 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   },
   "devDependencies": {
-    "ava": "^0.21.0",
-    "nyc": "^11.0.3"
+    "ava": "^0.24.0",
+    "nyc": "^11.4.0"
   },
   "peerDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint": "^4.12.1"
   },
   "ava": {
     "files": [
