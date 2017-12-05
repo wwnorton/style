@@ -20,6 +20,7 @@
     ".eslintignore",
     ".eslintrc.js",
     "index.js",
+    "rules",
     "test"
   ],
   "main": "index.js",
