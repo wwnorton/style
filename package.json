@@ -28,7 +28,8 @@
     "url": "git@gitlab.com:wwnorton/style/eslint-config-norton.git"
   },
   "scripts": {
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "nsp check",
     "preversion": "npm run lint",
     "postversion": "git push && git push --tags",
