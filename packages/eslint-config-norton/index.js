@@ -1,7 +1,7 @@
 module.exports = {
 	/**
 	 * use airbnb's well-reasoned style guide as base
-	 * @see https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+	 * @see https://github.com/airbnb/javascript/
 	 */
 	extends: [
 		'eslint-config-airbnb-base',
