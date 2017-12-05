@@ -23,11 +23,11 @@ Once the `eslint-config-norton` package is installed, you can use it by specifyi
 `.eslintrc.js` with 2 spaces instead of tabs.
 ```js
 module.exports = {
-    extends: ['norton'],
-    rules: {
-        indent: ['error', 2],
+	extends: ['norton'],	// or 'eslint-config-norton'
+	rules: {
+		indent: ['error', 2],
 		'no-tabs': 'error',
-    }
+	},
 };
 ```
 
@@ -35,7 +35,7 @@ module.exports = {
 ```json
 {
     "extends": [
-        "norton"
+        "eslint-config-norton"
     ],
     "env": {
         "browser": true,
