@@ -46,7 +46,7 @@ module.exports = {
 
 
 ## Rules
-This configuration extends [airbnb's style guide](https://github.com/airbnb/javascript) ([eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)). It overrides the following rules:
+This configuration extends [airbnb's base style guide](https://github.com/airbnb/javascript) ([eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)). It overrides the following rules:
 
 * No [comma-dangle](http://eslint.org/docs/rules/comma-dangle) on functions, but still `always-multiline` for all other forms. This is because [trailing function commas](https://github.com/tc39/proposal-trailing-function-commas) are only supported in ES2017 (Node 8+).
 * [Tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
