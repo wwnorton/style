@@ -11,13 +11,13 @@ yo norton-style
 
 Alternatively, you can install this repository directly. You'll also need a compatible version of ESLint:
 ```bash
-npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.1.3
+npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/eslint-config-norton.git#v1.2.0
 npm install --save-dev eslint@^4.9.0
 ```
 
 
 ## Usage
-Once the `eslint-config-norton` package is installed, you can use it by specifying `norton` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
+Once the `eslint-config-norton` package is installed, you can use it by specifying `norton` or `eslint-config-norton` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring). Note that generator-norton-style automatically sets up this file.
 
 ### Examples
 `.eslintrc.js` with 2 spaces instead of tabs.
