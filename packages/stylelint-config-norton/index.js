@@ -1,3 +1,6 @@
+const extend = require('lodash.merge');
+const standard = require('stylelint-config-standard');
+
 module.exports = {
 	extends: [
 		'stylelint-config-standard',
@@ -8,6 +11,14 @@ module.exports = {
 	],
 	rules: {
 		/** stylelint rules */
+		'at-rule-empty-line-before': extend(
+			standard.rules['at-rule-empty-line-before'],
+			[
+				'always', {
+					ignoreAtRules: ['else'],
+				},
+			]
+		),
 		'at-rule-no-unknown': null,
 		'declaration-property-unit-blacklist': {
 			'font-size': ['px'],
@@ -17,6 +28,6 @@ module.exports = {
 		'max-empty-lines': 2,
 
 		/** stylelint-scss rules */
-		// 'at-else-empty-line-before': 'never',
+		'scss/at-else-empty-line-before': 'never',
 	},
 };

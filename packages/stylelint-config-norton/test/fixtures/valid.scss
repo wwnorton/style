@@ -85,3 +85,12 @@
 		content: '→';
 	}
 }
+
+@mixin if-else($var) {
+	@if ($var) {
+		width: 100%;
+	}
+	@else {
+		width: 0;
+	}
+}
