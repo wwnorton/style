@@ -26,16 +26,16 @@
 .selector-1,
 .selector-2,
 .selector-3[type='text'] {
-	background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
-	box-sizing: border-box;
-	color: #333;
 	display: block;
+	box-sizing: border-box;
+	background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+	color: #333;
 }
 
 .selector-a,
 .selector-b:not(:first-child) {
-	padding: 10px !important;
 	top: calc(calc(1em * 2) / 3);
+	padding: 10px !important;
 }
 
 .selector-x { width: 10%; }
@@ -63,6 +63,9 @@
 	screen and (min-resolution: 192dpi),
 	screen and (min-resolution: 2dppx) {
 	.selector {
+		height: 10rem;
+		margin: 10px;
+		margin-bottom: 5px;
 		background-image:
 			repeating-linear-gradient(
 				-45deg,
@@ -74,9 +77,6 @@
 			0 1px 1px #000,
 			0 1px 0 #fff,
 			2px 2px 1px 1px #ccc inset;
-		height: 10rem;
-		margin: 10px;
-		margin-bottom: 5px;
 	}
 
 	/* Flush nested single line comment */

@@ -1,7 +1,7 @@
 import test from 'ava';
 import { invalid, lint, getWarnings } from './helpers';
 
-const rule = 'function-parentheses-space-inside';
+const rule = 'order/properties-order';
 let result;
 
 test.beforeEach(() => {
@@ -20,10 +20,10 @@ test(`${rule}: correct severity flagged`, async (t) => {
 
 test(`${rule}: correct line number`, async (t) => {
 	const warnings = await getWarnings(result, rule);
-	t.is(warnings[0].line, 2);
+	t.is(warnings[0].line, 18);
 });
 
 test(`${rule}: correct column number`, async (t) => {
 	const warnings = await getWarnings(result, rule);
-	t.is(warnings[0].column, 15);
+	t.is(warnings[0].column, 3);
 });

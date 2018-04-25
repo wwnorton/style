@@ -1,5 +1,6 @@
 const extend = require('lodash.merge');
 const standard = require('stylelint-config-standard');
+const idiomaticOrder = require('stylelint-config-idiomatic-order');
 
 module.exports = {
 	extends: [
@@ -26,6 +27,10 @@ module.exports = {
 		'function-parentheses-space-inside': 'never-single-line',
 		indentation: 'tab',
 		'max-empty-lines': 2,
+
+		/** override alphabetical and use the order from stylelint-config-idiomatic-order */
+		'order/properties-alphabetical-order': null,
+		'order/properties-order': idiomaticOrder.rules['order/properties-order'],
 
 		/** stylelint-scss rules */
 		'scss/at-else-empty-line-before': 'never',

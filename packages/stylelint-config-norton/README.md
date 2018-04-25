@@ -23,19 +23,26 @@ Once the `stylelint-config-norton` package is installed, you can use it by speci
 ```js
 // stylelint.config.js
 module.exports = {
-    extends: ['norton'],
-    rules: {
-        // Override rules here
-    }
+	extends: ['norton'],
+	rules: {
+		// Override rules here
+	}
 };
 ```
 
 
 ## Rules
-This configuration extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) and [stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines). It overrides the following rules:
+This configuration extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) and [stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines).
 
-* [Tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
-* `function-parentheses-space-inside` is `never-single-line` instead of `never`.
+It modifies the following rules:
+
+* `declaration-property-unit-blacklist` includes `px` for `font-size`. See [related issue](https://gitlab.com/wwnorton/style/stylelint-config-norton/issues/1).
+* `function-parentheses-space-inside` is `never-single-line` instead of `never` to be more in line with [eslint-config-norton](https://gitlab.com/wwnorton/style/eslint-config-norton).
+* `indentation` uses [tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
+* `max-empty-lines` is 2 instead of 1.
+* `order/properties-order` uses the [idiomatic css declaration order](https://github.com/necolas/idiomatic-css#declaration-order) from [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order) instead of alphabetical.
+* `scss/at-rule-empty-line-before` doesn't allow an empty line between `@if`/`@else` statements.
+
 
 [gitlab-ci-image]: https://gitlab.com/wwnorton/style/stylelint-config-norton/badges/master/build.svg
 [gitlab-ci-url]: https://gitlab.com/wwnorton/style/stylelint-config-norton/commits/master
