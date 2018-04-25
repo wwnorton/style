@@ -3,16 +3,23 @@
 
 
 ## Installation
-Recommended: use [generator-norton-style](https://gitlab.com/wwnorton/style/generator-norton-style) (a [Yeoman](http://yeoman.io/) generator) to automatically add all required files and dependencies. Follow instructions on [generator-norton-style's README](https://gitlab.com/wwnorton/style/generator-norton-style/blob/master/README.md) to install [Yeoman](http://yeoman.io/) and generator-norton-style globally and then just follow the generator's prompts:
+As of `v1.1.6`, this repository can be installed from the NPM registry. You'll also need a compatible version of Stylelint, [stylelint-order](https://github.com/hudochenkov/stylelint-order), and [stylelint-scss](https://github.com/kristerkari/stylelint-scss), which are peer dependencies:
+```bash
+# get the peerDependencies versions
+npm info "stylelint-config-norton@latest" peerDependencies
+# install (this assumes the above returns these specific versions)
+npm install --save-dev stylelint-config-norton stylelint@^8.2.0 stylelint-order@^0.8.0 stylelint-scss@^2.2.0
+```
+
+If using NPM 5+, you can use [npx](https://github.com/zkat/npx) to install the correct peer dependencies:
+```bash
+npx install-peerdeps --dev stylelint-config-norton
+```
+
+Alternatively, you can use [generator-norton-style](https://gitlab.com/wwnorton/style/generator-norton-style) (a [Yeoman](http://yeoman.io/) generator) to automatically add all required files and dependencies. Follow instructions on [generator-norton-style's README](https://gitlab.com/wwnorton/style/generator-norton-style/blob/master/README.md) to install [Yeoman](http://yeoman.io/) and generator-norton-style globally and then just follow the generator's prompts:
 
 ```bash
 yo norton-style
-```
-
-Alternatively, you can install this repository directly. You'll also need a compatible version of stylelint:
-```bash
-npm install --save-dev git+ssh://git@gitlab.com:wwnorton/style/stylelint-config-norton.git#v1.1.2
-npm install --save-dev stylelint@^8
 ```
 
 
@@ -40,7 +47,7 @@ It modifies the following rules:
 * `function-parentheses-space-inside` is `never-single-line` instead of `never` to be more in line with [eslint-config-norton](https://gitlab.com/wwnorton/style/eslint-config-norton).
 * `indentation` uses [tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
 * `max-empty-lines` is 2 instead of 1.
-* `order/properties-order` uses the [idiomatic css declaration order](https://github.com/necolas/idiomatic-css#declaration-order) from [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order) instead of alphabetical.
+* `order/properties-order` uses the [idiomatic css declaration order](https://github.com/necolas/idiomatic-css#declaration-order) from [stylelint-config-idiomatic-order](https://github.com/ream88/stylelint-config-idiomatic-order) instead of alphabetical. See [related issue](https://gitlab.com/wwnorton/style/stylelint-config-norton/issues/3).
 * `scss/at-rule-empty-line-before` doesn't allow an empty line between `@if`/`@else` statements.
 
 
