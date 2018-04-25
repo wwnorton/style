@@ -33,7 +33,7 @@
     "lint": "npm run lint:es",
     "lint:es": "eslint .",
     "lint:fix": "npm run lint:es -- --fix",
-    "lint:style": "node build && stylelint test/fixtures/*.scss",
+    "lint:style": "npm run build && stylelint test/fixtures/*.scss",
     "prepublishOnly": "nsp check",
     "report": "nyc report --reporter=html",
     "test": "nyc ava",
