@@ -64,8 +64,6 @@
     "files": [
       "test"
     ],
-    "failWithoutAssertions": false,
-    "serial": true,
-    "verbose": true
+    "failWithoutAssertions": false
   }
 }
