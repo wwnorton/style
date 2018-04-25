@@ -1,8 +1,8 @@
 .npm_setup: &npm_setup |
   # update npm to latest (5.8.0+ required for npm ci)
-  - npm i -g npm
+  npm i -g npm
   # install dependencies
-  - npm ci
+  npm ci
 
 test:node:6:
   image: node:6-alpine
