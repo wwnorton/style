@@ -44,9 +44,7 @@
     "lodash.merge": "^4.6.0",
     "stylelint-config-idiomatic-order": "^5.0.0",
     "stylelint-config-sass-guidelines": "^4.0.1",
-    "stylelint-config-standard": "^18.0.0",
-    "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.2.0"
+    "stylelint-config-standard": "^18.0.0"
   },
   "devDependencies": {
     "ava": "^0.24.0",
@@ -55,10 +53,14 @@
     "eslint-plugin-import": "^2.11.0",
     "nsp": "^3.2.1",
     "nyc": "^11.4.1",
-    "stylelint": "^8.4.0"
+    "stylelint": "^8.4.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.2.0"
   },
   "peerDependencies": {
-    "stylelint": "^8.2.0"
+    "stylelint": "^8.2.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.2.0"
   },
   "ava": {
     "files": [
