@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://gitlab.com/wwnorton/style/eslint-config-norton/issues"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Evan Yamanishi",
   "files": [
     ".eslintignore",
