@@ -1,7 +1,6 @@
 .npm_setup: &npm_setup |
-  # update npm to latest (5.8.0+ required for npm ci)
+  # update npm and install dependencies with `npm ci`
   npm i -g npm
-  # install dependencies
   npm ci
 
 test:node:6:
