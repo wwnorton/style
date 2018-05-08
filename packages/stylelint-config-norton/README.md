@@ -4,16 +4,18 @@
 
 ## Installation
 As of `v1.1.6`, this repository can be installed from the NPM registry. You'll also need a compatible version of Stylelint, [stylelint-order](https://github.com/hudochenkov/stylelint-order), and [stylelint-scss](https://github.com/kristerkari/stylelint-scss), which are peer dependencies:
+
+If using npm 5+, you can use [npx](https://github.com/zkat/npx) to install the correct peer dependencies:
+```bash
+npx install-peerdeps --dev stylelint-config-norton
+```
+
+If using npm <5, you'll need to install the peer dependencies on your own:
 ```bash
 # get the peerDependencies versions
 npm info "stylelint-config-norton@latest" peerDependencies
-# install (this assumes the above returns these specific versions)
-npm install --save-dev stylelint-config-norton stylelint@^8.2.0 stylelint-order@^0.8.0 stylelint-scss@^2.2.0
-```
-
-If using NPM 5+, you can use [npx](https://github.com/zkat/npx) to install the correct peer dependencies:
-```bash
-npx install-peerdeps --dev stylelint-config-norton
+# install (replace "version" with the versions returned by the above command)
+npm install --save-dev stylelint-config-norton stylelint@version stylelint-order@version stylelint-scss@version
 ```
 
 Alternatively, you can use [generator-norton-style](https://gitlab.com/wwnorton/style/generator-norton-style) (a [Yeoman](http://yeoman.io/) generator) to automatically add all required files and dependencies. Follow instructions on [generator-norton-style's README](https://gitlab.com/wwnorton/style/generator-norton-style/blob/master/README.md) to install [Yeoman](http://yeoman.io/) and generator-norton-style globally and then just follow the generator's prompts:
