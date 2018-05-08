@@ -1,44 +1,37 @@
-.node_test: &test
-    stage: test
-    before_script:
-        # add the private ssh key so that the repository can access platform repositories
-        - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-        - eval $(ssh-agent -s)
-        - ssh-add <(echo "$SSH_PRIVATE_KEY")
-        - mkdir -p ~/.ssh
-        - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
-        # install dependencies
-        - npm install
-    script:
-        - npm test
-
-cache:
-    paths:
-        - node_modules/
+.npm_setup: &npm_setup |
+  # update npm and install dependencies with `npm ci`
+  npm i -g npm
+  npm ci
 
 test:node:6:
-    image: node:6
-    <<: *test
-    after_script:
-        - npm run report
-    artifacts:
-        paths:
-            - coverage/
+  image: node:6-alpine
+  before_script:
+    - npm install
+  script:
+    - npm test
+  after_script:
+    - npm run report
+  artifacts:
+    paths:
+      - coverage/
 
 test:node:8:
-    image: node:8
-    <<: *test
-    allow_failure: true
+  image: node:8-alpine
+  before_script:
+    - *npm_setup
+  script:
+    - npm test
 
 pages:
-    stage: deploy
-    dependencies:
-        - test:node:6
-    script:
-        - mv coverage/ public/
-    artifacts:
-        paths:
-            - public
-        expire_in: 30 days
-    only:
-        - master
+  image: alpine:latest
+  stage: deploy
+  dependencies:
+    - test:node:6
+  script:
+    - mv coverage/ public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
+  only:
+    - master
