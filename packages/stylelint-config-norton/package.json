@@ -47,7 +47,7 @@
     "stylelint-config-standard": "^18.0.0"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "eslint": "^4.9.0",
     "eslint-config-norton": "^1.2.2",
     "eslint-plugin-import": "^2.11.0",
