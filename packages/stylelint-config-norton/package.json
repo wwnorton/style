@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-norton",
-  "version": "1.1.6",
+  "version": "1.2.2",
   "description": "Stylelint shareable config for the Norton stylesheet guide",
   "keywords": [
     "css",
@@ -42,7 +42,6 @@
   },
   "dependencies": {
     "lodash.merge": "^4.6.0",
-    "stylelint-config-idiomatic-order": "^5.0.0",
     "stylelint-config-sass-guidelines": "^5.0.0",
     "stylelint-config-standard": "^18.0.0"
   },
@@ -52,7 +51,7 @@
     "eslint-config-norton": "^1.2.2",
     "eslint-plugin-import": "^2.11.0",
     "nsp": "^3.2.1",
-    "nyc": "^11.4.1",
+    "nyc": "^11.7.2",
     "stylelint": "^9.2.0",
     "stylelint-order": "^0.8.0",
     "stylelint-scss": "^3.1.0"
