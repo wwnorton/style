@@ -21,6 +21,7 @@
     ".stylelintignore",
     "build.js",
     "index.js",
+    "rules",
     "test"
   ],
   "main": "index.js",
