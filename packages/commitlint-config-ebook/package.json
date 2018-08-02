@@ -4,7 +4,6 @@
   "description": "commitlint shareable config for Norton ebook git commit standards",
   "main": "index.js",
   "scripts": {
-    "commitmsg": "commitlint -E GIT_PARAMS",
     "lint": "eslint .",
     "release": "standard-version",
     "report": "nyc report --reporter=html",
@@ -31,10 +30,16 @@
     "eslint": "^4.19.1",
     "eslint-config-norton": "^1.2.2",
     "eslint-plugin-import": "^2.13.0",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.13",
     "nyc": "^12.0.2"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^7.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint"
+    }
   }
 }
