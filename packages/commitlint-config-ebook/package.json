@@ -31,7 +31,8 @@
     "eslint-config-norton": "^1.2.2",
     "eslint-plugin-import": "^2.13.0",
     "husky": "^1.0.0-rc.13",
-    "nyc": "^12.0.2"
+    "nyc": "^12.0.2",
+    "standard-version": "^4.4.0"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^7.0.1"
