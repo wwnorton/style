@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-ebook",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "commitlint shareable config for Norton ebook git commit standards",
   "main": "index.js",
   "scripts": {

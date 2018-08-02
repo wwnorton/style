@@ -2,5 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://gitlab.com/wwnorton/style/commitlint-config-ebook/compare/v0.1.0...v0.2.0) (2018-08-02)
+
+
+### Bug Fixes
+
+* **package:** add missing standard-version package ([766b94e](https://gitlab.com/wwnorton/style/commitlint-config-ebook/commit/766b94e))
+* **style:** ignore coverage ([8b43589](https://gitlab.com/wwnorton/style/commitlint-config-ebook/commit/8b43589))
+* **test:** properly apply the testing context ([a6b43e8](https://gitlab.com/wwnorton/style/commitlint-config-ebook/commit/a6b43e8))
+
+
+### Features
+
+* always run tests before pushing ([b2c6c06](https://gitlab.com/wwnorton/style/commitlint-config-ebook/commit/b2c6c06))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-08-02)
