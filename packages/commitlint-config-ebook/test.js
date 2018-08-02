@@ -39,9 +39,9 @@ test.beforeEach((t) => {
  */
 const commitTest = (desc, commitMsg, fn) => {
 	const title = `${desc}: "${commitMsg}"`;
-	test(title, async (t) => {
+	test(title, async function setup(t, ...args) {
 		t.context.report = await t.context.lint(commitMsg);
-		return fn.apply(this, arguments);
+		fn.call(this, t, ...args);
 	});
 };
 /* eslint-enable no-param-reassign */
