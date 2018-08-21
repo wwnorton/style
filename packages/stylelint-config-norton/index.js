@@ -11,6 +11,6 @@ module.exports = {
 	],
 	rules: Object.assign(
 		bestPractices,
-		style
+		style,
 	),
 };

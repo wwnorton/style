@@ -1,7 +1,7 @@
 import fs from 'fs';
 import test from 'ava';
 import stylelint from 'stylelint';
-import config from '../';
+import config from '..';
 
 const valid = fs.readFileSync('./test/fixtures/valid.scss', 'utf-8');
 let result;

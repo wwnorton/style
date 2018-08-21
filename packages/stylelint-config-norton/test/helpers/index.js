@@ -1,6 +1,6 @@
 import fs from 'fs';
 import stylelint from 'stylelint';
-import config from '../../';
+import config from '../..';
 
 export const invalid = fs.readFileSync('./test/fixtures/invalid.scss', 'utf-8');
 

@@ -4,5 +4,5 @@ const config = require('./');
 fs.writeFile(
 	'.stylelintrc.json',
 	JSON.stringify(config, null, '\t'),
-	(err) => { if (err) throw new Error(err); }
+	(err) => { if (err) throw new Error(err); },
 );

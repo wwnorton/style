@@ -10,7 +10,7 @@ module.exports = {
 			'always', {
 				ignoreAtRules: ['else'],
 			},
-		]
+		],
 	),
 	'at-rule-no-unknown': null,
 	'function-parentheses-space-inside': 'never-single-line',
