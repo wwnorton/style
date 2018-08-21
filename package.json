@@ -36,22 +36,22 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0"
+    "eslint-config-airbnb-base": "^13.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "ava": "^0.24.0",
-    "eslint": "^4.9.0",
-    "eslint-plugin-import": "^2.7.0",
     "nyc": "^11.4.0"
+    "eslint": "^5.4.0",
+    "eslint-plugin-import": "^2.14.0",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.2",
     "standard-version": "^4.4.0"
   },
   "peerDependencies": {
-    "eslint": "^4.9.0",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint": "^5.4.0",
+    "eslint-plugin-import": "^2.14.0"
   },
   "ava": {
     "files": [
