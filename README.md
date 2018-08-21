@@ -1,4 +1,4 @@
-# eslint-config-norton [![Build Status][gitlab-ci-image]][gitlab-ci-url] [![Coverage percentage][gitlab-coverage-image]][gitlab-coverage-url]
+# eslint-config-norton [![Build Status][gitlab-ci-image]][gitlab-ci-url]
 An ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [Norton code style](https://gitlab.com/wwnorton/style).
 
 A note from [airbnb's JavaScript guide](https://github.com/airbnb/javascript), which this repository extends:
