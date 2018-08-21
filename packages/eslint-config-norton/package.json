@@ -46,6 +46,8 @@
     "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.7.0",
     "nyc": "^11.4.0"
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.2",
   },
   "peerDependencies": {
     "eslint": "^4.9.0",
@@ -58,5 +60,8 @@
     "failWithoutAssertions": false,
     "serial": true,
     "verbose": true
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
   }
 }
