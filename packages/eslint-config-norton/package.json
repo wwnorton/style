@@ -41,6 +41,8 @@
     "eslint-config-airbnb-base": "^12.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
     "ava": "^0.24.0",
     "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.7.0",
