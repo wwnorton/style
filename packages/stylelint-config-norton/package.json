@@ -35,7 +35,6 @@
     "lint:es": "eslint .",
     "lint:fix": "npm run lint:es -- --fix",
     "lint:style": "npm run build && stylelint test/fixtures/*.scss",
-    "prepublishOnly": "nsp check",
     "release": "standard-version",
     "test": "ava"
   },
