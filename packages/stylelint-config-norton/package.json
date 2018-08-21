@@ -37,8 +37,7 @@
     "lint:style": "npm run build && stylelint test/fixtures/*.scss",
     "prepublishOnly": "nsp check",
     "release": "standard-version",
-    "report": "nyc report --reporter=html",
-    "test": "nyc ava",
+    "test": "ava"
   },
   "dependencies": {
     "lodash.merge": "^4.6.0",
@@ -54,8 +53,6 @@
     "eslint-plugin-import": "^2.14.0",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.2",
-    "nsp": "^3.2.1",
-    "nyc": "^11.7.2",
     "standard-version": "^4.4.0",
     "stylelint": "^9.2.0",
     "stylelint-order": "^0.8.0",
