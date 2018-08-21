@@ -29,15 +29,15 @@ test('correct tab error rule', async (t) => {
 	t.is(data.results[0].messages[0].ruleId, 'indent');
 });
 
-test('correct trailing-comma error message', async (t) => {
-	const data = await Promise.resolve(result);
-	t.is(data.results[0].messages[1].message, 'Unexpected trailing comma.');
-});
-
-test('correct trailing-comma error rule', async (t) => {
-	const data = await Promise.resolve(result);
-	t.is(data.results[0].messages[1].ruleId, 'comma-dangle');
-});
+// test('correct trailing-comma error message', async (t) => {
+// 	const data = await Promise.resolve(result);
+// 	t.is(data.results[0].messages[1].message, 'Unexpected trailing comma.');
+// });
+//
+// test('correct trailing-comma error rule', async (t) => {
+// 	const data = await Promise.resolve(result);
+// 	t.is(data.results[0].messages[1].ruleId, 'comma-dangle');
+// });
 
 test('flags warnings', async (t) => {
 	const data = await Promise.resolve(result);

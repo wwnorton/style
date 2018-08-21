@@ -1,10 +1,5 @@
-.npm_setup: &npm_setup |
-  # update npm and install dependencies with `npm ci`
-  npm i -g npm
-  npm ci
-
-test:node:6:
-  image: node:6-alpine
+test:node:8:
+  image: node:8-alpine
   before_script:
     - npm install
   script:
@@ -15,10 +10,10 @@ test:node:6:
     paths:
       - coverage/
 
-test:node:8:
-  image: node:8-alpine
+test:node:10:
+  image: node:10-alpine
   before_script:
-    - *npm_setup
+    - npm ci
   script:
     - npm test
 
