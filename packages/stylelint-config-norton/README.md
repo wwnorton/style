@@ -3,9 +3,7 @@
 
 
 ## Installation
-As of `v1.1.6`, this repository can be installed from the NPM registry. You'll also need a compatible version of Stylelint, [stylelint-order](https://github.com/hudochenkov/stylelint-order), and [stylelint-scss](https://github.com/kristerkari/stylelint-scss), which are peer dependencies:
-
-If using npm 5+, you can use [npx](https://github.com/zkat/npx) to install the correct peer dependencies:
+Use [npx](https://github.com/zkat/npx), which comes with NPM 5+:
 ```bash
 npx install-peerdeps --dev stylelint-config-norton
 ```
