@@ -4,11 +4,6 @@ test:node:8:
     - npm install
   script:
     - npm test
-  after_script:
-    - npm run report
-  artifacts:
-    paths:
-      - coverage/
 
 test:node:10:
   image: node:10-alpine
@@ -16,17 +11,3 @@ test:node:10:
     - npm ci
   script:
     - npm test
-
-pages:
-  image: alpine:latest
-  stage: deploy
-  dependencies:
-    - test:node:6
-  script:
-    - mv coverage/ public/
-  artifacts:
-    paths:
-      - public
-    expire_in: 30 days
-  only:
-    - master
