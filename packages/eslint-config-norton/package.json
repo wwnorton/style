@@ -31,7 +31,6 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "prepublishOnly": "nsp check",
     "preversion": "npm run lint",
     "postversion": "git push && git push --tags",
     "report": "nyc report --reporter=html",
@@ -46,7 +45,6 @@
     "ava": "^0.24.0",
     "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.7.0",
-    "nsp": "^3.2.1",
     "nyc": "^11.4.0"
   },
   "peerDependencies": {
