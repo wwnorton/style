@@ -39,8 +39,6 @@
     "release": "standard-version",
     "report": "nyc report --reporter=html",
     "test": "nyc ava",
-    "preversion": "npm run lint",
-    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "lodash.merge": "^4.6.0",
