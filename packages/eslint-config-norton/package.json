@@ -59,6 +59,16 @@
     "serial": true,
     "verbose": true
   },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
   "lint-staged": {
     "*.{js,jsx}": "eslint"
   }
