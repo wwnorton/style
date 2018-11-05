@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-norton",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint shareable config for the Norton JavaScript style guide",
   "keywords": [
     "code",
@@ -60,7 +60,9 @@
     "verbose": true
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "husky": {
     "hooks": {
