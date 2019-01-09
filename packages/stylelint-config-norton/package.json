@@ -39,7 +39,7 @@
     "test": "ava"
   },
   "dependencies": {
-    "lodash.merge": "^4.6.0",
+    "lodash.merge": "^4.6.1",
     "stylelint-config-primer": "^3.0.1",
     "stylelint-config-sass-guidelines": "^5.0.0",
     "stylelint-config-standard": "^18.2.0"
