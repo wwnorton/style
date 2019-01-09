@@ -20,7 +20,7 @@ test(`${rule}: correct severity flagged`, async (t) => {
 
 test(`${rule}: correct line number`, async (t) => {
 	const warnings = await getWarnings(result, rule);
-	t.is(warnings[0].line, 11);
+	t.is(warnings[0].line, 10);
 });
 
 test(`${rule}: correct column number`, async (t) => {
