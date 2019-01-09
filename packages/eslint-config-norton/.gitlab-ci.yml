@@ -1,13 +1,6 @@
-test:node:8:
+test:
   image: node:8-alpine
   before_script:
     - npm install
-  script:
-    - npm test
-
-test:node:10:
-  image: node:10-alpine
-  before_script:
-    - npm ci
   script:
     - npm test
