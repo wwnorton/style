@@ -47,7 +47,7 @@ It modifies the following rules:
 * `function-parentheses-space-inside` is `never-single-line` instead of `never` to be more in line with [eslint-config-norton](https://gitlab.com/wwnorton/style/eslint-config-norton).
 * `indentation` uses [tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
 * `max-empty-lines` is 2 instead of 1.
-* `order/properties-order` uses the [idiomatic css declaration order](https://github.com/necolas/idiomatic-css#declaration-order) instead of alphabetical. See related issues: #3 & #4.
+* `order/properties-order` uses [the order from GitHub's Primer design system](https://github.com/primer/primer/blob/master/tools/stylelint-config-primer/index.js#L47-L217) instead of alphabetical. See related issues: #3 & #4.
 * `scss/at-rule-empty-line-before` doesn't allow an empty line between `@if`/`@else` statements.
 
 
