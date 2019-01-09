@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.0.0...v2.0.1) (2019-01-09)
+
+
+### Bug Fixes
+
+* remove undefined package ([31d3589](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/31d3589))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v1.2.3...v2.0.0) (2018-08-21)
 
