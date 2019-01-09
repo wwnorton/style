@@ -1,11 +1,11 @@
 const extend = require('lodash.merge');
-const standard = require('stylelint-config-standard');
-const { primer } = require('./order');
+const { rules: standard } = require('stylelint-config-standard');
+const { rules: primer } = require('stylelint-config-primer');
 
 module.exports = {
 	/** stylelint rules */
 	'at-rule-empty-line-before': extend(
-		standard.rules['at-rule-empty-line-before'],
+		standard['at-rule-empty-line-before'],
 		[
 			'always', {
 				ignoreAtRules: ['else'],
@@ -19,7 +19,7 @@ module.exports = {
 
 	/** order rules */
 	'order/properties-alphabetical-order': null,
-	'order/properties-order': primer,
+	'order/properties-order': primer['order/properties-order'],
 
 	/** stylelint-scss rules */
 	'scss/at-else-empty-line-before': 'never',
