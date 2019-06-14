@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.1.1...v2.1.2) (2019-06-14)
+
+
+### Tests
+
+* simplify tests with snapshots ([f44e142](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/f44e142))
+
+
+
 ### [2.1.1](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.1.0...v2.1.1) (2019-06-14)
 
 
