@@ -1,6 +1,6 @@
 const extend = require('lodash.merge');
 const { rules: standard } = require('stylelint-config-standard');
-const { rules: primer } = require('stylelint-config-primer');
+const primerOrder = require('stylelint-config-primer/property-order');
 
 module.exports = {
 	/** stylelint rules */
@@ -19,7 +19,7 @@ module.exports = {
 
 	/** order rules */
 	'order/properties-alphabetical-order': null,
-	'order/properties-order': primer['order/properties-order'],
+	'order/properties-order': primerOrder,
 
 	/** stylelint-scss rules */
 	'scss/at-else-empty-line-before': 'never',
