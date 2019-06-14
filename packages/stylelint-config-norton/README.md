@@ -45,10 +45,8 @@ To use the Norton config in a project that doesn't use [Sass](https://sass-lang.
 
 ```js
 // stylelint.config.js
-const nortonCss = require('stylelint-config-norton/src/css');
-
 module.exports = {
-  extends: [nortonCss],
+  extends: [require.resolve('stylelint-config-norton/src/css')],
   rules: {
     // Override rules here
   }
