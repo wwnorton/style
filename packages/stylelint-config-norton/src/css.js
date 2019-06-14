@@ -1,0 +1,14 @@
+const style = require('./rules/style');
+const order = require('./rules/plugins/order');
+const bestPractices = require('./rules/best-practices');
+
+module.exports = {
+	extends: [
+		'stylelint-config-standard',
+	],
+	rules: {
+		...bestPractices,
+		...style,
+		...order,
+	},
+};
