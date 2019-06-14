@@ -59,8 +59,8 @@
     "stylelint": "^10.0.0"
   },
   "ava": {
-    "files": [
-      "test"
+    "helpers": [
+      "**/helpers/**/*"
     ],
     "failWithoutAssertions": false
   },
