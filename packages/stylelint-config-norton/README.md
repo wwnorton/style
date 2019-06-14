@@ -29,12 +29,26 @@ yo norton-style
 
 Once the `stylelint-config-norton` package is installed, you can use it by specifying `norton` in the [`extends`](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#extends) section of your [stylelint configuration](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md).
 
-### Examples
-
 ```js
 // stylelint.config.js
 module.exports = {
   extends: ['norton'],
+  rules: {
+    // Override rules here
+  }
+};
+```
+
+### Usage without Sass rules
+
+To use the Norton config in a project that doesn't use [Sass](https://sass-lang.com/), import and use the included css.js config instead of the default one.
+
+```js
+// stylelint.config.js
+const nortonCss = require('stylelint-config-norton/src/css');
+
+module.exports = {
+  extends: [nortonCss],
   rules: {
     // Override rules here
   }
