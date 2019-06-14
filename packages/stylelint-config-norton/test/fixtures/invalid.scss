@@ -1,12 +1,13 @@
 a {
   color: rgba( 255, 255, 255, 1);
+	width: 0;
 }
+
+
 
 h1 {
 	font-size: 32px;
 }
-
-
 
 @mixin if-else($var) {
 	@if ($var) {
@@ -15,6 +16,5 @@ h1 {
 
 	@else {
 		background: #fff;
-		width: 0;
 	}
 }
