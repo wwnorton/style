@@ -41,7 +41,8 @@
     "lodash.merge": "^4.6.1",
     "stylelint-config-primer": "^7.0.0",
     "stylelint-config-sass-guidelines": "^6.0.0",
-    "stylelint-config-standard": "^18.3.0"
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
