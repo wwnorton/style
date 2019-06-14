@@ -1,6 +1,21 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.1.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.0.1...v2.1.0) (2019-06-14)
+
+
+### Features
+
+* include a css-only export ([e283013](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/e283013))
+* update stylelint, primer, & sass-guidelines ([1062b24](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/1062b24))
+
+
+### Tests
+
+* update test config for ava v2.0 ([607ba54](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/607ba54))
+
+
 
 <a name="2.0.1"></a>
 ## [2.0.1](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.0.0...v2.0.1) (2019-01-09)
