@@ -1,5 +1,7 @@
-const bestPractices = require('./rules/best-practices');
 const style = require('./rules/style');
+const scss = require('./rules/plugins/scss');
+const order = require('./rules/plugins/order');
+const bestPractices = require('./rules/best-practices');
 
 module.exports = {
 	extends: [
@@ -12,5 +14,7 @@ module.exports = {
 	rules: {
 		...bestPractices,
 		...style,
+		...order,
+		...scss,
 	},
 };

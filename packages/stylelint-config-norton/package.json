@@ -20,11 +20,10 @@
   "files": [
     ".stylelintignore",
     "build.js",
-    "index.js",
-    "rules",
+    "src",
     "test"
   ],
-  "main": "index.js",
+  "main": "src/sass.js",
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:wwnorton/style/stylelint-config-norton.git"

@@ -1,9 +1,9 @@
 const extend = require('lodash.merge');
 const { rules: standard } = require('stylelint-config-standard');
-const primerOrder = require('stylelint-config-primer/property-order');
 
+/** stylelint-scss rules */
 module.exports = {
-	/** stylelint rules */
+	// allow @else to come immediately after @if block
 	'at-rule-empty-line-before': extend(
 		standard['at-rule-empty-line-before'],
 		[
@@ -13,14 +13,5 @@ module.exports = {
 		],
 	),
 	'at-rule-no-unknown': null,
-	'function-parentheses-space-inside': 'never-single-line',
-	indentation: 'tab',
-	'max-empty-lines': 2,
-
-	/** order rules */
-	'order/properties-alphabetical-order': null,
-	'order/properties-order': primerOrder,
-
-	/** stylelint-scss rules */
 	'scss/at-else-empty-line-before': 'never',
 };
