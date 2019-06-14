@@ -9,8 +9,8 @@ module.exports = {
 	plugins: [
 		'stylelint-scss',
 	],
-	rules: Object.assign(
-		bestPractices,
-		style,
-	),
+	rules: {
+		...bestPractices,
+		...style,
+	},
 };
