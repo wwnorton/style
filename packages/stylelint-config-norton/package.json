@@ -51,8 +51,8 @@
     "eslint": "^5.16.0",
     "eslint-config-norton": "^2.0.2",
     "eslint-plugin-import": "^2.17.3",
-    "husky": "^2.4.1",
-    "lint-staged": "^8.2.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
     "standard-version": "^6.0.1",
     "stylelint": "^10.1.0"
   },
