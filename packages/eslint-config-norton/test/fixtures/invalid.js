@@ -1,5 +1,5 @@
-require(
-  3,
-);
+const foo = [
+  'bar',
+];
 
-console.log('foobar');
+console.log(foo);
