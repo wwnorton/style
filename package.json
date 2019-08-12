@@ -52,12 +52,11 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "ava": {
-    "files": [
-      "test"
+    "helpers": [
+      "**/{fixtures,helpers}/**/*"
     ],
     "failWithoutAssertions": false,
-    "serial": true,
-    "verbose": true
+    "serial": true
   },
   "commitlint": {
     "extends": [
