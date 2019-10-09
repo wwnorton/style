@@ -1,4 +1,4 @@
-const primerOrder = require('stylelint-config-primer/property-order');
+const primerOrder = require('./property-order');
 
 /** order rules */
 module.exports = {
