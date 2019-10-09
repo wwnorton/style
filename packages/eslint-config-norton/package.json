@@ -38,13 +38,13 @@
     "eslint-config-airbnb-base": "^14.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "ava": "^2.2.0",
-    "eslint": "^6.1.0",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "ava": "^2.4.0",
+    "eslint": "^6.5.1",
     "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.3",
-    "lint-staged": "^9.2.1",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.2",
     "standard-version": "^7.0.0"
   },
   "peerDependencies": {
