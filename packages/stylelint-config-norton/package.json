@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "lodash.merge": "^4.6.1",
-    "stylelint-config-primer": "^8.0.0",
-    "stylelint-config-sass-guidelines": "^6.0.0",
+    "stylelint-config-primer": "^8.2.1",
+    "stylelint-config-sass-guidelines": "^6.1.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^3.1.1"
   },
@@ -49,11 +49,11 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "ava": "^2.4.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.5.1",
     "eslint-config-norton": "^3.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.5",
-    "lint-staged": "^9.2.5",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.2",
     "standard-version": "^7.0.0",
     "stylelint": "^11.0.0"
   },
