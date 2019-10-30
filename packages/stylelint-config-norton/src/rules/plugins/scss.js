@@ -3,15 +3,20 @@ const { rules: standard } = require('stylelint-config-standard');
 
 /** stylelint-scss rules */
 module.exports = {
-	// allow @else to come immediately after @if block
 	'at-rule-empty-line-before': extend(
 		standard['at-rule-empty-line-before'],
 		[
 			'always', {
-				ignoreAtRules: ['else'],
+				ignoreAtRules: [
+					// allow @else to come immediately after @if block
+					'else',
+					// allow the various module/imports to come after one another
+					'forward',
+					'import',
+					'use',
+				],
 			},
 		],
 	),
-	'at-rule-no-unknown': null,
 	'scss/at-else-empty-line-before': 'never',
 };

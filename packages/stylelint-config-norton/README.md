@@ -65,6 +65,7 @@ It modifies the following rules:
 * `max-empty-lines` is 2 instead of 1.
 * `order/properties-order` uses [the order from GitHub's Primer design system](https://github.com/primer/primer/blob/master/tools/stylelint-config-primer/index.js#L47-L217) instead of alphabetical. See related issues: #3 & #4.
 * `scss/at-rule-empty-line-before` doesn't allow an empty line between `@if`/`@else` statements.
+* `at-rule-empty-line-before` ignores `@forward`, `@import`, and `@use`.
 
 [gitlab-ci-image]: https://gitlab.com/wwnorton/style/stylelint-config-norton/badges/master/build.svg
 [gitlab-ci-url]: https://gitlab.com/wwnorton/style/stylelint-config-norton/commits/master
