@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.2.1...v2.3.0) (2019-10-30)
+
+
+### Features
+
+* add support for sass modules ([ab22c23](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/ab22c2348670a0a5c52c43e00c17e200e2829dd1))
+
 ### [2.2.1](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.2.0...v2.2.1) (2019-10-09)
 
 ## [2.2.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.1.3...v2.2.0) (2019-09-17)
