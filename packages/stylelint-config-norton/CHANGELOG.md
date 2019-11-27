@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.3.0...v2.4.0) (2019-11-27)
+
+
+### Features
+
+* update stylelint peer to support v10-12 ([d13bff3](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/d13bff31b1d96c9c1a86e672ddead2c3bb5c7e07))
+
 ## [2.3.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.2.1...v2.3.0) (2019-10-30)
 
 
