@@ -67,6 +67,6 @@
     "failWithoutAssertions": false
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint"
+    "*.{js,jsx}": "eslint --fix"
   }
 }
