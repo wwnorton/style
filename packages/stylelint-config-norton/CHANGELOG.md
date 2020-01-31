@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.4.0...v3.0.0) (2020-01-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Node v10+ is now required
+
+* **deps:** update configs ([2e422cc](https://gitlab.com/wwnorton/style/stylelint-config-norton/commit/2e422cc3e108048f6e45f03d793db73426324790))
+
 ## [2.4.0](https://gitlab.com/wwnorton/style/stylelint-config-norton/compare/v2.3.0...v2.4.0) (2019-11-27)
 
 
