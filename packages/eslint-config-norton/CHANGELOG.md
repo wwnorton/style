@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://gitlab.com/wwnorton/style/eslint-config-norton/compare/v3.0.1...v3.0.2) (2020-03-11)
+
+
+### Bug Fixes
+
+* remove redundant strict rules ([27b2e08](https://gitlab.com/wwnorton/style/eslint-config-norton/commit/27b2e08283751c3d642af5af1f82533d0afb0a6b))
+
 ### [3.0.1](https://gitlab.com/wwnorton/style/eslint-config-norton/compare/v3.0.0...v3.0.1) (2019-08-12)
 
 
