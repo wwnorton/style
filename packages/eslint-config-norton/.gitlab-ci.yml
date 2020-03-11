@@ -1,5 +1,5 @@
 test:
-  image: node:8-alpine
+  image: node:lts
   before_script:
     - npm install
   script:
