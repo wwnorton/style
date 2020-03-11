@@ -40,9 +40,10 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "ava": "^2.4.0",
+    "ava": "^3.5.0",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
+    "esm": "^3.2.25",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "standard-version": "^7.1.0"
@@ -52,11 +53,12 @@
     "eslint-plugin-import": "^2.18.2"
   },
   "ava": {
-    "helpers": [
-      "**/{fixtures,helpers}/**/*"
+    "files": [
+      "test/*.js"
     ],
-    "failWithoutAssertions": false,
-    "serial": true
+    "require": [
+			"esm"
+		]
   },
   "commitlint": {
     "extends": [
