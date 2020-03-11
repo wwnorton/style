@@ -1,6 +1,6 @@
 test:
   image: node:lts
   before_script:
-    - npm install
+    - npm ci
   script:
     - npm test
