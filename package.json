@@ -19,14 +19,11 @@
     "url": "git@gitlab.com:wwnorton/style/eslint-config-norton.git"
   },
   "license": "MIT",
-  "author": "Evan Yamanishi",
+  "author": "Evan Yamanishi <eyamanishi@wwnorton.com>",
   "main": "index.js",
   "files": [
-    ".eslintignore",
-    ".eslintrc.js",
     "index.js",
-    "rules",
-    "test"
+    "rules"
   ],
   "scripts": {
     "lint": "eslint .",
