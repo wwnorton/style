@@ -9,6 +9,7 @@ module.exports = {
 	extends: [
 		'eslint-config-airbnb-base',
 		'./rules/style',
+		'./rules/bestPractices',
 	].map(require.resolve),
 	/**
 	 * Add overrides for React and TypesScript environments.
