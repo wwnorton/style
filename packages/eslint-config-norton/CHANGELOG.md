@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.2](https://gitlab.com/wwnorton/style/eslint-config-norton/compare/v3.1.1...v3.1.2) (2020-07-14)
+
+
+### Bug Fixes
+
+* make sure overrides are included on npm ([4e083a7](https://gitlab.com/wwnorton/style/eslint-config-norton/commit/4e083a7f7e6efc2da425a2904b4df141e858e2d9))
+
 ### [3.1.1](https://gitlab.com/wwnorton/style/eslint-config-norton/compare/v3.1.0...v3.1.1) (2020-07-14)
 
 
