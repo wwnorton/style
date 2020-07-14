@@ -1,6 +1,3 @@
-const react = require('./overrides/react');
-const typescript = require('./overrides/typescript');
-
 module.exports = {
 	/**
 	 * use airbnb's well-reasoned style guide as base
@@ -16,7 +13,7 @@ module.exports = {
 	 * Note that additional eslint tooling will be required for these to work.
 	 */
 	overrides: [
-		react,
-		typescript,
-	],
+		'./overrides/react',
+		'./overrides/typescript',
+	].map(require),
 };
