@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0-beta.0](https://gitlab.com/wwnorton/style/eslint-config-norton/compare/v3.1.2...v4.0.0-beta.0) (2020-07-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* default exports are now expressly forbidden in favor of named exports. See https://basarat.gitbook.io/typescript/main-1/defaultisbad for rationale.
+
+### Features
+
+* allow consecutive single-line class members ([16acca2](https://gitlab.com/wwnorton/style/eslint-config-norton/commit/16acca2d1a7678641121e5592925751a78a9fbde))
+* avoid default export ([22567b8](https://gitlab.com/wwnorton/style/eslint-config-norton/commit/22567b8309a5e35b3c06e690863a3a53964ea0c5))
+
 ### [3.1.2](https://gitlab.com/wwnorton/style/eslint-config-norton/compare/v3.1.1...v3.1.2) (2020-07-14)
 
 
