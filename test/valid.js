@@ -1,23 +1,21 @@
 import test from 'ava';
+import path from 'path';
 import eslint from 'eslint';
 
 const files = [
-	'./index.js',
-	'./test/valid.js',
+	path.join(__dirname, 'fixtures/valid.js'),
 ];
 const cli = new eslint.CLIEngine({ useEslintrc: true });
-let result;
+let report;
 
-test.beforeEach(() => {
-	result = cli.executeOnFiles(files);
+test.before(async () => {
+	report = await cli.executeOnFiles(files);
 });
 
 test('did not error', async (t) => {
-	const data = await Promise.resolve(result);
-	t.is(data.errorCount, 0);
+	t.is(report.errorCount, 0);
 });
 
 test('flags no warnings', async (t) => {
-	const data = await Promise.resolve(result);
-	t.is(data.warningCount, 0);
+	t.is(report.warningCount, 0);
 });
