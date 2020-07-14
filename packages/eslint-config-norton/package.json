@@ -58,21 +58,21 @@
     ]
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.0.0"
+    "eslint-config-airbnb-base": "^14.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "ava": "^3.5.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint": "^7.4.0",
+    "eslint-plugin-import": "^2.22.0",
     "esm": "^3.2.25",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "standard-version": "^7.1.0"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0 || ^6.1.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-import": "^2.22.0"
   }
 }
