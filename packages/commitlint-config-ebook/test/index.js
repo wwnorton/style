@@ -1,7 +1,7 @@
 import test from 'ava';
 import load from '@commitlint/load';
 import commitlint from '@commitlint/lint';
-import config from './';
+import config from '..';
 
 let lint;
 
@@ -16,10 +16,10 @@ test.before(async () => {
 	 * @param  {String} commitMsg	The commit message
 	 * @return {Object}				The report returned by @commitlint/lint
 	 */
-	lint = commitMsg => commitlint(
+	lint = (commitMsg) => commitlint(
 		commitMsg,
 		opts.rules,
-		opts.parserPreset ? { parserOpts: opts.parserPreset.parserOpts } : {}
+		opts.parserPreset ? { parserOpts: opts.parserPreset.parserOpts } : {},
 	);
 });
 
