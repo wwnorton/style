@@ -2,17 +2,6 @@
   "name": "commitlint-config-ebook",
   "version": "0.2.0",
   "description": "commitlint shareable config for Norton ebook git commit standards",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint .",
-    "release": "standard-version",
-    "report": "nyc report --reporter=html",
-    "test": "nyc ava"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.com:wwnorton/style/commitlint-config-ebook.git"
-  },
   "keywords": [
     "code",
     "lint",
@@ -21,27 +10,18 @@
     "quality",
     "git"
   ],
-  "author": "Evan Yamanishi",
-  "license": "MIT",
-  "devDependencies": {
-    "@commitlint/lint": "^7.0.0",
-    "@commitlint/load": "^7.0.0",
-    "ava": "^0.25.0",
-    "eslint": "^4.19.1",
-    "eslint-config-norton": "^1.2.2",
-    "eslint-plugin-import": "^2.13.0",
-    "husky": "^1.0.0-rc.13",
-    "nyc": "^12.0.2",
-    "standard-version": "^4.4.0"
+  "homepage": "https://github.com/wwnorton/style/packages/commitlint-config-ebook",
+  "bugs": {
+    "url": "https://github.com/wwnorton/style/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wwnorton/style.git"
+  },
+  "license": "MIT",
+  "author": "Evan Yamanishi",
+  "main": "index.js",
   "dependencies": {
     "@commitlint/config-conventional": "^7.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint",
-      "pre-push": "npm test"
-    }
   }
 }

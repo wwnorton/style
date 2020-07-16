@@ -1,7 +1,31 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "lint:es": "eslint .",
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "**/test/*.js"
+    ],
+    "require": [
+      "esm"
+    ]
+  },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@commitlint/lint": "^9.1.1",
+    "@commitlint/load": "^9.1.1",
+    "ava": "^3.10.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "esm": "^3.2.25",
+    "lerna": "^3.22.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

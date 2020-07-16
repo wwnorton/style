@@ -10,13 +10,13 @@
     "quality",
     "style"
   ],
-  "homepage": "https://gitlab.com/wwnorton/style/eslint-config-norton",
+  "homepage": "https://github.com/wwnorton/style/packages/eslint-config-norton",
   "bugs": {
-    "url": "https://gitlab.com/wwnorton/style/eslint-config-norton/issues"
+    "url": "https://github.com/wwnorton/style/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:wwnorton/style/eslint-config-norton.git"
+    "url": "git@github.com:wwnorton/style.git"
   },
   "license": "MIT",
   "author": "Evan Yamanishi <eyamanishi@wwnorton.com>",
@@ -26,48 +26,8 @@
     "overrides",
     "rules"
   ],
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "release": "standard-version",
-    "test": "ava"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm test"
-    }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint"
-  },
-  "ava": {
-    "files": [
-      "test/*.js"
-    ],
-    "require": [
-      "esm"
-    ]
-  },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.2.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
-    "ava": "^3.10.1",
-    "eslint": "^7.4.0",
-    "eslint-plugin-import": "^2.22.0",
-    "esm": "^3.2.25",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "standard-version": "^8.0.2"
   },
   "peerDependencies": {
     "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",

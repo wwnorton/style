@@ -1,6 +1,0 @@
-test:
-  image: node:lts
-  before_script:
-    - npm ci
-  script:
-    - npm test

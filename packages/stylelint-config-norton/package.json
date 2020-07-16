@@ -11,33 +11,21 @@
     "stylelint",
     "stylelint-config"
   ],
-  "homepage": "https://gitlab.com/wwnorton/style/stylelint-config-norton",
+  "homepage": "https://github.com/wwnorton/style/packages/stylelint-config-norton",
   "bugs": {
-    "url": "https://gitlab.com/wwnorton/style/stylelint-config-norton/issues"
+    "url": "https://github.com/wwnorton/style/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wwnorton/style.git"
   },
   "license": "MIT",
   "author": "Evan Yamanishi",
+  "main": "src/sass.js",
   "files": [
-    ".stylelintignore",
-    "build.js",
     "src",
     "test"
   ],
-  "main": "src/sass.js",
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.com:wwnorton/style/stylelint-config-norton.git"
-  },
-  "scripts": {
-    "build": "node build",
-    "lint": "npm run lint:es",
-    "lint:es": "eslint .",
-    "lint:fix": "npm run lint:es -- --fix",
-    "lint:style": "npm run build && stylelint test/fixtures/*.scss",
-    "prerelease": "npm test",
-    "release": "standard-version",
-    "test": "ava"
-  },
   "dependencies": {
     "lodash.merge": "^4.6.1",
     "stylelint-config-sass-guidelines": "^7.0.0",
@@ -45,28 +33,7 @@
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.14.2"
   },
-  "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "ava": "^2.4.0",
-    "eslint": "^6.8.0",
-    "eslint-config-norton": "^3.0.1",
-    "eslint-plugin-import": "^2.20.0",
-    "husky": "^4.2.1",
-    "lint-staged": "^10.0.7",
-    "standard-version": "^7.1.0",
-    "stylelint": "^13.0.0"
-  },
   "peerDependencies": {
     "stylelint": "^13.0.0"
-  },
-  "ava": {
-    "helpers": [
-      "**/helpers/**/*"
-    ],
-    "failWithoutAssertions": false
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint --fix"
   }
 }
