@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['./packages/eslint-config-norton'].map(require.resolve),
+	extends: ['./packages/eslint-config-norton'],
 	rules: {
 		'import/no-extraneous-dependencies': ['error',
 			{
