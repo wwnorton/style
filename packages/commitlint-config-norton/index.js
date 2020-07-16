@@ -3,6 +3,6 @@ module.exports = {
 		'@commitlint/config-conventional',
 	],
 	rules: {
-		// add ebook-specific rules here
+		// Norton-specific rules go here
 	},
 };

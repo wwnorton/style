@@ -5,7 +5,7 @@ module.exports = {
 			{
 				packageDir: [
 					'.',
-					'./packages/commitlint-config-ebook',
+					'./packages/commitlint-config-norton',
 					'./packages/eslint-config-norton',
 					'./packages/stylelint-config-norton',
 				],

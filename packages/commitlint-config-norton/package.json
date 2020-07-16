@@ -1,7 +1,7 @@
 {
-  "name": "commitlint-config-ebook",
+  "name": "commitlint-config-norton",
   "version": "0.2.0",
-  "description": "commitlint shareable config for Norton ebook git commit standards",
+  "description": "commitlint shareable config for Norton git commit standards",
   "keywords": [
     "code",
     "lint",
@@ -10,7 +10,7 @@
     "quality",
     "git"
   ],
-  "homepage": "https://github.com/wwnorton/style/packages/commitlint-config-ebook",
+  "homepage": "https://github.com/wwnorton/style/packages/commitlint-config-norton",
   "bugs": {
     "url": "https://github.com/wwnorton/style/issues"
   },

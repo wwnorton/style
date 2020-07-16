@@ -1,1 +1,1 @@
-module.exports = require('./packages/commitlint-config-ebook');
+module.exports = require('./packages/commitlint-config-norton');
