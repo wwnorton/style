@@ -1,6 +1,8 @@
 // GitHub Primer's property order
 // https://github.com/primer/stylelint-config-primer/blob/master/property-order.js
 
+// add and groups accesibility properties to the bottom.
+
 module.exports = [
 	'position',
 	'top',
@@ -98,7 +100,6 @@ module.exports = [
 	'quotes',
 	'counter-reset',
 	'counter-increment',
-	'resize',
 	'user-select',
 	'nav-index',
 	'nav-up',
@@ -171,4 +172,16 @@ module.exports = [
 	'animation-delay',
 	'animation-iteration-count',
 	'animation-direction',
+	'backface-visibility',
+	'resize',
+	'appearance',
+	'user-select',
+	'interpolation-mode',
+	'direction',
+	'marks',
+	'page',
+	'set-link-source',
+	'unicode-bidi',
+	'speak',
+	'speak-as'
 ];
