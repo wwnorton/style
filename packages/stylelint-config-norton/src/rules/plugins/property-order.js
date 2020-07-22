@@ -183,5 +183,5 @@ module.exports = [
 	'set-link-source',
 	'unicode-bidi',
 	'speak',
-	'speak-as'
+	'speak-as',
 ];

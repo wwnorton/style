@@ -5,6 +5,6 @@ module.exports = {
 		'font-size': ['px'],
 	},
 	{
-		'severity': 'warning'
+		severity: 'warning',
 	}],
 };

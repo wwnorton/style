@@ -5,26 +5,26 @@ const primerOrder = require('./property-order');
 module.exports = {
 	'order/properties-alphabetical-order': null,
 	'order/properties-order': primerOrder,
-	"order/order": [
-        [
-          "custom-properties",
-          "dollar-variables",
-          {
-            "type": "at-rule",
-            "name": "extend"
-		},
-		  "declarations",
-          {
-            "type": "at-rule",
-            "name": "include",
-            "hasBlock": false
-          },
-          {
-            "type": "at-rule",
-            "name": "include",
-            "hasBlock": true
-          },
-          "rules"
-        ]
-      ]
+	'order/order': [
+		[
+			'custom-properties',
+			'dollar-variables',
+			{
+				type: 'at-rule',
+				name: 'extend',
+			},
+			'declarations',
+			{
+				type: 'at-rule',
+				name: 'include',
+				hasBlock: false,
+			},
+			{
+				type: 'at-rule',
+				name: 'include',
+				hasBlock: true,
+			},
+			'rules',
+		],
+	],
 };
