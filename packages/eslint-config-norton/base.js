@@ -1,15 +1,11 @@
 const typescript = require('./overrides/typescript');
 
 module.exports = {
-	/**
-	 * use airbnb's well-reasoned style guide as base
-	 * @see https://github.com/airbnb/javascript/
-	 */
 	extends: [
-		'eslint-config-airbnb',
+		'eslint-config-airbnb-base',
 		'./rules/style',
-		'./rules/react',
 	].map(require.resolve),
+	rules: {},
 	/**
 	 * Add overrides for React and TypesScript environments.
 	 * Note that additional eslint tooling will be required for these to work.
