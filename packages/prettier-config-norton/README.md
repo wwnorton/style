@@ -4,9 +4,12 @@ A Prettier [shareable config](https://prettier.io/docs/en/configuration.html#sha
 
 ## Installation
 
+You'll also need a compatible version of Prettier which is a peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+:
+
+```sh
+npx install-peerdeps --dev prettier-config-norton
 ```
-npm install prettier-config-norton
-```
+
 ## Usage
 
 Once the `prettier-config-norton` package is installed, you can use it by specifying it in your package.json: 
@@ -36,8 +39,30 @@ To extend a configuration you will need to use a prettier.config.js or .prettier
 module.exports = {
 	...require('prettier-config-norton'),
 	semi: false
+	// additional rule changes.
 };
 ```
+
+## Running
+
+This package only provides the W.W. Norton Prettier configuration, it is assumed that you have `prettier` installed in your project.
+This will already be done if you ran the `install-peerdeps` command specified in the [Installation section](#installation).
+
+- It's recommended to install the relevant [Editor Addons/Plugins](https://prettier.io/docs/en/editors.html) and enable "Prettier on Save".
+
+- It's recommended to add a prettier script to your `package.json`. An example is below: 
+
+	```
+	scripts: {
+		"prettier": "prettier '**/*.{js,json,css,scss,html,hbs,md}' --write" 
+	}
+	```
+	You can then run the following, to automatically format your project's code:
+
+	```
+	npm run prettier 
+	```
+- More commands can be found on [Prettier's documentation](https://prettier.io/docs/en/cli.html).
 
 ## Rules
 
