@@ -4,7 +4,7 @@ A Prettier [shareable config](https://prettier.io/docs/en/configuration.html#sha
 
 ## Installation
 
-You'll also need a compatible version of Prettier which is a peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+:
+You'll also need a compatible version of Prettier which is a peer dependency. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+:
 
 ```sh
 npx install-peerdeps --dev prettier-config-norton
@@ -66,7 +66,7 @@ This will already be done if you ran the `install-peerdeps` command specified in
 
 ## Rules
 
-This configuration is aimed to align with our modified Airbnb Style Guides and overrides a couple of the default rules for Prettier.
+This configuration is aimed to align with our modified Airbnb Style Guides by overriding a couple of the default rules for Prettier.
 
 - Use [Tabs](https://prettier.io/docs/en/options.html#tabs) over spaces 
 - Use [single quotes](https://prettier.io/docs/en/options.html#quotes) in regards to JavaScript code.
