@@ -1,9 +1,14 @@
 const typescript = require('./overrides/typescript');
 
 module.exports = {
+	/**
+	 * add eslint-config-prettier to handle formatting conflicts with prettier
+	 * @see https://github.com/prettier/eslint-config-prettier
+	 */
 	extends: [
 		'eslint-config-airbnb-base',
 		'./rules/style',
+		'eslint-config-prettier'
 	].map(require.resolve),
 	rules: {},
 	/**
