@@ -18,3 +18,16 @@ h1 {
 		background: #fff;
 	}
 }
+
+button {
+	color: red;
+	div {
+		height: 0;
+		span {
+			width: 30px;
+			button {
+				width: 30px;
+			}
+		}
+	}
+}
