@@ -24,6 +24,10 @@ yo norton-style
 
 Once the `eslint-config-norton` package is installed, you can use it by specifying `norton` or `eslint-config-norton` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring). Note that generator-norton-style automatically sets up this file. You can then override anything you like from there.
 
+### Usage with Prettier
+
+Currently [Prettier](https://prettier.io/) does a much better job at handling formatting than Eslint. `eslint-config-norton` is setup to work alongside our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) which handles our formatting. Please incorporate our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) in your project as well.
+
 ### Examples
 
 `.eslintrc.js` with 2 spaces instead of tabs.
