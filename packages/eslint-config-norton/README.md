@@ -26,7 +26,7 @@ Once the `eslint-config-norton` package is installed, you can use it by specifyi
 
 ### Usage with Prettier
 
-Currently [Prettier](https://prettier.io/) does a much better job at handling formatting than Eslint. `eslint-config-norton` is setup to work alongside our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) which handles our formatting. Please incorporate our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) in your project as well.
+Currently [Prettier](https://prettier.io/) does a much better job at handling formatting than Eslint. `eslint-config-norton` is setup to work alongside our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) which handles our formatting. `eslint-config-norton` extends [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) and `eslint-config-prettier/react` accordingly to turn off Eslint rule conflicts with Prettier. Please incorporate our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) in your project as well.
 
 ### Examples
 
