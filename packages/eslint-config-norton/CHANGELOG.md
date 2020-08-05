@@ -1,3 +1,43 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 3.1.3 (2020-07-24)
+
+
+### Bug Fixes
+
+* make sure overrides are included on npm ([307e5ac](https://github.com/wwnorton/style/commit/307e5ac3fba119ad2f5f1fab2c9270235bf399b9))
+* remove redundant strict rules ([e90d59f](https://github.com/wwnorton/style/commit/e90d59fb10b9d18cc00130c99280079b05d587fd))
+* require overrides ahead of compilation ([8d59ed7](https://github.com/wwnorton/style/commit/8d59ed7af9e0ac764776de00745db45d2855273c))
+* update peer deps to be in line with airbnb ([9ac9715](https://github.com/wwnorton/style/commit/9ac9715ebb0de9d7ea802a114833214350dc34d0))
+
+
+### Features
+
+* add hooks to do standard release ([cffa46b](https://github.com/wwnorton/style/commit/cffa46b0543d051dd15c13afce9d65c66cac03be))
+* add overrides for react & typescript ([3f197c1](https://github.com/wwnorton/style/commit/3f197c1e3db35735e4c726698e4ccad12f0b4681))
+* remove support for node 6 ([bfc856e](https://github.com/wwnorton/style/commit/bfc856e80483fbeff668832730d2c5d5cbf72a65))
+* update airbnb-base to v14 ([10dbfa5](https://github.com/wwnorton/style/commit/10dbfa58960c47f72f0554c1d40aea6c548b65be))
+* update eslint-config-airbnb-base ([3dd60a7](https://github.com/wwnorton/style/commit/3dd60a7d990d236ec0307e6b75d28a01ce5cfd8b))
+
+
+### Performance Improvements
+
+* remove pointless coverage ([798b072](https://github.com/wwnorton/style/commit/798b072c7d0d0e453c92d54df99ec16015ee57cb))
+
+
+### BREAKING CHANGES
+
+* see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/CHANGELOG.md#1400--2019-08-09
+* see
+https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/CHANGELOG.md
+
+
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
