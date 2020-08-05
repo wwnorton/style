@@ -32,7 +32,8 @@ test('valid file flags no warnings', async (t) => {
 	t.is(warningCount, 0);
 });
 
-test('using spaces instead of tabs triggers an error', (t) => {
-	const { messages } = getReport(invalid);
-	t.true(flagged(messages, 'indent'));
-});
+// This is turned off due to the inclusion of eslint-config-prettier
+// test('using spaces instead of tabs triggers an error', (t) => {
+// 	const { messages } = getReport(invalid);
+// 	t.true(flagged(messages, 'indent'));
+// });
