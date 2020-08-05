@@ -1,0 +1,23 @@
+{
+  "name": "prettier-config-norton",
+  "version": "1.0.0",
+  "description": "Prettier shareable config for W.W. Norton & Company",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/wwnorton/style/packages/prettier-config-norton",
+  "bugs": {
+    "url": "https://github.com/wwnorton/style/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wwnorton/style.git"
+  },
+  "license": "MIT",
+  "author": "Jonathan Chan <jchan@wwnorton.com>",
+  "main": "index.js",
+  "peerDependencies": {
+    "prettier": "2.x"
+  }
+}
