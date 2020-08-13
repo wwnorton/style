@@ -1,18 +1,18 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'W.W. Norton & Company Code Guidelines',
+  tagline: 'A collection of guidelines for your coding needs.',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: process.env.BASE_URL || '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'wwnorton', // Usually your GitHub org/user name.
+  projectName: 'style-guides', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Code Guidelines',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/seagull-dark.svg',
       },
       items: [
         {
@@ -23,9 +23,10 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: 'https://github.com/wwnorton/style',
+          title: 'GitHub',
+					position: 'right',
+					className: 'navbar__link--github',
         },
       ],
     },
@@ -41,7 +42,7 @@ module.exports = {
             },
             {
               label: 'Second Doc',
-              to: 'docs/doc2/',
+              to: 'docs/javascript-style',
             },
           ],
         },
@@ -75,8 +76,13 @@ module.exports = {
             },
           ],
         },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+			],
+			logo: {
+				alt: 'Norton Style Guides',
+				src: 'img/seagull-light.svg',
+				href: 'https://wnorton.com',
+			},
+      copyright: `Copyright © ${new Date().getFullYear()} W. W. Norton & Company.`,
     },
   },
   presets: [
@@ -85,8 +91,10 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          sidebarPath: require.resolve('./sidebars.js'),
+          homePageId: 'javascript',
+					sidebarPath: require.resolve('./sidebars.js'),
+					showLastUpdateAuthor: true,
+					showLastUpdateTime: true,
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',

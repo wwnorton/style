@@ -1,17 +1,18 @@
 ---
 id: hello-world
 title: Hello
-author: Endilie Yacop Sucipto
-author_title: Maintainer of Docusaurus
-author_url: https://github.com/endiliey
-author_image_url: https://avatars1.githubusercontent.com/u/17883920?s=460&v=4
-tags: [hello, docusaurus]
+author: Jonathan Chan
+author_title: WWNorton Developer
+author_url: https://github.com/ParmeJon
+author_image_url: https://avatars2.githubusercontent.com/u/41137981?s=460&u=9454a191d0c778192c6e753283a851d3aeb03d5c&v=4
+tags: [guidelines, style]
 ---
 
-Welcome to this blog. This blog is created with [**Docusaurus 2 alpha**](https://v2.docusaurus.io/).
+Welcome to W. W. Norton & Company's style guidelines
 
 <!--truncate-->
 
-This is a test post.
+This is where all our guidelines documenations across different
+languages will live.
 
-A whole bunch of other information.
+This is a work in progress.
