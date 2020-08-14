@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'W.W. Norton & Company Code Guidelines',
+  title: 'W. W. Norton & Company Code Guidelines',
   tagline: 'A collection of guidelines for your coding needs.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://wwnorton.github.io/style-guides',
   baseUrl: process.env.BASE_URL || '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
