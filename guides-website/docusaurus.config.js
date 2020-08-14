@@ -37,29 +37,33 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Javascript',
+              to: 'docs/javascript-style',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/javascript-style',
+              label: 'React',
+              to: 'docs/react-style',
+						},
+						{
+              label: 'Typescript',
+              to: 'docs/typescript-style',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'W. W. Norton & Company',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Books that Live',
+              href: 'https://wwnorton.com/who-we-are',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Catalog',
+              href: 'https://wwnorton.com/catalog',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/wwnorton',
             },
           ],
         },
@@ -72,7 +76,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/wwnorton/style',
             },
           ],
         },
@@ -80,7 +84,7 @@ module.exports = {
 			logo: {
 				alt: 'Norton Style Guides',
 				src: 'img/seagull-light.svg',
-				href: 'https://wnorton.com',
+				href: 'https://www.wwnorton.com',
 			},
       copyright: `Copyright © ${new Date().getFullYear()} W. W. Norton & Company.`,
     },
