@@ -54,6 +54,18 @@ module.exports = {
 }
 ```
 
+## TYPESCRIPT PROJECTS
+
+> **No other setup is necessary for Typescript support.**
+
+### How this works.
+
+The eslint-config-norton package is setup to automatically work with projects that use Typescript as well as projects that do not use Typescript. The package contains an "overrides" parameter which provides support for .ts and .tsx files if those files are present in the project. When Typescript files are detected the override supplies the necessary configuration to enable Typescript linting.
+
+**For more information please see...**
+Typescript Lint Setup - https://www.notion.so/Typescript-Lint-Setup-06cef0036d0b4887b4e07b57def202e4
+Typescript Style Guide - https://www.notion.so/TypeScript-Style-Guide-a73cca890fb342b0a1f99a7ba1ce55d8
+
 ## FOR NON REACT PROJECTS
 
 If you don't want React linting you can simply extend the base.js entry point in our config, `eslint-config-norton/base`.
