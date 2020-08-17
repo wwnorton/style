@@ -18,6 +18,7 @@ const rules = [
 	'max-empty-lines',
 	'order/properties-order',
 	'scss/at-else-empty-line-before',
+	'max-nesting-depth',
 ];
 
 const sass = { rules };

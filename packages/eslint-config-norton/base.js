@@ -1,3 +1,6 @@
+/**
+ * ? This is the base configuration for projects without React.
+ */
 const typescript = require('./overrides/typescript');
 
 module.exports = {
