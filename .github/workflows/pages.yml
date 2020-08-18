@@ -1,0 +1,30 @@
+name: Github Pages
+
+on:
+  push:
+    branches:
+      - docs-docusaurus
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.1
+        with:
+          node-version: 12.x
+      - name: Install 📦
+          run: npm install
+            working-directory: guides-website
+      - name: Build docs 📄
+          run: npm run Build
+            working-directory: guides-website
+          env:
+            BASE_URL: /style-guides/
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public
+
