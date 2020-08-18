@@ -101,13 +101,13 @@ module.exports = {
 					showLastUpdateTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/wwnorton/style/edit/docs-docusaurus/guides-website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/wwnorton/style/edit/docs-docusaurus/guides-website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/scss/main.scss'),
