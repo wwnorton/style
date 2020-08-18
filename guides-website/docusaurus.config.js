@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'A collection of guidelines for your coding needs.',
   url: 'https://wwnorton.github.io/style-guides',
   baseUrl: process.env.BASE_URL || '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'wwnorton', // Usually your GitHub org/user name.
   projectName: 'style-guides', // Usually your repo name.
@@ -116,6 +116,7 @@ module.exports = {
     ],
 	],
 	plugins: [
+		'docusaurus-lunr-search',
 		'docusaurus-plugin-sass',
 		[
 			'@docusaurus/plugin-pwa',
