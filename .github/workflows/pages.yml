@@ -14,11 +14,11 @@ jobs:
         with:
           node-version: 12.x
       - name: Install 📦
+          working-directory: guides-website
           run: npm install
-            working-directory: guides-website
       - name: Build docs 📄
+          working-directory: guides-website
           run: npm run Build
-            working-directory: guides-website
           env:
             BASE_URL: /style-guides/
       - name: Deploy 🚀
