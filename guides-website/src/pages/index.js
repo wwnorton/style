@@ -8,32 +8,30 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
+    title: <a href="https://github.com/wwnorton/style/tree/main/packages/eslint-config-norton">eslint-config-norton</a>,
     // imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        An <a href="https://eslint.org/">ESLint</a> shareable config for Norton code style. Currently defaulted to provide React linting.
+				Be sure to use this alongside our prettier-config-norton for your formatting needs.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <a href="https://github.com/wwnorton/style/tree/main/packages/stylelint-config-norton">stylelint-config-norton</a>,
     // imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A <a href="https://stylelint.io/">Stylelint</a> shareable config for the Norton stylesheet guide. Helps to avoid errors and enforce conventions in your styles.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <a href="https://github.com/wwnorton/style/tree/main/packages/prettier-config-norton">prettier-config-norton</a>,
     // imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        An opinionated <a href="https://prettier.io/">Prettier</a> shareable config for Norton Code style. Made to work alongside our eslint-config-norton for your linting needs.
       </>
     ),
   },
