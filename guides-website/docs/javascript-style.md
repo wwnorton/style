@@ -131,7 +131,8 @@ function baz() {
 }
 ```
 
-### Place 1 space before the leading brace.
+### space-before-blocks
+Place 1 space before the leading brace.
 eslint: [`space-before-blocks`](https://eslint.org/docs/rules/space-before-blocks.html)
 
 ```javascript
@@ -158,7 +159,9 @@ dog.set('attr', {
 });
 ```
 
-### Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space between the argument list and the function name in function calls and declarations.
+### Keyword Spacing
+Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space between the argument list and the function name in function calls and declarations.
+
 eslint: [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing.html)
 
 ```javascript
@@ -183,7 +186,9 @@ function fight() {
 }
 ```
 
-### Set off operators with spaces.
+### space-infix-ops
+Set off operators with spaces.
+
 eslint: [`space-infix-ops`](https://eslint.org/docs/rules/space-infix-ops.html)
 
 ```javascript
@@ -194,7 +199,9 @@ const x=y+5;
 const x = y + 5;
 ```
 
-### End files with a single newline character.
+### eol-last
+End files with a single newline character.
+
 eslint: [`eol-last`](https://github.com/eslint/eslint/blob/master/docs/rules/eol-last.md)
 
 ```javascript
@@ -219,8 +226,11 @@ import { es6 } from './AirbnbStyleGuide';
 export default es6;↵
 ```
 
-### Use indentation when making long method chains (more than 2 method chains). Use a leading dot, which emphasizes that the line is a method call, not a new statement.
-eslint: [`newline-per-chained-call`](https://eslint.org/docs/rules/newline-per-chained-call) [`no-whitespace-before-property`](https://eslint.org/docs/rules/no-whitespace-before-property)
+### Chained Calls
+Use indentation when making long method chains (more than 2 method chains). Use a leading dot, which emphasizes that the line is a method call, not a new statement.
+
+eslint: [`newline-per-chained-call`](https://eslint.org/docs/rules/newline-per-chained-call)
+eslint: [`no-whitespace-before-property`](https://eslint.org/docs/rules/no-whitespace-before-property)
 
 ```javascript
 // bad 👎
@@ -261,8 +271,9 @@ const leds = stage.selectAll('.led')
 // good 👍
 const leds = stage.selectAll('.led').data(data);
 ```
-
-### Leave a blank line after blocks and before the next statement.
+### Padding 
+#### Blank Lines
+Leave a blank line after blocks and before the next statement.
 
 ```javascript
 // bad 👎
@@ -319,7 +330,9 @@ const arr = [
 return arr;
 ```
 
-### Do not pad your blocks with blank lines.
+#### Padded Blocks
+Do not pad your blocks with blank lines.
+
 eslint: [`padded-blocks`](https://eslint.org/docs/rules/padded-blocks.html)
 
 ```javascript
@@ -360,7 +373,9 @@ if (baz) {
 }
 ```
 
-### Do not use multiple blank lines to pad your code.
+#### No Multiple Blank Lines
+Do not use multiple blank lines to pad your code.
+
 eslint: [`no-multiple-empty-lines`](https://eslint.org/docs/rules/no-multiple-empty-lines)
 
 ```javascript
@@ -413,7 +428,10 @@ class Person {
 }
 ```
 
-### Do not add spaces inside parentheses.
+
+### Parentheses Spacing
+Do not add spaces inside parentheses.
+
 eslint: [`space-in-parens`](https://eslint.org/docs/rules/space-in-parens.html)
 
 ```javascript
@@ -438,7 +456,9 @@ if (foo) {
 }
 ```
 
-### Do not add spaces inside brackets.
+### Array Bracket Spacing
+Do not add spaces inside brackets.
+
 eslint: [`array-bracket-spacing`](https://eslint.org/docs/rules/array-bracket-spacing.html)
 
 ```javascript
@@ -451,7 +471,9 @@ const foo = [1, 2, 3];
 console.log(foo[0]);
 ```
 
-### Add spaces inside curly braces.
+#### Object Curly Spacing
+Add spaces inside curly braces.
+
 eslint: [`object-curly-spacing`](https://eslint.org/docs/rules/object-curly-spacing.html)
 
 ```javascript
@@ -462,8 +484,12 @@ const foo = {clark: 'kent'};
 const foo = { clark: 'kent' };
 ```
 
-### Avoid having lines of code that are longer than 80 characters (including whitespace). Note: long strings are exempt from this rule, and should not be broken up.
+### Max Length
+Avoid having lines of code that are longer than 80 characters (including whitespace). 
+Note: long strings are exempt from this rule, and should not be broken up.
+
 eslint: [`max-len`](https://eslint.org/docs/rules/max-len.html)
+
 > Why? This ensures readability and maintainability.
 
 ```javascript
@@ -491,7 +517,9 @@ $.ajax({
   .fail(() => console.log('You have failed this city.'));
 ```
 
-### Require consistent spacing inside an open block token and the next token on the same line. This rule also enforces consistent spacing inside a close block token and previous token on the same line.
+### Block Spacing
+Require consistent spacing inside an open block token and the next token on the same line. This rule also enforces consistent spacing inside a close block token and previous token on the same line.
+
 eslint: [`block-spacing`](https://eslint.org/docs/rules/block-spacing)
 
 ```javascript
@@ -504,7 +532,9 @@ function foo() { return true; }
 if (foo) { bar = 0; }
 ```
 
-### Avoid spaces before commas and require a space after commas.
+### Comma Spacing
+Avoid spaces before commas and require a space after commas.
+
 eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
 
 ```javascript
@@ -517,7 +547,9 @@ var foo = 1, bar = 2;
 var arr = [1, 2];
 ```
 
-### Enforce spacing inside of computed property brackets.
+### Computed Property Spacing
+Enforce spacing inside of computed property brackets.
+
 eslint: [`computed-property-spacing`](https://eslint.org/docs/rules/computed-property-spacing)
 
 ```javascript
@@ -883,7 +915,8 @@ const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
 
 ## Arrays
 
-### Use the literal syntax for array creation.
+### No Array Constructor
+Use the literal syntax for array creation.
 
 eslint: [`no-array-constructor`](https://eslint.org/docs/rules/no-array-constructor.html)
 
@@ -897,7 +930,7 @@ const items = [];
 ```
 
 
-### Use Arraypush
+### Use `Array.push`
 
 [Array#push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) instead of direct assignment to add items to an array.
 
@@ -913,7 +946,8 @@ someStack.push('abracadabra');
 ```
 
 
-### Use array spreads `...` to copy arrays.
+### Copy Arrays with spreads `...`
+Use array spreads `...` to copy arrays.
 
 
 ```js
@@ -931,9 +965,8 @@ const itemsCopy = [...items];
 ```
 
 
-### To convert an iterable object to an array, use spreads `...` instead of Array.from
-
-[`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
+#### Convert Iterable Object with spreads `...`
+Use array spreads `...` to convert an iterable object to an array, instead of [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 
 
 ```js
@@ -947,7 +980,7 @@ const nodes = [...foo];
 ```
 
 
-### Use Array.from
+### Use `Array.from` for converting objects to arrays
 
 [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) for converting an array-like object to an array.
 
@@ -963,7 +996,8 @@ const arr = Array.from(arrLike);
 ```
 
 
-### Use [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) instead of spread `...` for mapping over iterables, because it avoids creating an intermediate array.
+### Use `Array.from` for mapping over iterables
+Use [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) instead of spread `...` for mapping over iterables, because it avoids creating an intermediate array.
 
 
 ```js
