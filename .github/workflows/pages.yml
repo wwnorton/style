@@ -3,10 +3,10 @@ name: Github Pages
 on:
   pull_request:
     branches:
-      -docus-docusaurus
+      - main
   push:
     branches:
-      - docs-docusaurus
+      - main
 
 jobs:
   deploy:
