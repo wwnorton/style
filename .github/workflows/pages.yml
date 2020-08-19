@@ -1,6 +1,9 @@
 name: Github Pages
 
 on:
+  pull_request:
+    branches:
+      -docus-docusaurus
   push:
     branches:
       - docs-docusaurus
