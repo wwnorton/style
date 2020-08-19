@@ -1,10 +1,8 @@
 ---
-name: JavaScript Style
-route: /guides/javascript-style
-menu: Guides
+id: javascript
+title: Javascript Style Guide
+sidebar_label: Javascript
 ---
-
-# JavaScript Style
 
 > A guide for writing consistent and aesthetically pleasing JavaScript.
 
