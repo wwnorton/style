@@ -1,12 +1,12 @@
 module.exports = {
   title: 'W. W. Norton & Company Code Guidelines',
   tagline: 'A collection of guidelines for your coding needs.',
-  url: 'https://wwnorton.github.io/style-guides',
+  url: 'https://wwnorton.github.io/style',
   baseUrl: process.env.BASE_URL || '/',
   onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'wwnorton', // Usually your GitHub org/user name.
-  projectName: 'style-guides', // Usually your repo name.
+  projectName: 'style', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Code Guidelines',
