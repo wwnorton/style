@@ -4,13 +4,11 @@ title: Typescript Style Guide
 sidebar_label: Typescript
 ---
 
-# TypeScript Style Guide
-
 **WWNorton TypeScript Style Guide**
 
 [Typescript Lint Setup](https://www.notion.so/Typescript-Lint-Setup-06cef0036d0b4887b4e07b57def202e4)
 
-# Official Typescript Documentation
+## Official Typescript Documentation
 
 [Familiar With TypeScript already?](https://www.typescriptlang.org/docs/home.html)
 
@@ -18,7 +16,7 @@ sidebar_label: Typescript
 
 [TypeScript Best Practices - Semicolons and Spacing](https://levelup.gitconnected.com/typescript-best-practices-semicolons-and-spacing-5be9c5963604)
 
-# General
+## General
 
 - **No Unused Expressions**
 
@@ -45,7 +43,7 @@ stringUtils.ts
 map.ts 
 ```
 
-# Variables and Function
+## Variables and Function
 
 - **Use `camelCase` for variable and function names**
 
@@ -167,7 +165,7 @@ async function foo() {
 }
 ```
 
-# Array
+## Array
 
 - **Annotate arrays as `foos:Foo[]` instead of `foos:Array<Foo>`.**
 
@@ -181,7 +179,7 @@ foos:Array<Foo>;
 foos:Foo[];
 ```
 
-# Strings
+## Strings
 
 - **Prefer single quotes (`'`) unless escaping.**
 
@@ -212,7 +210,7 @@ var foo = `this foo has a dynamic ${bar}`;
 
 We should use backticks or quotes in a consistent manner for declaring strings. Better yet, we should use backticks since they’ll create template strings, which are more flexible. They allow expressions to be embedded in it.
 
-# Class
+## Class
 
 - **Use `PascalCase` for class names.**
 
@@ -267,7 +265,7 @@ class B extends A {
 
 They’re both redundant so they should be removed.
 
-# Interface
+## Interface
 
 - U**se `PascalCase` for name.**
 
@@ -317,7 +315,7 @@ interface Foo {
 }
 ```
 
-# Type
+## Type
 
 - **Use `PascalCase` for name.**
 
@@ -347,7 +345,7 @@ type Animal = {
 }
 ```
 
-# Type vs. Interface
+## Type vs. Interface
 
 - **Use `type` when you *might* need a union or intersection:**
 
@@ -374,7 +372,7 @@ class X implements FooBar {
 }
 ```
 
-# Namespace
+## Namespace
 
 - **Use `PascalCase` for names**
 
@@ -422,7 +420,7 @@ enum Color {
 }
 ```
 
-# Null vs. Undefined
+## Null vs. Undefined
 
 - **Prefer not to use either for explicit unavailability**
 
@@ -483,7 +481,7 @@ if (error != null) // rules out both null and undefined
 
 ```
 
-# Tabs vs. Spaces
+## Tabs vs. Spaces
 
 - **Use tabs over spaces.**
 
@@ -506,7 +504,7 @@ function baz() {
 }
 ```
 
-# Semicolons
+## Semicolons
 
 - **Use semicolons.**
 
