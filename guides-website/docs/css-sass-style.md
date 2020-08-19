@@ -1,12 +1,10 @@
 ---
-name: CSS/SASS Style
-route: /guides/css-sass-style
-menu: Guides
+id: css-sass
+title: CSS/SASS Style Guide
+sidebar_label: CSS/SASS
 ---
 
 > W.W. Norton & Company recommends a slightly modified [Airbnb CSS / SASS styleguide](https://github.com/airbnb/css).
-
-# Airbnb CSS / Sass Styleguide
 
 ## Terminology
 
@@ -16,8 +14,8 @@ A “rule declaration” is the name given to a selector (or a group of selector
 
 ```css
 .listing {
-  font-size: 18px;
-  line-height: 1.2;
+	font-size: 18px;
+	line-height: 1.2;
 }
 ```
 
@@ -27,11 +25,11 @@ In a rule declaration, “selectors” are the bits that determine which element
 
 ```css
 .my-element-class {
-  /* ... */
+	/* ... */
 }
 
 [aria-hidden] {
-  /* ... */
+	/* ... */
 }
 ```
 
@@ -41,8 +39,8 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ```css
 /* some selector */ {
-  background: #f1f1f1;
-  color: #333;
+	color: #333;
+	background: #f1f1f1;
 }
 ```
 
@@ -67,12 +65,17 @@ W.W. Norton & Company strongly suggests using `em` or `rem` for font-size as opp
 **Bad**
 
 ```css
-.avatar{
-    border-radius:50%;
-    border:2px solid white; }
-.no, .nope, .not_good {
+.avatar {
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+.no,
+.nope,
+.not_good {
     // ...
 }
+
 #lol-no {
   // ...
 }
@@ -82,8 +85,8 @@ W.W. Norton & Company strongly suggests using `em` or `rem` for font-size as opp
 
 ```css
 .avatar {
-  border-radius: 50%;
-  border: 2px solid white;
+	border: 2px solid white;
+	border-radius: 50%;
 }
 
 .one,
@@ -177,7 +180,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: none;
+	border: none;
 }
 ```
 
@@ -185,7 +188,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: 0;
+	border: 0;
 }
 ```
 
@@ -263,11 +266,11 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 
 ```scss
 .page-container {
-  .content {
-    .profile {
-      // STOP!
-    }
-  }
+	.content {
+		.profile {
+			// STOP!
+		}
+	}
 }
 ```
 

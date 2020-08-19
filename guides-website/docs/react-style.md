@@ -1,12 +1,10 @@
 ---
-name: React Style
-route: /guides/react-style
-menu: Guides
+id: react
+title: React Style Guide
+sidebar_label: React
 ---
 
 > W.W. Norton & Company recommends using the [Airbnb React/JSX style guide](https://github.com/airbnb/javascript/tree/master/react).
-
-# Airbnb React/JSX Style Guide
 
 This style guide is mostly based on the standards that are currently prevalent in JavaScript, although some conventions (i.e async/await or static class fields) may still be included or prohibited on a case-by-case basis. Currently, anything prior to stage 3 is not included nor recommended in this guide.
 

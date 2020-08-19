@@ -1,10 +1,8 @@
 ---
-name: Typescript Style
-route: /guides/typescript-style
-menu: Guides
+id: typescript
+title: Typescript Style Guide
+sidebar_label: Typescript
 ---
-
-# Typescript Style
 
 ## Variable and Function
 * Use `camelCase` for variable and function names
