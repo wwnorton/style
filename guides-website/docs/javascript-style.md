@@ -232,11 +232,12 @@ import { es6 } from './AirbnbStyleGuide';
 export default es6;↵
 ```
 
-### Method Chains
+### Chained Calls
 
 Use indentation when making long method chains (more than 2 method chains). Use a leading dot, which emphasizes that the line is a method call, not a new statement.
 
-eslint: [`newline-per-chained-call`](https://eslint.org/docs/rules/newline-per-chained-call) [`no-whitespace-before-property`](https://eslint.org/docs/rules/no-whitespace-before-property)
+eslint: [`newline-per-chained-call`](https://eslint.org/docs/rules/newline-per-chained-call) 
+eslint: [`no-whitespace-before-property`](https://eslint.org/docs/rules/no-whitespace-before-property)
 
 ```javascript
 // bad 👎
@@ -278,7 +279,9 @@ const leds = stage.selectAll('.led')
 const leds = stage.selectAll('.led').data(data);
 ```
 
-### After Blocks and Statements
+### Padding
+
+#### Blank Lines
 
 Leave a blank line after blocks and before the next statement.
 
@@ -337,7 +340,7 @@ const arr = [
 return arr;
 ```
 
-### Padded Blocks
+#### Padded Blocks
 
 Do not pad your blocks with blank lines.
 
@@ -381,7 +384,7 @@ if (baz) {
 }
 ```
 
-### Padding w/ Multiple Empty Lines 
+#### No Multiple Blank Lines
 
 Do not use multiple blank lines to pad your code.
 
@@ -436,8 +439,9 @@ class Person {
   }
 }
 ```
+### Spacing
 
-### Space In Parentheses
+#### Parentheses Spacing
 
 Do not add spaces inside parentheses.
 
@@ -465,7 +469,7 @@ if (foo) {
 }
 ```
 
-### Inside Brackets
+#### Inside Brackets
 
 Do not add spaces inside brackets.
 
@@ -481,7 +485,7 @@ const foo = [1, 2, 3];
 console.log(foo[0]);
 ```
 
-### Inside Curly Braces
+#### Inside Curly Braces
 
 Add spaces inside curly braces.
 
@@ -495,7 +499,7 @@ const foo = {clark: 'kent'};
 const foo = { clark: 'kent' };
 ```
 
-### Max Length
+#### Max Length
 
 Avoid having lines of code that are longer than 80 characters (including whitespace). Note: long strings are exempt from this rule, and should not be broken up.
 
@@ -527,7 +531,7 @@ $.ajax({
   .fail(() => console.log('You have failed this city.'));
 ```
 
-### Block Spacing
+#### Block Spacing
 Require consistent spacing inside an open block token and the next token on the same line. This rule also enforces consistent spacing inside a close block token and previous token on the same line.
 
 eslint: [`block-spacing`](https://eslint.org/docs/rules/block-spacing)
@@ -542,7 +546,7 @@ function foo() { return true; }
 if (foo) { bar = 0; }
 ```
 
-### Comma Spacing
+#### Comma Spacing
 
 Avoid spaces before commas and require a space after commas.
 
@@ -558,7 +562,7 @@ var foo = 1, bar = 2;
 var arr = [1, 2];
 ```
 
-### Computed Property Spacing
+#### Computed Property Spacing
 
 Enforce spacing inside of computed property brackets.
 
@@ -578,7 +582,7 @@ var x = { [b]: a }
 obj[foo[bar]]
 ```
 
-### Function Spacing
+#### Function Spacing
 
 Avoid spaces between functions and their invocations.
 
@@ -595,7 +599,7 @@ func
 func();
 ```
 
-### Key Spacing
+#### Key Spacing
 Enforce spacing between keys and values in object literal properties.
 
 eslint: [`key-spacing`](https://eslint.org/docs/rules/key-spacing)
@@ -609,13 +613,13 @@ var obj2 = { foo:42 };
 var obj = { foo: 42 };
 ```
 
-### Trailing Spaces
+#### Trailing Spaces
 
 Avoid trailing spaces at the end of lines.
 
 eslint: [`no-trailing-spaces`](https://eslint.org/docs/rules/no-trailing-spaces)
 
-### Multiple Empty Lines
+#### Multiple Empty Lines
 
 Avoid multiple empty lines, only allow one newline at the end of files, and avoid a newline at the beginning of files.
 
@@ -1005,7 +1009,7 @@ const itemsCopy = [...items];
 ```
 
 
-### Use Spreads for Iterable Object
+#### Use Spreads for Iterable Object
 
 To convert an iterable object to an array, use spreads `...` instead of Array.from
 
@@ -1039,7 +1043,7 @@ const arr = Array.from(arrLike);
 ```
 
 
-### Mapping over Iterables
+#### Mapping over Iterables
 
 Use [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) instead of spread `...` for mapping over iterables, because it avoids creating an intermediate array.
 
@@ -1398,7 +1402,9 @@ if (currentUser) {
 }
 ```
 
-### Arguments
+### Parameters and Arguments
+
+#### `arguments`
 
 Never name a parameter `arguments`. This will take precedence over the `arguments` object that is given to every function scope.
 
@@ -1415,7 +1421,7 @@ function foo(name, options, args) {
 }
 ```
 
-### Prefer Rest Params
+#### Prefer Rest Params
 
 Never use `arguments`, opt to use rest syntax `...` instead.
 
@@ -1437,7 +1443,7 @@ function concatenateAll(...args) {
 }
 ```
 
-### Default Parameter Syntax
+#### Default Parameter Syntax
 
 Use default parameter syntax rather than mutating function arguments.
 
@@ -1467,7 +1473,7 @@ function handleThings(opts = {}) {
 ```
 
 
-### Parameter Side Effects
+#### Parameter Side Effects
 
 Avoid side effects with default parameters.
 
@@ -1487,7 +1493,7 @@ count(); // 3
 ```
 
 
-### Default Parameters Last
+#### Default Parameters Last
 
 Always put default parameters last.
 
@@ -1500,6 +1506,56 @@ function handleThings(opts = {}, name) {
 
 // good 👍
 function handleThings(name, opts = {}) {
+  // ...
+}
+```
+
+#### Never Mutate Parameters.
+
+eslint: [`no-param-reassign`](https://eslint.org/docs/rules/no-param-reassign.html)
+
+> IMPORTANCE: Manipulating objects passed in as parameters can cause unwanted variable side effects in the original caller.
+
+
+```js
+// bad 👎
+function f1(obj) {
+  obj.key = 1;
+}
+
+// good 👍
+function f2(obj) {
+  const key = Object.prototype.hasOwnProperty.call(obj, 'key') ? obj.key : 1;
+}
+```
+
+
+#### Never Reassign Parameters.
+
+eslint: [`no-param-reassign`](https://eslint.org/docs/rules/no-param-reassign.html)
+
+> IMPORTANCE: Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimization issues, especially in V8.
+
+
+```js
+// bad 👎
+function f1(a) {
+  a = 1;
+  // ...
+}
+
+function f2(a) {
+  if (!a) { a = 1; }
+  // ...
+}
+
+// good 👍
+function f3(a) {
+  const b = a || 1;
+  // ...
+}
+
+function f4(a = 1) {
   // ...
 }
 ```
@@ -1544,57 +1600,6 @@ const y = function a() {};
 ```
 
 
-### Never Mutate Parameters.
-
-eslint: [`no-param-reassign`](https://eslint.org/docs/rules/no-param-reassign.html)
-
-> IMPORTANCE: Manipulating objects passed in as parameters can cause unwanted variable side effects in the original caller.
-
-
-```js
-// bad 👎
-function f1(obj) {
-  obj.key = 1;
-}
-
-// good 👍
-function f2(obj) {
-  const key = Object.prototype.hasOwnProperty.call(obj, 'key') ? obj.key : 1;
-}
-```
-
-
-### Never Reassign Parameters.
-
-eslint: [`no-param-reassign`](https://eslint.org/docs/rules/no-param-reassign.html)
-
-> IMPORTANCE: Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimization issues, especially in V8.
-
-
-```js
-// bad 👎
-function f1(a) {
-  a = 1;
-  // ...
-}
-
-function f2(a) {
-  if (!a) { a = 1; }
-  // ...
-}
-
-// good 👍
-function f3(a) {
-  const b = a || 1;
-  // ...
-}
-
-function f4(a = 1) {
-  // ...
-}
-```
-
-
 ### Prefer Spread
 
 Prefer the use of the spread operator `...` to call variadic functions.
@@ -1621,7 +1626,7 @@ new Date(...[2016, 8, 5]);
 ```
 
 
-### Function Paren Newline
+### Function Parentheses Newline
 
 Functions with multiline signatures, or invocations, should be indented just like every other multiline.
 
@@ -2033,7 +2038,7 @@ class Foo {
 ```
 
 
-### Class Methods Use This
+### Class Methods Use `this`
 
 Class methods should use `this` or be made into a static method unless an external library or framework requires to use specific non-static methods.
 
@@ -2253,7 +2258,9 @@ import baz from './baz';
 ```
 ## Iterators and Generators
 
-### Don't Use Iterators.
+### Iterators
+
+Don't Use Iterators.
 
 Prefer JavaScript's higher-order functions instead of loops like `for-in` or `for-of`. eslint: [`no-iterator`](https://eslint.org/docs/rules/no-iterator.html) [`no-restricted-syntax`](https://eslint.org/docs/rules/no-restricted-syntax)
 
@@ -2299,11 +2306,13 @@ numbers.forEach((num) => {
 const increasedByOne = numbers.map((num) => num + 1);
 ```
 
+### Generators
 
-### Don’t Use Generators For Now.
+Don’t Use Generators For Now
+
 > Why? They don’t transpile well to ES5.
 
-### Generator Spacing
+#### Generator Spacing
 
 If you must use generators, or if you disregard [our advice](#generators--nope), make sure their function signature is spaced properly.
 
@@ -2568,7 +2577,7 @@ console.log(c); // throws ReferenceError
 // the same applies for `const`
 ```
 
-### No Plus Plus
+### No Unary Increments
 
 Avoid using unary increments and decrements (`++`, `--`).
 
@@ -2942,7 +2951,7 @@ const foo = maybe1 > maybe2
 const foo = maybe1 > maybe2 ? 'bar' : maybeNull;
 ```
 
-### Unnecessary Ternaries
+#### Unnecessary Ternaries
 
 Avoid unneeded ternary statements.
 
@@ -3354,7 +3363,9 @@ class Calculator extends Abacus {
 
 
 ## Commas
+
 ### Leading commas: **Nope.**
+
 eslint: [`comma-style`](https://eslint.org/docs/rules/comma-style.html)
 
 ```javascript
@@ -3390,6 +3401,7 @@ const hero = {
 ```
 
 ### Additional trailing comma: **Yup.**
+
 eslint: [`comma-dangle`](https://eslint.org/docs/rules/comma-dangle.html)
 > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don’t have to worry about the [trailing comma problem](https://github.com/airbnb/javascript/blob/es5-deprecated/es5/README.md#commas) in legacy browsers.
 
@@ -3659,6 +3671,33 @@ const thisIsMyObject = {};
 function thisIsMyFunction() {}
 ```
 
+#### camelCase Export Usage
+
+Use camelCase when you export-default a function. Your filename should be identical to your function’s name.
+
+```javascript
+function makeStyleGuide() {
+	// ...
+}
+
+export default makeStyleGuide;
+```
+
+### More camelCase Usage
+
+Use camelCase for variables, properties and function names
+
+Variables, properties and function names should use camelCase. They should also be descriptive. Single character variables and uncommon abbreviations should generally be avoided.
+
+
+```js
+// bad 👎
+var admin_user = db.query('SELECT * FROM users ...');
+
+// good 👍
+var adminUser = db.query('SELECT * FROM users ...');
+```
+
 ### PascalCase
 
 Use PascalCase only when naming constructors or classes.
@@ -3685,6 +3724,19 @@ class User {
 const good = new User({
   name: 'yup',
 });
+```
+
+#### PascalCase Export Usage
+
+Use PascalCase when you export a constructor / class / singleton / function library / bare object.
+
+```javascript
+const AirbnbStyleGuide = {
+  es6: {
+  },
+};
+
+export default AirbnbStyleGuide;
 ```
 
 ### No Underscore Dangle
@@ -3776,31 +3828,6 @@ import insideDirectory from './insideDirectory'; // camelCase export/import/dire
 // ^ supports both insideDirectory.js and insideDirectory/index.js
 ```
 
-### camelCase Export Usage
-
-Use camelCase when you export-default a function. Your filename should be identical to your function’s name.
-
-```javascript
-function makeStyleGuide() {
-	// ...
-}
-
-export default makeStyleGuide;
-```
-
-### PascalCase Export Usage
-
-Use PascalCase when you export a constructor / class / singleton / function library / bare object.
-
-```javascript
-const AirbnbStyleGuide = {
-  es6: {
-  },
-};
-
-export default AirbnbStyleGuide;
-```
-
 
 ### Acronyms and Initialisms
 
@@ -3877,7 +3904,7 @@ export const MAPPING = {
 };
 ```
 
-### Use UPPERCASE for Constants
+#### Use UPPERCASE for Constants
 
 Constants should be declared as regular variables or static class properties, using all uppercase letters.
 
@@ -3894,22 +3921,6 @@ var SECOND = 1 * 1000;
 function File() {
 }
 File.FULL_PERMISSIONS = 0777;
-```
-
-
-### More camelCase Usage
-
-Use camelCase for variables, properties and function names
-
-Variables, properties and function names should use camelCase. They should also be descriptive. Single character variables and uncommon abbreviations should generally be avoided.
-
-
-```js
-// bad 👎
-var admin_user = db.query('SELECT * FROM users ...');
-
-// good 👍
-var adminUser = db.query('SELECT * FROM users ...');
 ```
 
 
