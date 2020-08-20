@@ -37,15 +37,10 @@
 	}
 }
 
-
-.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
+.docSidebarContainer {
+	position: relative;
 	width: 255px;
-}
-
-.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
-	scrollbar-width: none; /* Firefox */
-	-ms-overflow-style: none;  /* IE 10+ */
-	&::-webkit-scrollbar {
-		display: none; /* Chrome */
-	}
+	box-sizing: border-box;
+	margin-top: calc(-1 * var(--ifm-navbar-height));
+	border-right: 1px solid var(--ifm-toc-border-color);
 }
