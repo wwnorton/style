@@ -1,7 +1,7 @@
 ---
 id: typescript
 title: Typescript Style Guide
-sidebar_label: Typescript
+sidebar_label: TypeScript
 ---
 
 **WWNorton TypeScript Style Guide**
