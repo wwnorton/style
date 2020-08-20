@@ -44,15 +44,15 @@ module.exports = {
           items: [
             {
               label: 'Javascript',
-              to: 'docs/javascript-style',
+              to: 'docs/javascript',
             },
             {
               label: 'React',
-              to: 'docs/react-style',
+              to: 'docs/react',
 						},
 						{
               label: 'Typescript',
-              to: 'docs/typescript-style',
+              to: 'docs/typescript',
             },
           ],
         },
@@ -101,7 +101,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'javascript',
+          homePageId: 'introduction',
 					sidebarPath: require.resolve('./sidebars.js'),
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true,
