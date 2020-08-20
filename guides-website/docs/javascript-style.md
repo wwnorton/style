@@ -3683,7 +3683,7 @@ function makeStyleGuide() {
 export default makeStyleGuide;
 ```
 
-### More camelCase Usage
+#### More camelCase Usage
 
 Use camelCase for variables, properties and function names
 
