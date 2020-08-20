@@ -1,6 +1,5 @@
 module.exports = {
   docs: [
-		// 'introduction',
 		{
 			type: 'category',
 			label: 'Guides',
