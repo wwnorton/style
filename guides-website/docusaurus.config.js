@@ -51,7 +51,7 @@ module.exports = {
               to: 'docs/react',
 						},
 						{
-              label: 'Typescript',
+              label: 'TypeScript',
               to: 'docs/typescript',
             },
           ],
