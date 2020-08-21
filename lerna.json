@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "packages/*",
+    "guides-website"
   ],
   "version": "independent"
 }

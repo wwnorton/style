@@ -3,8 +3,12 @@
   "private": true,
   "scripts": {
     "lerna": "lerna",
+    "bootstrap": "lerna bootstrap",
     "lint:es": "eslint .",
-    "test": "ava"
+    "test": "ava",
+    "dev:docs":  "lerna exec --scope=guides-website -- npm start",
+    "build:docs": "lerna exec --scope=guides-website -- npm run build",
+    "serve:docs": "lerna exec --scope=guides-website npm run serve"
   },
   "ava": {
     "files": [
