@@ -10,7 +10,7 @@
     "quality",
     "git"
   ],
-  "homepage": "https://github.com/wwnorton/style/packages/commitlint-config-norton",
+  "homepage": "https://github.com/wwnorton/style/tree/main/packages/commitlint-config-norton",
   "bugs": {
     "url": "https://github.com/wwnorton/style/issues"
   },

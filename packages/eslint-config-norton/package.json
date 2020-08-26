@@ -10,7 +10,7 @@
     "quality",
     "style"
   ],
-  "homepage": "https://github.com/wwnorton/style/packages/eslint-config-norton",
+  "homepage": "https://github.com/wwnorton/style/tree/main/packages/eslint-config-norton",
   "bugs": {
     "url": "https://github.com/wwnorton/style/issues"
   },

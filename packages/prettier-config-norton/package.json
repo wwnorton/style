@@ -6,7 +6,7 @@
     "prettier",
     "prettier-config"
   ],
-  "homepage": "https://github.com/wwnorton/style/packages/prettier-config-norton",
+  "homepage": "https://github.com/wwnorton/style/tree/main/packages/prettier-config-norton",
   "bugs": {
     "url": "https://github.com/wwnorton/style/issues"
   },

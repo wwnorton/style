@@ -11,7 +11,7 @@
     "stylelint",
     "stylelint-config"
   ],
-  "homepage": "https://github.com/wwnorton/style/packages/stylelint-config-norton",
+  "homepage": "https://github.com/wwnorton/style/tree/main/packages/stylelint-config-norton",
   "bugs": {
     "url": "https://github.com/wwnorton/style/issues"
   },
