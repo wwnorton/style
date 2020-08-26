@@ -3,5 +3,63 @@
     "packages/*",
     "guides-website"
   ],
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "access": "public",
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "signGitCommit": true,
+      "signGitTag": true
+    },
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "signGitCommit": true,
+      "signGitTag": true,
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "✨ Features"
+          },
+          {
+            "type": "fix",
+            "section": "🐛 Bug Fixes"
+          },
+          {
+            "type": "docs",
+            "hidden": false,
+            "section": "📝 Documentation"
+          },
+          {
+            "type": "chore",
+            "hidden": false,
+            "section": "🛠 Maintenance"
+          },
+          {
+            "type": "style",
+            "hidden": true
+          },
+          {
+            "type": "refactor",
+            "hidden": false,
+            "section": "♻️ Refactor"
+          },
+          {
+            "type": "test",
+            "hidden": true
+          }
+        ],
+        "issuePrefixes": ["#"],
+        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+        "userUrlFormat": "{{host}}/{{user}}"
+      }
+    }
+  }
 }
