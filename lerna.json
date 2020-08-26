@@ -9,16 +9,12 @@
       "access": "public",
       "allowBranch": "main",
       "conventionalCommits": true,
-      "createRelease": "github",
-      "signGitCommit": true,
-      "signGitTag": true
+      "createRelease": "github"
     },
     "version": {
       "allowBranch": "main",
       "conventionalCommits": true,
       "createRelease": "github",
-      "signGitCommit": true,
-      "signGitTag": true,
       "changelogPreset": {
         "name": "conventionalcommits",
         "types": [
@@ -53,12 +49,7 @@
             "type": "test",
             "hidden": true
           }
-        ],
-        "issuePrefixes": ["#"],
-        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
-        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
-        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
-        "userUrlFormat": "{{host}}/{{user}}"
+        ]
       }
     }
   }
