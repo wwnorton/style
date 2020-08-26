@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.0.0-beta.2 (2020-08-26)
+
+* chore: fix missing base entrypoint by adding base.js to files ([0c89d3a](https://github.com/wwnorton/style/commit/0c89d3a))
+* chore: remove extra comma in dependencies ([48ab099](https://github.com/wwnorton/style/commit/48ab099))
+* chore: update package to proper homepage url ([41d9765](https://github.com/wwnorton/style/commit/41d9765))
+* chore(eslint): add typescript to peerDependencies ([202e321](https://github.com/wwnorton/style/commit/202e321))
+
+
+
+
+
 ## 3.1.3 (2020-07-24)
 
 

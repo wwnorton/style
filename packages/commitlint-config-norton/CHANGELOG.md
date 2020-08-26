@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.2.3 (2020-08-26)</small>
+
+* chore: update package to proper homepage url ([41d9765](https://github.com/wwnorton/style/commit/41d9765))
+
+
+
+
+
 ## 0.2.1 (2020-07-24)
 
 **Note:** Version bump only for package commitlint-config-norton
