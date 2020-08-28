@@ -10,23 +10,8 @@
  */
 module.exports = {
 	rules: {
+		/** Enable tabs in JSX. */
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
-		'react/jsx-filename-extension': [
-			'error',
-			{
-				extensions: ['.jsx', '.tsx'],
-			},
-		],
-		'react/jsx-props-no-spreading': ['off'],
-		'react/static-property-placement': [
-			'error',
-			'property assignment',
-			{
-				defaultProps: 'static public field',
-			},
-		],
-		'react-hooks/rules-of-hooks': 'error',
-		'react-hooks/exhaustive-deps': 'warn',
 	},
 };
