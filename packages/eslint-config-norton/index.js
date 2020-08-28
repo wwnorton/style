@@ -1,4 +1,5 @@
 const typescript = require('./overrides/typescript');
+const typescriptReact = require('./overrides/typescript-react');
 
 module.exports = {
 	/**
