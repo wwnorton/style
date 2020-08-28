@@ -1,6 +1,6 @@
 const test = require('ava');
-const load = require('@commitlint/load');
-const commitlint = require('@commitlint/lint');
+const { default: load } = require('@commitlint/load');
+const { default: commitlint } = require('@commitlint/lint');
 const config = require('..');
 
 let lint;
