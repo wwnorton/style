@@ -23,8 +23,27 @@ module.exports = {
 			'error',
 			'static public field',
 		],
+		/** Add tsx to the base config. */
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				js: 'never',
+				jsx: 'never',
+				mjs: 'never',
+				ts: 'never',
+				tsx: 'never',
+			},
+		],
 	},
 	settings: {
+		'import/extensions': [
+			'.js',
+			'.jsx',
+			'.mjs',
+			'.ts',
+			'.tsx',
+		],
 		'import/resolver': {
 			node: {
 				extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],

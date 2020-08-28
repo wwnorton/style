@@ -18,8 +18,26 @@ module.exports = {
 		'@typescript-eslint/no-extra-semi': 'error',
 		semi: 'off',
 		'@typescript-eslint/semi': 'error',
+
+		/** Add ts to airbnb's list. */
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				js: 'never',
+				mjs: 'never',
+				jsx: 'never',
+				ts: 'never',
+			},
+		],
 	},
 	settings: {
+		'import/extensions': [
+			'.js',
+			'.jsx',
+			'.mjs',
+			'.ts',
+		],
 		'import/resolver': {
 			node: {
 				extensions: ['.js', '.json', '.ts'],
