@@ -18,10 +18,11 @@ module.exports = {
 		'./rules/react',
 	].map(require.resolve),
 	/**
-	 * Add overrides for React and TypesScript environments.
-	 * Note that additional eslint tooling will be required for these to work.
+	 * Use overrides for TypeScript to ensure that .js files aren't linted with the
+	 * TypeScript rules.
 	 */
 	overrides: [
 		typescript,
+		typescriptReact,
 	],
 };
