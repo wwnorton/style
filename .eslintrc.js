@@ -12,4 +12,8 @@ module.exports = {
 			},
 		],
 	},
+	parserOptions: {
+		tsconfigRootDir: __dirname,
+		project: ['./packages/eslint-config-norton/tsconfig.json'],
+	},
 };
