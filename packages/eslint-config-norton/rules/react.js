@@ -9,9 +9,7 @@
  * Note that all of these can be added via `eslint-config-airbnb`.
  */
 module.exports = {
-	// files: ['*.jsx', '*.tsx'],
 	env: { browser: true },
-	plugins: ['react-hooks'],
 	rules: {
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
