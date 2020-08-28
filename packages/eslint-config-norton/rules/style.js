@@ -5,6 +5,6 @@ module.exports = {
 		 * @see https://gitlab.com/wwnorton/style/guide/issues/1
 		 */
 		indent: ['error', 'tab'],
-		'no-tabs': 0,
+		'no-tabs': 'off',
 	},
 };
