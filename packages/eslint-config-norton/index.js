@@ -11,10 +11,11 @@ module.exports = {
 	 */
 	extends: [
 		'eslint-config-airbnb',
-		'./rules/style',
-		'./rules/react',
+		'eslint-config-airbnb/hooks',
 		'eslint-config-prettier',
 		'eslint-config-prettier/react',
+		'./rules/style',
+		'./rules/react',
 	].map(require.resolve),
 	/**
 	 * Add overrides for React and TypesScript environments.
