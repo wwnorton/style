@@ -9,7 +9,7 @@ module.exports = {
 	 * @see https://github.com/prettier/eslint-config-prettier
 	 */
 	extends: [
-		'eslint-config-airbnb-base',
+		'eslint-config-airbnb/base',
 		'./rules/style',
 		'eslint-config-prettier'
 	].map(require.resolve),
