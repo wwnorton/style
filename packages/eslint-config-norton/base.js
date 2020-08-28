@@ -1,7 +1,7 @@
 /**
  * ? This is the base configuration for projects without React.
  */
-const typescript = require('./overrides/typescript');
+const typescriptBase = require('./overrides/typescript-base');
 
 module.exports = {
 	/**
@@ -14,6 +14,6 @@ module.exports = {
 		'./rules/style',
 	].map(require.resolve),
 	overrides: [
-		typescript,
+		typescriptBase,
 	],
 };
