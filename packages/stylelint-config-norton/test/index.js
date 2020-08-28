@@ -1,10 +1,10 @@
-import fs from 'fs';
-import test from 'ava';
-import path from 'path';
-import { lint } from 'stylelint';
-import { promisify } from 'util';
-import sassConfig from '../src/sass';
-import cssConfig from '../src/css';
+const fs = require('fs');
+const test = require('ava');
+const path = require('path');
+const { lint } = require('stylelint');
+const { promisify } = require('util');
+const sassConfig = require('../src/sass');
+const cssConfig = require('../src/css');
 
 const readFile = promisify(fs.readFile);
 

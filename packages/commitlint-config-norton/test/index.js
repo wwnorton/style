@@ -1,7 +1,7 @@
-import test from 'ava';
-import load from '@commitlint/load';
-import commitlint from '@commitlint/lint';
-import config from '..';
+const test = require('ava');
+const load = require('@commitlint/load');
+const commitlint = require('@commitlint/lint');
+const config = require('..');
 
 let lint;
 
