@@ -3,10 +3,14 @@ name: Github Pages
 on:
   pull_request:
     branches:
-      - main
+    - main
+    paths:
+    - 'guides-website/**'
   push:
     branches:
-      - main
+    - main
+    paths:
+    - 'guides-website/**'
 
 jobs:
   deploy:
