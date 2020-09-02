@@ -1,11 +1,6 @@
 name: Github Pages
 
 on:
-  pull_request:
-    branches:
-    - main
-    paths:
-    - 'guides-website/**'
   push:
     branches:
     - main
