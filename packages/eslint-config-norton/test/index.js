@@ -1,6 +1,8 @@
 const test = require('ava');
 const path = require('path');
+const prettier = require('prettier');
 const { ESLint } = require('eslint');
+const fs = require('fs');
 
 const valid = {
 	js: path.join(__dirname, 'fixtures/valid.js'),
