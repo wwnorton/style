@@ -1,8 +1,3 @@
-/**
- * ? This is the base configuration for projects without React.
- */
-const typescriptBase = require('./overrides/typescript-base');
-
 module.exports = {
 	/**
 	 * add eslint-config-prettier to handle formatting conflicts with prettier
@@ -13,7 +8,4 @@ module.exports = {
 		'eslint-config-prettier',
 		'./rules/style',
 	].map(require.resolve),
-	overrides: [
-		typescriptBase,
-	],
 };

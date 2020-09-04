@@ -1,11 +1,4 @@
-/**
- * Overrides for usage with TypeScript + React.
- */
 module.exports = {
-	files: ['*.tsx'],
-	extends: [
-		'./typescript-base',
-	].map(require.resolve),
 	rules: {
 		/** Add .tsx to react/jsx-filename-extension. */
 		'react/jsx-filename-extension': [
@@ -35,22 +28,5 @@ module.exports = {
 				tsx: 'never',
 			},
 		],
-	},
-	settings: {
-		'import/extensions': [
-			'.js',
-			'.jsx',
-			'.mjs',
-			'.ts',
-			'.tsx',
-		],
-		'import/resolver': {
-			node: {
-				extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
-			},
-			webpack: {
-				extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
-			},
-		},
 	},
 };
