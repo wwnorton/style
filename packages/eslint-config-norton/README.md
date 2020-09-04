@@ -73,26 +73,28 @@ module.exports = {
 }
 ```
 
-## For Typescript projects
+## For TypeScript projects
 
-This package also provides configuration for Typescript liniting. In order to use our Typescript linting you need to extend an additional entrypoint based on your needs. Under the hood this configuration disables some base ESLint rules which do not interface well with Typescript files and Prettier options and subsequently provides Typescript linting.
+This package also provides configuration for TypeScript liniting. In order to use our TypeScript linting you need to extend an additional entrypoint based on your needs. Under the hood this configuration disables some base ESLint rules which do not interface well with TypeScript files and Prettier options and subsequently provides TypeScript linting.
 
-It uses [`@typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) for most of its Typescript rules.
+> Expects TypeScript to already be installed on your application side. 
+
+It uses [`@typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) for most of its TypeScript rules.
 
 Note: These configurations are still meant to be used alongside [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) to facilitate most of the formatting.
 
 ### How this works.
 
-The entrypoints below provide Typescript overrides. 
+The entrypoints below provide TypeScript overrides. 
 
-- **eslint-config-norton/typescript**: this includes an extendable override file providing linting for Typescript along with React.
-- **eslint-config-norton/typescript-base**: this includes an extendable override file providing linting for *only* Typescript.
+- **eslint-config-norton/typescript**: this includes an extendable override file providing linting for TypeScript along with React.
+- **eslint-config-norton/typescript-base**: this includes an extendable override file providing linting for *only* TypeScript.
 
 > The TypeScript ruleset relies on Type definitions and being aware of the location of your TSConfig. Make sure your `'./tsconfig.json'` is in your root directory.
 
 ### Examples
 
-Incorporating Typescript and React Linting:
+Incorporating TypeScript and React Linting:
 
 ```js
 module.exports = {
@@ -103,7 +105,7 @@ module.exports = {
 }
 ```
 
-Incorporating just Typescript Linting:
+Incorporating just TypeScript Linting:
 
 ```js
 module.exports = {
@@ -116,8 +118,8 @@ module.exports = {
 
 ### **For more information please see...**
 
-Typescript Lint Setup - https://www.notion.so/Typescript-Lint-Setup-06cef0036d0b4887b4e07b57def202e4
-Typescript Style Guide - https://www.notion.so/TypeScript-Style-Guide-a73cca890fb342b0a1f99a7ba1ce55d8
+TypeScript Lint Setup - https://www.notion.so/Typescript-Lint-Setup-06cef0036d0b4887b4e07b57def202e4
+TypeScript Style Guide - https://www.notion.so/TypeScript-Style-Guide-a73cca890fb342b0a1f99a7ba1ce55d8
 ESLint Plugin TypeScript - https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
 
 
