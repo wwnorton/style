@@ -77,11 +77,13 @@ module.exports = {
 
 This package also provides configuration for Typescript liniting. In order to use our Typescript linting you need to extend an additional entrypoint based on your needs. Under the hood this configuration disables some base ESLint rules which do not interface well with Typescript files and Prettier options and subsequently provides Typescript linting.
 
+It uses [`@typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) for most of its Typescript rules.
+
 Note: These configurations are still meant to be used alongside [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) to facilitate most of the formatting.
 
 ### How this works.
 
-This is entrypoint provides Typescript overrides. 
+The entrypoints below provide Typescript overrides. 
 
 - **eslint-config-norton/typescript**: this includes an extendable override file providing linting for Typescript along with React.
 - **eslint-config-norton/typescript-base**: this includes an extendable override file providing linting for *only* Typescript.
