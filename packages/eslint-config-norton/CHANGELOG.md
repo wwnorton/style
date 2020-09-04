@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.0.0-beta.3 (2020-09-04)
+
+* docs(eslint-config-norton): update and fix typos for typescript project documentation ([aca96d3](https://github.com/wwnorton/style/commit/aca96d3))
+* docs(eslint-config-norton): update new Typescript usage documentation ([25936fa](https://github.com/wwnorton/style/commit/25936fa))
+* test: add post Prettier testing ([de7860a](https://github.com/wwnorton/style/commit/de7860a))
+* test: setup for prettier changes formatting in tests ([1f83922](https://github.com/wwnorton/style/commit/1f83922))
+* test(eslint-config-norton): add tests for all rules and file types ([f3c3fc7](https://github.com/wwnorton/style/commit/f3c3fc7))
+* fix: add back Prettier semi rules for rule clarity and easier testing ([70f8d6e](https://github.com/wwnorton/style/commit/70f8d6e))
+* fix(eslint-config-norton): don't enforce env in config ([3af1f12](https://github.com/wwnorton/style/commit/3af1f12))
+* fix(eslint-config-norton): ensure that Norton rules are preferred over extended configs ([2ab6547](https://github.com/wwnorton/style/commit/2ab6547))
+* fix(eslint-config-norton): overhaul typescript overrides ([f8121c4](https://github.com/wwnorton/style/commit/f8121c4))
+* fix(eslint-config-norton): prefer norton rules in base config ([a455a96](https://github.com/wwnorton/style/commit/a455a96))
+* fix(eslint-config-norton): re-enable semicolon since the prettier config disables them ([6b98ba1](https://github.com/wwnorton/style/commit/6b98ba1))
+* refactor: move typescript rules into rules folder ([bda8892](https://github.com/wwnorton/style/commit/bda8892))
+* refactor: remove semi rules in favor of prettier formatting ([b1240ae](https://github.com/wwnorton/style/commit/b1240ae))
+* refactor(eslint-config-norton): add ts/tsx to import/extensions rule & setting ([ad5d5c0](https://github.com/wwnorton/style/commit/ad5d5c0))
+* refactor(eslint-config-norton): override base with typescript base ([ca16f31](https://github.com/wwnorton/style/commit/ca16f31))
+* refactor(eslint-config-norton): prefer "off" to 0 ([31c5e27](https://github.com/wwnorton/style/commit/31c5e27))
+* refactor(eslint-config-norton): remove redundant and opinionated rules ([c9f1778](https://github.com/wwnorton/style/commit/c9f1778))
+* refactor(eslint-config-norton): remove redundant plugins ([e55e395](https://github.com/wwnorton/style/commit/e55e395))
+* refactor(eslint-config-norton): simplify config comment ([f8ff14d](https://github.com/wwnorton/style/commit/f8ff14d))
+* refactor(eslint-config-norton): use the base config exposed by esling-config-airbnb ([dfd2183](https://github.com/wwnorton/style/commit/dfd2183))
+* chore: add new entrypoints to files and add typescript to peerDependenciesMeta ([3f1c379](https://github.com/wwnorton/style/commit/3f1c379))
+* chore: import typescriptReact ([31a3071](https://github.com/wwnorton/style/commit/31a3071))
+* chore: remove unnecessary dependency ([58a5733](https://github.com/wwnorton/style/commit/58a5733))
+* feat: move typescript overrides into entrypoints ([2053be4](https://github.com/wwnorton/style/commit/2053be4))
+
+
+
+
+
 ## 4.0.0-beta.2 (2020-08-26)
 
 * chore: fix missing base entrypoint by adding base.js to files ([0c89d3a](https://github.com/wwnorton/style/commit/0c89d3a))
