@@ -1,26 +1,15 @@
-const typescript = require('./overrides/typescript');
-
+/**
+ * Use Airbnb as base and add Prettier to handle formatting conflicts.
+ * @see https://github.com/airbnb/javascript/
+ * @see https://github.com/prettier/eslint-config-prettier
+ */
 module.exports = {
-	/**
-	 * use airbnb's well-reasoned style guide as base
-	 * @see https://github.com/airbnb/javascript/
-	 */
-	/**
-	 * add eslint-config-prettier to handle formatting conflicts with prettier
-	 * @see https://github.com/prettier/eslint-config-prettier
-	 */
 	extends: [
 		'eslint-config-airbnb',
-		'./rules/style',
-		'./rules/react',
+		'eslint-config-airbnb/hooks',
 		'eslint-config-prettier',
 		'eslint-config-prettier/react',
+		'./rules/style',
+		'./rules/react',
 	].map(require.resolve),
-	/**
-	 * Add overrides for React and TypesScript environments.
-	 * Note that additional eslint tooling will be required for these to work.
-	 */
-	overrides: [
-		typescript,
-	],
 };

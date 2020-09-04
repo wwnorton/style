@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['./packages/eslint-config-norton'],
+	extends: ['./packages/eslint-config-norton', './packages/eslint-config-norton/typescript'],
 	rules: {
 		'import/no-extraneous-dependencies': ['error',
 			{
@@ -11,5 +11,9 @@ module.exports = {
 				],
 			},
 		],
+	},
+	parserOptions: {
+		tsconfigRootDir: __dirname,
+		project: ['./packages/eslint-config-norton/tsconfig.json'],
 	},
 };
