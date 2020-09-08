@@ -11,5 +11,6 @@ module.exports = {
 		'eslint-config-prettier/react',
 		'./rules/style',
 		'./rules/react',
+		'./rules/security'
 	].map(require.resolve),
 };

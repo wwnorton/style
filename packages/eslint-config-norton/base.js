@@ -7,5 +7,6 @@ module.exports = {
 		'eslint-config-airbnb/base',
 		'eslint-config-prettier',
 		'./rules/style',
+		'./rules/security'
 	].map(require.resolve),
 };
