@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-norton",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "description": "Stylelint shareable config for the Norton stylesheet guide",
   "keywords": [
     "css",

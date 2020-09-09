@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>3.1.3 (2020-09-09)</small>
+
+* chore(deps): bump stylelint-config-sass-guidelines from 7.0.0 to 7.1.0 (#49) ([60786a8](https://github.com/wwnorton/style/commit/60786a8)), closes [#49](https://github.com/wwnorton/style/issues/49)
+
+
+
+
+
 ## <small>3.1.2 (2020-09-04)</small>
 
 * refactor: use commonjs modules for tests ([58d03ba](https://github.com/wwnorton/style/commit/58d03ba))

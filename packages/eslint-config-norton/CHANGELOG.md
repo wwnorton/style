@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.0.0-beta.4 (2020-09-09)
+
+* refactor(eslint-config-norton): add comments to security rules and reorder ([d876102](https://github.com/wwnorton/style/commit/d876102))
+* feat(eslint-config-norton): add norton master eslint rules ([aceecd6](https://github.com/wwnorton/style/commit/aceecd6))
+* feat(eslint-config-norton): add security rules to base and index entrypoints ([54134cb](https://github.com/wwnorton/style/commit/54134cb))
+* test(eslint-config-norton): disable node/no-extraneous-import for react test cases ([642e17f](https://github.com/wwnorton/style/commit/642e17f))
+* chore: update package-lock and add security peer deps to eslint-config and security dev deps to mono ([1abb8b5](https://github.com/wwnorton/style/commit/1abb8b5))
+* docs(eslint-config-norton): update TypeScript documentation ([5c9e508](https://github.com/wwnorton/style/commit/5c9e508))
+
+
+
+
+
 ## 4.0.0-beta.3 (2020-09-04)
 
 * docs(eslint-config-norton): update and fix typos for typescript project documentation ([aca96d3](https://github.com/wwnorton/style/commit/aca96d3))

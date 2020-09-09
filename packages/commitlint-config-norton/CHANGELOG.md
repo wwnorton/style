@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.2.5 (2020-09-09)</small>
+
+* test(commitlint-config-norton): add additional valid test case ([fa7754b](https://github.com/wwnorton/style/commit/fa7754b))
+* chore(commitlint-config-norton): update @commitlint/config-conventional to 11.0.0 to resolve dot-pro ([62a6def](https://github.com/wwnorton/style/commit/62a6def))
+
+
+
+
+
 ## <small>0.2.4 (2020-09-04)</small>
 
 * refactor: use commonjs modules for tests ([58d03ba](https://github.com/wwnorton/style/commit/58d03ba))
