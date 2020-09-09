@@ -7,3 +7,21 @@
 ![ghpages](https://github.com/wwnorton/style/workflows/Github%20Pages/badge.svg)
 
 > Style guides and linting configs for code at Norton
+
+## Packages
+
+### [`eslint-config-norton`](https://github.com/wwnorton/style/tree/main/packages/eslint-config-norton#eslint-config-norton)
+
+- An ESLint shareable config for Norton code style. Currently defaulted to provide React linting. There are also extendable TypeScript and TypeScript with React override entry points. 
+- Should be used alongside `prettier-config-norton` for formatting. 
+
+### [`prettier-config-norton`](https://github.com/wwnorton/style/tree/main/packages/prettier-config-norton#prettier-config-norton)
+
+- A Prettier shareable config for Norton code style. Made to be used alongside `eslint-config-norton`.
+
+### [`stylelint-config-norton`](https://github.com/wwnorton/style/tree/main/packages/stylelint-config-norton#stylelint-config-norton)
+
+- A Stylelint shareable config for the Norton stylesheet guide.
+### [`commitlint-config-norton`](https://github.com/wwnorton/style/tree/main/packages/commitlint-config-norton#commitlint-config-norton)
+
+- A commitlint shareable config for Norton code style.
