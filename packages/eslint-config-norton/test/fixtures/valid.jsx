@@ -1,3 +1,5 @@
+// Currently disable Node rule since we don't want react as a dependency in our eslint-config-norton
+// eslint-disable-next-line node/no-extraneous-import
 import React from 'react';
 
 export default class Foo extends React.Component {

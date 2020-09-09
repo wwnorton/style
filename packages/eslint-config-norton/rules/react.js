@@ -13,5 +13,8 @@ module.exports = {
 		/** Enable tabs in JSX. */
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
+
+		/** Master Eslint Norton Rules */
+		'react/no-find-dom-node': 'warn',
 	},
 };

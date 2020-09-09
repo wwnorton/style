@@ -51,3 +51,7 @@ const commitTest = (desc, commitMsg, fn) => {
 commitTest('invalid type', 'foo: bar', async (t) => {
 	t.false(t.context.report.valid, 'test failure message');
 });
+
+commitTest('valid type', 'chore: update packages', async (t) => {
+	t.true(t.context.report.valid, 'test failure message');
+});
