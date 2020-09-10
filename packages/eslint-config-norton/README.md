@@ -10,9 +10,9 @@ A note from [airbnb's JavaScript guide](https://github.com/airbnb/javascript), w
 
 ## Installation
 
-As of `v1.2.1`, this repository can be installed from the NPM registry. You'll also need a compatible version of ESLint, [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import), [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and other plugins found in the package.json which are peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+ and [install-peerdeps](https://www.npmjs.com/package/install-peerdeps):
+As of `v1.2.1`, this repository can be installed from the NPM registry. You'll also need a compatible version of ESLint, [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import), [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and other plugins found in the package.json which are peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+ and [install-peerdeps](https://www.npmjs.com/package/install-peerdeps). The shell command below will install ESLint version `7.2.0` to your application and other specified peer dependencies. This config is compatible with ESLint versions `^5.16.0 || ^6.8.0 || ^7.2.0`.
 
-> **Note**: you can also manually install your peer-dependencies. This method will install ESLint version `7.2.0` to your application. This config is compatiable with ESLint versions `^5.16.0 || ^6.8.0 || ^7.2.0`.
+> **Note**: you can also manually install your peer dependencies. 
 
 ```sh
 npx install-peerdeps --dev eslint-config-norton
