@@ -10,7 +10,7 @@ A note from [airbnb's JavaScript guide](https://github.com/airbnb/javascript), w
 
 ## Installation
 
-As of `v1.2.1`, this repository can be installed from the NPM registry. You'll also need a compatible version of ESLint, and [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import), which are peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+:
+As of `v1.2.1`, this repository can be installed from the NPM registry. You'll also need a compatible version of ESLint, [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import), [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and other plugins found in the package.json which are peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+:
 
 ```sh
 npx install-peerdeps --dev eslint-config-norton
