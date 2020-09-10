@@ -44,6 +44,8 @@ module.exports = {
 };
 ```
 
+The ESLint `env` attribute may need to be configured to handle certain variables based on your use case.
+
 `.eslintrc.json` in a browser environment with jQuery
 
 ```json
