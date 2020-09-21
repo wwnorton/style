@@ -23,5 +23,8 @@
   "main": "index.js",
   "dependencies": {
     "@commitlint/config-conventional": "^11.0.0"
+  },
+  "peerDependencies": {
+    "commitlint": "^11.0.0"
   }
 }
