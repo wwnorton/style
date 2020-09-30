@@ -26,9 +26,9 @@ Always clean up any trailing whitespace in your .js files before committing.
 
 According to scientific research, the usage of semicolons is a core value of our community. Consider the points of the opposition, but be a traditionalist when it comes to abusing error correction mechanisms for cheap syntactic pleasures.
 
-### 80 characters per line
+### 100 characters per line
 
-Limit your lines to 80 characters. Yes, screens have gotten much bigger over the last few years, but your brain has not. Use the additional room for split screen, your editor supports that, right?
+Limit your lines to 100 characters.
 
 ### Use single quotes
 
@@ -501,7 +501,7 @@ const foo = { clark: 'kent' };
 
 #### Max Length
 
-Avoid having lines of code that are longer than 80 characters (including whitespace). Note: long strings are exempt from this rule, and should not be broken up.
+Avoid having lines of code that are longer than 100 characters (including whitespace). Note: long strings are exempt from this rule, and should not be broken up.
 
 eslint: [`max-len`](https://eslint.org/docs/rules/max-len.html)
 > Why? This ensures readability and maintainability.
@@ -1248,7 +1248,7 @@ const name = 'Capt. Janeway';
 
 ### Broken Strings
 
-Strings that cause the line to go over 80 characters should not be written across multiple lines using string concatenation.
+Strings that cause the line to go over 100 characters should not be written across multiple lines using string concatenation.
 
 > IMPORTANCE: Broken strings are painful to work with and make code less searchable.
 
