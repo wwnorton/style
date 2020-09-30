@@ -68,5 +68,8 @@ This will already be done if you ran the `install-peerdeps` command specified in
 
 This configuration is aimed to align with our modified Airbnb Style Guides by overriding a couple of the default rules for Prettier.
 
+- Use [Print Width](https://prettier.io/docs/en/options.html#print-width) at 100
 - Use [Tabs](https://prettier.io/docs/en/options.html#tabs) over spaces 
-- Use [single quotes](https://prettier.io/docs/en/options.html#quotes) in regards to JavaScript code.
+- Use [single quotes](https://prettier.io/docs/en/options.html#quotes) true in regards to JavaScript code.
+- Use [Arrow Parens](https://prettier.io/docs/en/options.html#print-width) as always.
+- Use [Trailing Commas](https://prettier.io/docs/en/options.html#trailing-commas) as all.
