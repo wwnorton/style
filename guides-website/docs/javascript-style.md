@@ -2167,20 +2167,23 @@ const foo = 3;
 export { foo };
 ```
 
-### Prefer Default Export
+### Named and Default Export
 
-In modules with a single export, prefer default export over named export.
+There are two different types of export, named and default. You can have multiple named exports per module but only one default export.
+
+In JS modules with a single export, prefer default export over named export. As for Typescript we want to prefer named export and avoide default export. See the [Typescript docs](https://wwnorton.github.io/style/docs/typescript#import--export) for more info.
 
 eslint: [`import/prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md)
-> Why? To encourage more files that only ever export one thing, which is better for readability and maintainability.
+> Why? To encourage more files that only ever export one thing, which is better for readability and maintainability. However, named exports provide consistency throughout all files with a focus on being explicit over implicit. TypeScript can also leverage it's auto complete and auto suggest features with named exports.
 
 ```javascript
-// bad 👎
-export function foo() {}
+// okay 
+export default function foo() {}
 
 // good 👍
-export default function foo() {}
+export function foo() {}
 ```
+
 
 Put all `import`s above non-import statements.
 eslint: [`import/first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md)

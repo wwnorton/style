@@ -554,3 +554,49 @@ function returnObject() {
 	};
 }
 ```
+
+## Import / Export
+
+- **Avoid export default**
+
+> We should avoid export default as the provide maintainability concerns. You can read more up about this topic in [Typescript Deep Dive - Avoid Export Default](https://basarat.gitbook.io/typescript/main-1/defaultisbad)
+
+Example: 
+
+```ts
+class Foo {
+}
+export default Foo;
+```
+
+`bar.ts` file below:
+```ts
+import Foo from "./foo";
+```
+- If you refactor `Foo` in `foo.ts` it will not rename it in `bar.ts`.
+- If you end up needing to export more stuff from `foo.ts` (which is what many of your files will have) then you have to juggle the import syntax
+
+```tsx
+// Bad 👎
+export default class Foo {
+  return 
+  {
+    key: value
+  };
+}
+
+// In another file:
+import Foo from './foo';
+
+
+// Good 👍
+export class Foo {
+	return {
+		key: value
+	};
+}
+
+// In another file:
+import { Foo } from "./foo";
+
+```
