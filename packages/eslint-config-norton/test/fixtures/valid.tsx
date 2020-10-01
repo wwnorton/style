@@ -5,7 +5,7 @@ import React from 'react';
 type FooProps = React.HTMLAttributes<HTMLDivElement>;
 interface FooState { isOpen: boolean; }
 
-export default class Foo extends React.Component<FooProps, FooState> {
+export class Foo extends React.Component<FooProps, FooState> {
 	static defaultProps = {
 		className: 'foo',
 	};
