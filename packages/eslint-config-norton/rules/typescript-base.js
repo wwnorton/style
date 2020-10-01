@@ -1,4 +1,7 @@
 module.exports = {
+	extends: [
+		'./bestPractices'
+	].map(require.resolve),
 	rules: {
 		/** Enable tabs with @typescript-eslint/indent instead of eslint/indent. */
 		indent: 'off',
