@@ -202,6 +202,12 @@ test('ts: using unnecessary semicolons does not trigger an error post Prettier',
 	t.false(flagged(messages, '@typescript-eslint/no-extra-semi'));
 });
 
+test('ts: using default export triggers an error', (t) => {
+	const { messages } = getReport(invalid.ts);
+	t.false(flagged(messages, 'import/prefer-default-export'));
+	t.true(flagged(messages, 'import/no-default-export'));
+});
+
 
 // React
 
@@ -311,4 +317,10 @@ test('tsx: expected React rules are not triggered post Prettier', (t) => {
 test('tsx: using property assignment for React static properties triggers an error', (t) => {
 	const { messages } = getReport(invalid.tsx);
 	t.true(flagged(messages, 'react/static-property-placement'));
+});
+
+test('tsx: using default export triggers an error', (t) => {
+	const { messages } = getReport(invalid.tsx);
+	t.false(flagged(messages, 'import/prefer-default-export'));
+	t.true(flagged(messages, 'import/no-default-export'));
 });
