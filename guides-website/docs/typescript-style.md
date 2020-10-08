@@ -564,13 +564,14 @@ function returnObject() {
 Example: 
 
 ```ts
+// foo.ts
 class Foo {
 }
 export default Foo;
 ```
 
-`bar.ts` file below:
 ```ts
+// bar.ts
 import Foo from "./foo";
 ```
 - If you refactor `Foo` in `foo.ts` it will not rename it in `bar.ts`.
@@ -578,6 +579,7 @@ import Foo from "./foo";
 
 ```tsx
 // Bad 👎
+// foo.ts
 export default class Foo {
   return 
   {
@@ -585,18 +587,19 @@ export default class Foo {
   };
 }
 
-// In another file:
+// bar.ts
 import Foo from './foo';
 
 
 // Good 👍
+// foo.ts
 export class Foo {
 	return {
 		key: value
 	};
 }
 
-// In another file:
+// bar.ts
 import { Foo } from "./foo";
 
 ```
