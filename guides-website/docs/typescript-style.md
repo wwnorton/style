@@ -559,7 +559,7 @@ function returnObject() {
 
 - **Avoid export default**
 
-> We should avoid export default as the provide maintainability concerns. You can read more up about this topic in [Typescript Deep Dive - Avoid Export Default](https://basarat.gitbook.io/typescript/main-1/defaultisbad)
+> Avoid `export default` in TypeScript because of the maintainability and <abbr title="Developer experience">DX</abbr> issues outlined in [Typescript Deep Dive - Avoid Export Default](https://basarat.gitbook.io/typescript/main-1/defaultisbad).
 
 Example: 
 
