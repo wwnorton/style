@@ -2176,7 +2176,7 @@ In JS modules with a single export, prefer default export over named export.
 > Note: this is inverted in Typescript, where we [prefer named exports and avoid default export](https://wwnorton.github.io/style/docs/typescript#import--export).
 
 eslint: [`import/prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md)
-> Why? To encourage more files that only ever export one thing, which is better for readability and maintainability. However, named exports provide consistency throughout all files with a focus on being explicit over implicit. TypeScript can also leverage it's auto complete and auto suggest features with named exports.
+> Why? To encourage more files that only ever export one thing, which is better for readability and maintainability. 
 
 ```javascript
 // okay 
