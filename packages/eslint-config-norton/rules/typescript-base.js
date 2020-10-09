@@ -1,10 +1,8 @@
 module.exports = {
 	rules: {
 		/**
-		 * Avoid export default to improve TypeScript experience. Applicable in
-		 * JavaScript as well, though less impactful.
-		 * Currently just applied to Typescript overrides.
-		 * For rationale, see https://basarat.gitbook.io/typescript/main-1/defaultisbad
+		 * Avoid export default.
+		 * @see https://github.com/wwnorton/style/pull/71
 		 */
 		'import/prefer-default-export': 'off',
 		'import/no-default-export': 'error',
