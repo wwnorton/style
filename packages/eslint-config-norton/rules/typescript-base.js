@@ -1,5 +1,12 @@
 module.exports = {
 	rules: {
+		/**
+		 * Avoid export default.
+		 * @see https://github.com/wwnorton/style/pull/71
+		 */
+		'import/prefer-default-export': 'off',
+		'import/no-default-export': 'error',
+
 		/** Enable tabs with @typescript-eslint/indent instead of eslint/indent. */
 		indent: 'off',
 		'@typescript-eslint/indent': ['error', 'tab'],

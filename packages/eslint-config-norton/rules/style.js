@@ -13,7 +13,6 @@ module.exports = {
 		'semi-spacing': ['error', { before: false, after: true }],
 		'semi-style': ['error', 'last'],
 
-
 		/** Norton Master Eslint Rules */
 		'no-alert': 'warn',
 		'no-control-regex': 'off',
