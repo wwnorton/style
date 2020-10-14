@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0-beta.6](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.5...eslint-config-norton@4.0.0-beta.6) (2020-10-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config-norton:** in ts or tsx files will show linting errors
+
+### ✨ Features
+
+* **eslint-config-norton:** add avoid export default rule for Typescript overrides ([5ffd5fa](https://github.com/wwnorton/style/commit/5ffd5fad53c90ae7c2dad84eb11cb14fcc673e93))
+
+
+### ♻️ Refactor
+
+* **eslint-config-norton:** move bestPractices avoid default export logic  purely into typescript-base ([e3462fe](https://github.com/wwnorton/style/commit/e3462fe6ba6b2f057ae20a849ecbe5e0072dfeb3))
+
+
+### 📝 Documentation
+
+* **eslint-config-norton:** change avoid export default rule comment to point to github issue ([63a96cb](https://github.com/wwnorton/style/commit/63a96cb4fd9bc5852584b858c1388f985f1424e6))
+
+
+
 ## [4.0.0-beta.5](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.4...eslint-config-norton@4.0.0-beta.5) (2020-09-30)
 
 
