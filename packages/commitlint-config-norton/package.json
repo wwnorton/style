@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-norton",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "commitlint shareable config for Norton git commit standards",
   "keywords": [
     "code",
@@ -23,5 +23,8 @@
   "main": "index.js",
   "dependencies": {
     "@commitlint/config-conventional": "^11.0.0"
+  },
+  "peerDependencies": {
+    "commitlint": "^11.0.0"
   }
 }

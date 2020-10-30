@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.6](https://github.com/wwnorton/style/compare/commitlint-config-norton@0.2.5...commitlint-config-norton@0.2.6) (2020-09-30)
+
+
+### 🛠 Maintenance
+
+* **commitlint-config-norton:** add commitlint v11.0.0 to peerDependencies ([ab53612](https://github.com/wwnorton/style/commit/ab5361208b31fe1f493f68600d0a4b18daae7bfb))
+
+
+
 ## <small>0.2.5 (2020-09-09)</small>
 
 * test(commitlint-config-norton): add additional valid test case ([fa7754b](https://github.com/wwnorton/style/commit/fa7754b))
