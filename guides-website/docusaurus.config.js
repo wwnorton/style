@@ -1,8 +1,11 @@
+const baseUrl = process.env.BASE_URL || '/';
+const base = baseUrl.replace(/\/$/, '');
+
 module.exports = {
 	title: 'W. W. Norton & Company Code Guidelines',
 	tagline: 'A collection of guidelines for your coding needs.',
 	url: 'https://wwnorton.github.io/style',
-	baseUrl: process.env.BASE_URL || '/',
+	baseUrl: baseUrl || '/',
 	onBrokenLinks: 'warn',
 	favicon: 'img/favicon.ico',
 	organizationName: 'wwnorton', // Usually your GitHub org/user name.
@@ -132,12 +135,12 @@ module.exports = {
 					{
 						tagName: 'link',
 						rel: 'icon',
-						href: '/img/android-chrome-512x512.png',
+						href: `${base}/img/android-chrome-512x512.png`,
 					},
 					{
 						tagName: 'link',
 						rel: 'manifest',
-						href: '/manifest.json',
+						href: `${base}/manifest.json`,
 					},
 					{
 						tagName: 'meta',
@@ -157,7 +160,7 @@ module.exports = {
 					{
 						tagName: 'link',
 						rel: 'apple-touch-icon',
-						href: '/img/android-chrome-512x512.png',
+						href: `${base}/img/android-chrome-512x512.png`,
 					},
 					{
 						tagName: 'link',
@@ -168,7 +171,7 @@ module.exports = {
 					{
 						tagName: 'meta',
 						name: 'msapplication-TileImage',
-						content: '/img/android-chrome-512x512.png',
+						content: `${base}/img/android-chrome-512x512.png`,
 					},
 					{
 						tagName: 'meta',
