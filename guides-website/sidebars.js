@@ -1,9 +1,9 @@
 module.exports = {
-  docs: [
+	docs: [
 		'introduction',
-		'javascript',
-		'react',
-		'typescript',
-		'css-sass',
+		'javascript-style',
+		'react-style',
+		'typescript-style',
+		'css-sass-style',
 	]
 };

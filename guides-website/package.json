@@ -11,16 +11,19 @@
     "serve": "docusaurus serve --dir ../public"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.61",
-    "@docusaurus/plugin-pwa": "^2.0.0-alpha.59",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
-    "@mdx-js/react": "^1.5.8",
+    "@docusaurus/core": "^2.0.0-alpha.66",
+    "@docusaurus/plugin-pwa": "^2.0.0-alpha.66",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.66",
+    "@mdx-js/react": "^1.6.19",
     "clsx": "^1.1.1",
     "docusaurus-lunr-search": "^2.1.7",
-    "docusaurus-plugin-sass": "^0.1.9",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "docusaurus-plugin-sass": "^0.1.11",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
+  "nohoist": [
+    "**/html-minifier-terser"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
