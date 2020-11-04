@@ -1,5 +1,5 @@
 ---
-id: hello-world
+slug: hello-world
 title: Hello
 author: Jonathan Chan
 author_title: WWNorton Developer

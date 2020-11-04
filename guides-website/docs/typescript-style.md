@@ -1,5 +1,5 @@
 ---
-id: typescript
+slug: typescript
 title: Typescript Style Guide
 sidebar_label: TypeScript
 ---

@@ -1,5 +1,5 @@
 ---
-id: javascript
+slug: javascript
 title: Javascript Style Guide
 sidebar_label: Javascript
 ---
