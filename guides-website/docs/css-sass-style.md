@@ -1,5 +1,5 @@
 ---
-id: css-sass
+slug: css-sass
 title: CSS/SASS Style Guide
 sidebar_label: CSS/SASS
 ---

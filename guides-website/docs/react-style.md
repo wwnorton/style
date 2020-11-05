@@ -1,5 +1,5 @@
 ---
-id: react
+slug: react
 title: React Style Guide
 sidebar_label: React
 ---
