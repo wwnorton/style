@@ -6,6 +6,11 @@ on:
     - main
     paths:
     - 'guides-website/**'
+  workflow_dispatch:
+    branches:
+    - main
+    paths:
+    - 'guides-website/**'
 
 jobs:
   deploy:
