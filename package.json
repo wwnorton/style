@@ -16,7 +16,7 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
+    "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/lint": "^9.1.1",
     "@commitlint/load": "^9.1.1",
