@@ -19,7 +19,7 @@
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/lint": "^9.1.1",
-    "@commitlint/load": "^9.1.1",
+    "@commitlint/load": "^12.1.4",
     "@types/react": "^16.9.48",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.10.1",
