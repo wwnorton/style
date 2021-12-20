@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/wwnorton/style/compare/stylelint-config-norton@3.1.3...stylelint-config-norton@4.0.0) (2021-12-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* stylelint v14 is now required.
+
+### ♻️ Refactor
+
+* manually merge rules ([fb3f9a8](https://github.com/wwnorton/style/commit/fb3f9a8f315c791a9c2e1cfbea0d851c8e53b665))
+* use new rule name ("disallowed-list") ([9ab136a](https://github.com/wwnorton/style/commit/9ab136a7c15d6365fab54d0aff2ce9f2eaac43dc))
+
+
+### ✨ Features
+
+* add single string-quotes rule ([e26049c](https://github.com/wwnorton/style/commit/e26049cf80f62cf6adca7978b43a4b796105dac4)), closes [/github.com/stylelint/stylelint-config-standard/blob/main/CHANGELOG.md#2300](https://github.com/wwnorton//github.com/stylelint/stylelint-config-standard/blob/main/CHANGELOG.md/issues/2300)
+* extend standard-scss instead of sass-guidelines ([3903c44](https://github.com/wwnorton/style/commit/3903c4445f81e3b8432a69e683066939342fb016))
+* update property-order ([0249901](https://github.com/wwnorton/style/commit/0249901bf374b4a36bead5273bc283860098c4a1))
+* update stylelint dependencies to latest ([2dd8029](https://github.com/wwnorton/style/commit/2dd802986fd859aab172328c7d41b37e1ed61511))
+
+
+
 ## <small>3.1.3 (2020-09-09)</small>
 
 * chore(deps): bump stylelint-config-sass-guidelines from 7.0.0 to 7.1.0 (#49) ([60786a8](https://github.com/wwnorton/style/commit/60786a8)), closes [#49](https://github.com/wwnorton/style/issues/49)

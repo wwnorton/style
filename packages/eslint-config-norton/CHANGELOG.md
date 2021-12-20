@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0-beta.7](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.6...eslint-config-norton@4.0.0-beta.7) (2021-12-20)
+
+
+### 🛠 Maintenance
+
+* **deps:** bump @typescript-eslint/eslint-plugin from 3.10.1 to 4.0.0 ([08fec98](https://github.com/wwnorton/style/commit/08fec98ec249ccec359ea0a1b2cb5bd710f6ea73))
+
+
+
 ## [4.0.0-beta.6](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.5...eslint-config-norton@4.0.0-beta.6) (2020-10-14)
 
 

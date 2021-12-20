@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/wwnorton/style/compare/guides-website@1.0.4...guides-website@1.1.0) (2021-12-20)
+
+
+### 📝 Documentation
+
+* **guides-website:** add slugs to docs ([780de81](https://github.com/wwnorton/style/commit/780de81e45f4a7a456078a0fa3114ac1eacf7bbe))
+
+
+### ✨ Features
+
+* **guides-website:** remove DocPage DocItem Swizzled css to fix build issues on docusaurus upgrade ([e9d5f69](https://github.com/wwnorton/style/commit/e9d5f698619c51e076ae5652c35fc58205bba640))
+
+
+### 🛠 Maintenance
+
+* **deps:** [security] bump ini from 1.3.5 to 1.3.8 ([6f0533a](https://github.com/wwnorton/style/commit/6f0533a8ea080defc951442757b575ca5606b83b))
+* **deps:** bump @docusaurus/core from 2.0.0-alpha.61 to 2.0.0-alpha.64 ([da8c513](https://github.com/wwnorton/style/commit/da8c51372dcb74910a7844c4a7e4cc0ff1ddf1ac))
+* **deps:** bump @docusaurus/plugin-pwa ([eeaf643](https://github.com/wwnorton/style/commit/eeaf643f15c13585fa52f29a4e7ebc30ea26e703))
+* **deps:** bump @docusaurus/preset-classic ([ed78f25](https://github.com/wwnorton/style/commit/ed78f25d79d5037cc73b4219943d8e6d87bb1f58))
+* **deps:** bump docusaurus-plugin-sass from 0.1.9 to 0.1.10 ([6d1f87c](https://github.com/wwnorton/style/commit/6d1f87c79d3d2c4e0cc6b6917160b1062e4048f5))
+* **guides-website:** plugin-pwa configuration edits ([65f60ac](https://github.com/wwnorton/style/commit/65f60acc634bea6056c7ad8652a4fb6c8e4ad7bb))
+* **guides-website:** update dependencies and add nohoist for html-minifier-terser build issue ([9293883](https://github.com/wwnorton/style/commit/92938836e3e374077e0485d8c5b36f569f8488ce))
+
+
+
 ### [1.0.4](https://github.com/WWNorton/style/compare/guides-website@1.0.3...guides-website@1.0.4) (2020-10-14)
 
 
