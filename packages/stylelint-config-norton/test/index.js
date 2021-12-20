@@ -12,7 +12,7 @@ const getWarnings = (res, rule) => Promise.resolve(res)
 	.then((data) => data.results[0].warnings.filter((w) => w.rule === rule));
 
 const rules = [
-	'declaration-property-unit-blacklist',
+	'declaration-property-unit-disallowed-list',
 	'function-parentheses-space-inside',
 	'indentation',
 	'max-empty-lines',
@@ -24,7 +24,7 @@ const rules = [
 const sass = { rules };
 const css = {
 	rules: [
-		'declaration-property-unit-blacklist',
+		'declaration-property-unit-disallowed-list',
 		'function-parentheses-space-inside',
 		'indentation',
 		'max-empty-lines',

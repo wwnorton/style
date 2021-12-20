@@ -5,11 +5,10 @@ const bestPractices = require('./rules/best-practices');
 
 module.exports = {
 	extends: [
-		'stylelint-config-standard',
-		'stylelint-config-sass-guidelines',
+		'stylelint-config-standard-scss',
 	],
 	plugins: [
-		'stylelint-scss',
+		'stylelint-order',
 	],
 	rules: {
 		...bestPractices,
