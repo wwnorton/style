@@ -1,6 +1,9 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap --ignore guides-website",
