@@ -6,13 +6,10 @@
   "version": "independent",
   "command": {
     "publish": {
-      "access": "public",
-      "allowBranch": "main",
-      "conventionalCommits": true,
-      "createRelease": "github"
+      "access": "public"
     },
     "version": {
-      "allowBranch": "main",
+      "allowBranch": ["main", "release/*"],
       "conventionalCommits": true,
       "createRelease": "github",
       "changelogPreset": {
