@@ -1,7 +1,7 @@
-@forward './foo.scss';
-@use 'bootstrap' as bs;
 @import url('x.css');
 @import url('y.css');
+@forward './foo.scss';
+@use 'bootstrap' as bs;
 
 /**
  * Sass at-rules
