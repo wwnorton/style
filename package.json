@@ -2,16 +2,15 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "guides-website"
   ],
   "scripts": {
-    "lerna": "lerna",
-    "bootstrap": "lerna bootstrap --ignore guides-website",
     "lint:es": "eslint .",
     "test": "ava",
-    "dev:docs": "lerna exec --scope=guides-website -- npm start",
-    "build:docs": "lerna exec --scope=guides-website -- npm run build",
-    "serve:docs": "lerna exec --scope=guides-website npm run serve"
+    "dev:docs": "npm run start --workspace guides-website",
+    "build:docs": "npm run build --workspace guides-website",
+    "serve:docs": "npm run serve --workspace guides-website"
   },
   "ava": {
     "files": [
