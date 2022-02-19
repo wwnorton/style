@@ -14,11 +14,6 @@ module.exports = {
 				name: 'extend',
 			},
 			'declarations',
-			{
-				type: 'at-rule',
-				name: 'include',
-				hasBlock: false,
-			},
 			'rules',
 		],
 	],
