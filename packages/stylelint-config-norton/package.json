@@ -20,7 +20,7 @@
     "url": "git@github.com:wwnorton/style.git"
   },
   "license": "MIT",
-  "author": "Evan Yamanishi",
+  "author": "Evan Yamanishi <eyamanishi@wwnorton.com>",
   "main": "src/sass.js",
   "files": [
     "src",
