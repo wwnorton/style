@@ -66,4 +66,4 @@ jobs:
         if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Test 🧪
-        run: npm run test -- --timeout=20s
+        run: npm run test -- --timeout=40s
