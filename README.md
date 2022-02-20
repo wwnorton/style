@@ -1,28 +1,15 @@
 # W. W. Norton Code Style
 
-![eslint-config-norton](https://img.shields.io/npm/v/eslint-config-norton?label=eslint-config&logo=eslint-config&style=flat-square "eslint-config-norton NPM release")
-![stylelint-config-norton](https://img.shields.io/npm/v/stylelint-config-norton?label=stylelint-config&logo=stylint-config-norton&style=flat-square "stylelint-config-norton NPM release")
-![commitlint-config-norton](https://img.shields.io/npm/v/commitlint-config-norton?label=commitlint-config&logo=commitlint-config-norton&style=flat-square "commitlint-config-norton NPM release")
-![prettier-config-norton](https://img.shields.io/npm/v/prettier-config-norton?label=prettier-config&logo=prettier-config-norton&style=flat-square "prettier-config-norton NPM release")
-[![codecov](https://codecov.io/gh/wwnorton/style/branch/main/graph/badge.svg)](https://codecov.io/gh/wwnorton/style)
-![ghpages](https://github.com/wwnorton/style/workflows/Github%20Pages/badge.svg)
+[![Checks](https://img.shields.io/github/workflow/status/wwnorton/style/Integration?label=Checks)](https://github.com/wwnorton/style/actions?query=workflow%3AIntegration+branch%3Amain)
+[![eslint-config-norton version](https://img.shields.io/npm/v/eslint-config-norton?label=eslint-config)](https://www.npmjs.com/package/eslint-config-norton)
+[![stylelint-config-norton version](https://img.shields.io/npm/v/stylelint-config-norton?label=stylelint-config)](https://www.npmjs.com/package/stylelint-config-norton)
+[![commitlint-config-norton version](https://img.shields.io/npm/v/commitlint-config-norton?label=commitlint-config)](https://www.npmjs.com/package/commitlint-config-norton)
+[![prettier-config-norton version](https://img.shields.io/npm/v/prettier-config-norton?label=prettier-config)](https://www.npmjs.com/package/prettier-config-norton)
 
-> Style guides and linting configs for code at Norton
+Sharable configs for code style at W. W. Norton & Company.
+Each package is managed independently, so refer to their readmes for more details.
 
-## Packages
-
-### [`eslint-config-norton`](https://github.com/wwnorton/style/tree/main/packages/eslint-config-norton#eslint-config-norton)
-
-- An ESLint shareable config for Norton code style. Currently defaulted to provide React linting. There are also extendable TypeScript and TypeScript with React override entry points. 
-- Should be used alongside `prettier-config-norton` for formatting. 
-
-### [`prettier-config-norton`](https://github.com/wwnorton/style/tree/main/packages/prettier-config-norton#prettier-config-norton)
-
-- A Prettier shareable config for Norton code style. Made to be used alongside `eslint-config-norton`.
-
-### [`stylelint-config-norton`](https://github.com/wwnorton/style/tree/main/packages/stylelint-config-norton#stylelint-config-norton)
-
-- A Stylelint shareable config for the Norton stylesheet guide.
-### [`commitlint-config-norton`](https://github.com/wwnorton/style/tree/main/packages/commitlint-config-norton#commitlint-config-norton)
-
-- A commitlint shareable config for Norton code style.
+- [eslint-config-norton](packages/eslint-config-norton)
+- [prettier-config-norton](packages/prettier-config-norton)
+- [stylelint-config-norton](packages/stylelint-config-norton)
+- [commitlint-config-norton](packages/commitlint-config-norton)
