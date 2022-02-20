@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W. W. Norton &amp; Company Code Guidelines Blog</title>
+        <link>https://wwnorton.github.io/style/blog</link>
+        <description>W. W. Norton &amp; Company Code Guidelines Blog</description>
+        <lastBuildDate>Wed, 29 May 2019 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Hello]]></title>
+            <link>https://wwnorton.github.io/style/blog/hello-world</link>
+            <guid>hello-world</guid>
+            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to W. W. Norton & Company's style guidelines]]></description>
+            <content:encoded><![CDATA[<p>Welcome to W. W. Norton &amp; Company's style guidelines</p><p>This is where all our guidelines documenations across different
+languages will live.</p><p>This is a work in progress.</p>]]></content:encoded>
+            <category>guidelines</category>
+            <category>style</category>
+        </item>
+    </channel>
+</rss>

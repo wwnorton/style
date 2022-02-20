@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wwnorton.github.io/style/blog</id>
+    <title>W. W. Norton &amp; Company Code Guidelines Blog</title>
+    <updated>2019-05-29T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://wwnorton.github.io/style/blog"/>
+    <subtitle>W. W. Norton &amp; Company Code Guidelines Blog</subtitle>
+    <icon>https://wwnorton.github.io/style/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hello]]></title>
+        <id>hello-world</id>
+        <link href="https://wwnorton.github.io/style/blog/hello-world"/>
+        <updated>2019-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to W. W. Norton & Company's style guidelines]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to W. W. Norton &amp; Company's style guidelines</p><p>This is where all our guidelines documenations across different
+languages will live.</p><p>This is a work in progress.</p>]]></content>
+        <author>
+            <name>Jonathan Chan</name>
+            <uri>https://github.com/ParmeJon</uri>
+        </author>
+        <category label="guidelines" term="guidelines"/>
+        <category label="style" term="style"/>
+    </entry>
+</feed>
