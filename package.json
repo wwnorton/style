@@ -6,7 +6,7 @@
     "guides-website"
   ],
   "scripts": {
-    "eslint": "eslint .",
+    "eslint": "eslint . --ignore-path .gitignore --ignore-pattern invalid-*",
     "test": "ava",
     "dev:docs": "npm run start --workspace guides-website",
     "build:docs": "npm run build --workspace guides-website",
