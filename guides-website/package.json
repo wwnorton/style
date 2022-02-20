@@ -3,12 +3,24 @@
   "version": "1.1.1",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
     "build": "docusaurus build --out-dir ../public",
-    "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve --dir ../public"
+    "docusaurus": "docusaurus",
+    "serve": "docusaurus serve --dir ../public",
+    "start": "docusaurus start",
+    "swizzle": "docusaurus swizzle"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.15",
@@ -23,17 +35,5 @@
   },
   "nohoist": [
     "**/html-minifier-terser"
-  ],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  ]
 }
