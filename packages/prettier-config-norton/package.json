@@ -18,6 +18,6 @@
   "author": "Jonathan Chan <jchan@wwnorton.com>",
   "main": "index.js",
   "peerDependencies": {
-    "prettier": "2.x"
+    "prettier": "^2.0.0"
   }
 }
