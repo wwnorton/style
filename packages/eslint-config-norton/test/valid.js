@@ -12,7 +12,8 @@ const valid = {
 
 // JavaScript
 
-test('js(valid file): no errors or warnings', async (t) => {
+// eslint-disable-next-line no-script-url
+test('javascript: no errors or warnings', async (t) => {
 	const [{ errorCount, warningCount }] = await eslint.lintFiles(valid.js);
 	t.is(errorCount, 0);
 	t.is(warningCount, 0);
@@ -20,7 +21,7 @@ test('js(valid file): no errors or warnings', async (t) => {
 
 // React
 
-test('jsx(valid file): no errors or warnings', async (t) => {
+test('javascriptreact: no errors or warnings', async (t) => {
 	const [{ errorCount, warningCount }] = await eslint.lintFiles(valid.jsx);
 	t.is(errorCount, 0);
 	t.is(warningCount, 0);
@@ -28,7 +29,7 @@ test('jsx(valid file): no errors or warnings', async (t) => {
 
 // TypeScript
 
-test('ts(valid file): no errors or warnings', async (t) => {
+test('typescript: no errors or warnings', async (t) => {
 	const [{ errorCount, warningCount }] = await eslint.lintFiles(valid.ts);
 	t.is(errorCount, 0);
 	t.is(warningCount, 0);
@@ -36,7 +37,7 @@ test('ts(valid file): no errors or warnings', async (t) => {
 
 // React + TypeScript
 
-test('tsx(valid file): no errors or warnings', async (t) => {
+test('typescriptreact: no errors or warnings', async (t) => {
 	const [{ errorCount, warningCount }] = await eslint.lintFiles(valid.tsx);
 	t.is(errorCount, 0);
 	t.is(warningCount, 0);
