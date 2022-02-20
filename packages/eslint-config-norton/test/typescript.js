@@ -6,6 +6,7 @@ const { eslint, createChecker } = require('./helpers');
 const FIXTURE = path.join(__dirname, 'fixtures/invalid-ts.ts');
 
 test.before(async (t) => {
+	t.timeout(60000, 'lint invalid .ts');
 	// eslint-disable-next-line no-param-reassign
 	t.context.checker = createChecker(await eslint.lintFiles(FIXTURE));
 });
