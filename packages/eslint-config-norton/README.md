@@ -1,6 +1,6 @@
 # eslint-config-norton
 
-![npm](https://img.shields.io/npm/v/eslint-config-norton)
+[![eslint-config-norton version](https://img.shields.io/npm/v/eslint-config-norton)](https://www.npmjs.com/package/eslint-config-norton)
 
 > The official W. W. Norton ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html), based on [Airbnb](https://github.com/airbnb/javascript) but with support for TypeScript.
 

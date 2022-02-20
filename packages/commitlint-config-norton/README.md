@@ -1,8 +1,9 @@
 # commitlint-config-norton
-![commitlint-config-norton](https://img.shields.io/npm/v/commitlint-config-norton?label=commitlint-config&logo=commitlint-config-norton&style=flat-square "commitlint-config-norton NPM release")
+
+[![commitlint-config-norton version](https://img.shields.io/npm/v/commitlint-config-norton)](https://www.npmjs.com/package/commitlint-config-norton)
 
 
-A commitlint [shareable config](https://commitlint.io/docs/en/configuration.html#sharing-configurations) for [Norton code style](https://gitlab.com/wwnorton/style).
+> A commitlint [shareable config](https://commitlint.io/docs/en/configuration.html#sharing-configurations) for [Norton code style](https://gitlab.com/wwnorton/style).
 
 ## Installation
 

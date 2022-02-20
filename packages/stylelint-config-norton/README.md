@@ -1,6 +1,8 @@
 # stylelint-config-norton
-![stylelint-config-norton](https://img.shields.io/npm/v/stylelint-config-norton?label=stylelint-config&logo=stylint-config-norton&style=flat-square "stylelint-config-norton NPM release")
-> [Stylelint](https://github.com/stylelint/stylelint) shareable [config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md) for the [Norton stylesheet guide](https://gitlab.com/wwnorton/style)
+
+[![stylelint-config-norton version](https://img.shields.io/npm/v/stylelint-config-norton)](https://www.npmjs.com/package/stylelint-config-norton)
+
+> A [Stylelint](https://github.com/stylelint/stylelint) shareable [config](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md) for the [Norton stylesheet guide](https://gitlab.com/wwnorton/style)
 
 ## Installation
 

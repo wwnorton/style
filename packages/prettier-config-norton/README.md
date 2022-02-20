@@ -1,6 +1,8 @@
 # prettier-config-norton
 
-A Prettier [shareable config](https://prettier.io/docs/en/configuration.html#sharing-configurations) for [Norton code style](https://gitlab.com/wwnorton/style).
+[![prettier-config-norton version](https://img.shields.io/npm/v/prettier-config-norton)](https://www.npmjs.com/package/prettier-config-norton)
+
+> A Prettier [shareable config](https://prettier.io/docs/en/configuration.html#sharing-configurations) for [Norton code style](https://gitlab.com/wwnorton/style).
 
 ## Installation
 
