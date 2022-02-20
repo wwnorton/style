@@ -28,9 +28,9 @@ module.exports = {
 					href: 'https://wwnorton.github.io/design-system/',
 					label: 'NDS',
 					title: 'wwNDS',
-					position: 'left'
+					position: 'left',
 				},
-				{to: 'blog', label: 'Blog', position: 'left'},
+				{ to: 'blog', label: 'Blog', position: 'left' },
 				{
 					href: 'https://github.com/wwnorton/style',
 					title: 'GitHub',
@@ -181,5 +181,5 @@ module.exports = {
 				],
 			},
 		],
-	]
+	],
 };

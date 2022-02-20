@@ -5,5 +5,5 @@ module.exports = {
 		'react-style',
 		'typescript-style',
 		'css-sass-style',
-	]
+	],
 };

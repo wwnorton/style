@@ -173,5 +173,5 @@ module.exports = [
 	'animation-timing-function',
 	'animation-delay',
 	'animation-iteration-count',
-	'animation-direction'
+	'animation-direction',
 ];
