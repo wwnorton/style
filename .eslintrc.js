@@ -4,6 +4,14 @@ module.exports = {
 	extends: [
 		'norton/react',
 	],
+	overrides: [
+		{
+			files: ['.ts', '.tsx'],
+			extends: [
+				'plugin:@typescript-eslint/recommended-requiring-type-checking',
+			],
+		},
+	],
 	parserOptions: {
 		project: './tsconfig.json',
 	},
