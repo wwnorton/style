@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.1](https://github.com/wwnorton/style/compare/guides-website@1.1.0...guides-website@1.1.1) (2022-02-20)
+
+
+### 🛠 Maintenance
+
+* **style:** eslint --fix ([8bb3822](https://github.com/wwnorton/style/commit/8bb382238a2d05d9e3a92dc3e3ca9df34ec99d9d))
+* switch to npm workspaces ([7c205a5](https://github.com/wwnorton/style/commit/7c205a538ac797eb0faf20955d6c29f20ea8edc1))
+* update guide site eslint config ([e829640](https://github.com/wwnorton/style/commit/e829640a4e3978507c49fc6436243914078deefd))
+* update website dependencies ([e067cc1](https://github.com/wwnorton/style/commit/e067cc145bdb6deeca2344d32abfbfde9135bc0f))
+
+
+
 ## [1.1.0](https://github.com/wwnorton/style/compare/guides-website@1.0.4...guides-website@1.1.0) (2021-12-20)
 
 

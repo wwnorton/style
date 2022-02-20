@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.7](https://github.com/wwnorton/style/compare/commitlint-config-norton@0.2.6...commitlint-config-norton@0.2.7) (2022-02-20)
+
+
+### 🛠 Maintenance
+
+* **dev-deps:** bump ava to v4 ([1efc1c4](https://github.com/wwnorton/style/commit/1efc1c45ebb2f3b8d034a0eac1fe3e12016f74d0))
+* switch to npm workspaces ([7c205a5](https://github.com/wwnorton/style/commit/7c205a538ac797eb0faf20955d6c29f20ea8edc1))
+
+
+
 ### [0.2.6](https://github.com/wwnorton/style/compare/commitlint-config-norton@0.2.5...commitlint-config-norton@0.2.6) (2020-09-30)
 
 

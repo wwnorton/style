@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-norton",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "commitlint shareable config for Norton git commit standards",
   "keywords": [
     "code",

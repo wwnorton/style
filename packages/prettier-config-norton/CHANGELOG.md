@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.1](https://github.com/wwnorton/style/compare/prettier-config-norton@1.2.0...prettier-config-norton@1.2.1) (2022-02-20)
+
+
+### 🛠 Maintenance
+
+* **style:** eslint --fix ([8bb3822](https://github.com/wwnorton/style/commit/8bb382238a2d05d9e3a92dc3e3ca9df34ec99d9d))
+
+
+
 ## [1.2.0](https://github.com/wwnorton/style/compare/prettier-config-norton@1.1.0...prettier-config-norton@1.2.0) (2020-09-30)
 
 

@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0-alpha.1](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.7...eslint-config-norton@5.0.0-alpha.1) (2022-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* default config no longer includes React
+* remove security rules
+* remove prettier rules
+* support typescript with overrides
+* avoid export default in TypeScript
+
+* feat!(eslint-config-norton): streamline for v5 ([8de4433](https://github.com/wwnorton/style/commit/8de44332f52795ac9f62b848e9d8eb0dd1ac1a71))
+
+
+### 🛠 Maintenance
+
+* airbnb is a dependency ([7dfc31b](https://github.com/wwnorton/style/commit/7dfc31b2836312e02ea07f73b771ff720a8a754c))
+* **dev-deps:** bump ava to v4 ([1efc1c4](https://github.com/wwnorton/style/commit/1efc1c45ebb2f3b8d034a0eac1fe3e12016f74d0))
+* disable ts type checking rules by default ([9f683ec](https://github.com/wwnorton/style/commit/9f683ecc05847eb3a196e88c5ffa808f1366d239))
+* manually bump to 5.0 alpha ([b6390bb](https://github.com/wwnorton/style/commit/b6390bb3392fba7e7549d452dc146dc7f080e4e5))
+* switch to npm workspaces ([7c205a5](https://github.com/wwnorton/style/commit/7c205a538ac797eb0faf20955d6c29f20ea8edc1))
+* use consistent test names ([5e350dd](https://github.com/wwnorton/style/commit/5e350ddec4ef29c0688b26be5eb7e10239d9dc88))
+
+
+
 ## [4.0.0-beta.7](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.6...eslint-config-norton@4.0.0-beta.7) (2021-12-20)
 
 

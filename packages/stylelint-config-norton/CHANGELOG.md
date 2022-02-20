@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/wwnorton/style/compare/stylelint-config-norton@4.0.0...stylelint-config-norton@4.1.0) (2022-02-20)
+
+
+### ✨ Features
+
+* **order:** remove include from block order ([d123c7e](https://github.com/wwnorton/style/commit/d123c7e6b81c4dec9eb1f65410425d1efc74d92c))
+
+
+### 🛠 Maintenance
+
+* add email address ([7b6e2ad](https://github.com/wwnorton/style/commit/7b6e2ad829d392d2b416b92eb5234db281305fc7))
+* bump stylelint-config-standard to v25 ([f8963ce](https://github.com/wwnorton/style/commit/f8963ceeabb36aa0d2801fbf0958f201506f970c))
+* **dev-deps:** bump ava to v4 ([1efc1c4](https://github.com/wwnorton/style/commit/1efc1c45ebb2f3b8d034a0eac1fe3e12016f74d0))
+* **style:** eslint --fix ([8bb3822](https://github.com/wwnorton/style/commit/8bb382238a2d05d9e3a92dc3e3ca9df34ec99d9d))
+* switch to npm workspaces ([7c205a5](https://github.com/wwnorton/style/commit/7c205a538ac797eb0faf20955d6c29f20ea8edc1))
+
+
+
 ## [4.0.0](https://github.com/wwnorton/style/compare/stylelint-config-norton@3.1.3...stylelint-config-norton@4.0.0) (2021-12-20)
 
 
