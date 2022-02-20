@@ -10,7 +10,7 @@ It is highly recommend to use npm v7+, which [will install peer dependencies for
 Earlier versions of npm will require you to install peer dependencies yourself.
 
 ```sh
-npm install eslint-config-norton
+npm install eslint-config-norton --save-dev
 ```
 
 ## Usage
@@ -33,9 +33,25 @@ extends: [
 
 ## TypeScript support
 
-Both [the default entrypoint](./index.js) and [the React entrypoint](./react.js) provide support for TypeScript through [overrides](https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work) that use both [the officially recommended configs](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#recommended-configs) (including `recommended-requiring-type-checking`) and [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript).
+Both [the default entrypoint](./index.js) and [the React entrypoint](./react.js) provide support for TypeScript through [overrides](https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work) that use both [the officially recommended config](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#recommended-configs) and [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript).
 This means that only `.ts(x)?` files will use the TypeScript rules, while `.js(x)?` files will use the JavaScript rules, allowing for mixed TypeScript/JavaScript codebases.
 This is helpful when you want to lint your entire TypeScript codebase but some files have to be JavaScript, such as configs (e.g., `docusaurus.config.js`, `.stylelintrc.js`).
+
+The `plugin:@typescript-eslint/recommended` config is already enabled so you shouldn't include it, but `plugin:@typescript-eslint/recommended-requiring-type-checking` is not.
+It is highly recommended that you turn it on for a more strict set of rules.
+
+```js
+extends: [
+  'norton', // or 'norton/react'
+  // 'plugin:@typescript-eslint/recommended', <- this is already enabled by eslint-config-norton so don't add it here
+  'plugin:@typescript-eslint/recommended-requiring-type-checking',
+];
+```
+
+This is not enabled by default because it would not be possible to opt out of it and because it adds non-negligible overhead.
+[@typescript/plugin-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#recommended-configs) specifically recommends the following:
+
+> Pro Tip: For larger codebases you may want to consider splitting our linting into two separate stages: 1. fast feedback rules which operate purely based on syntax (no type-checking), 2. rules which are based on semantics (type-checking).
 
 ## Rules
 
