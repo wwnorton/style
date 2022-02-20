@@ -22,7 +22,7 @@
   "author": "Evan Yamanishi",
   "main": "index.js",
   "dependencies": {
-    "@commitlint/config-conventional": "^11.0.0"
+    "@commitlint/config-conventional": "^16.2.1"
   },
   "peerDependencies": {
     "commitlint": "^11.0.0"
