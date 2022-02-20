@@ -14,7 +14,8 @@
   },
   "ava": {
     "files": [
-      "**/test/*.js"
+      "**/test/*.js",
+      "!**/helpers*"
     ]
   },
   "devDependencies": {
