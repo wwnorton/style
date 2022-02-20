@@ -22,37 +22,21 @@
   "author": "Evan Yamanishi <eyamanishi@wwnorton.com>",
   "main": "index.js",
   "files": [
-    "base.js",
     "index.js",
-    "typescript.js",
-    "typescript-base.js",
+    "react.js",
     "rules"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.0.0",
-    "@typescript-eslint/parser": "^3.9.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0"
+    "eslint-config-airbnb-typescript": "^16.1.0"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.0",
-    "eslint-plugin-no-unsanitized": "^3.1.2",
-    "eslint-plugin-no-wildcard-postmessage": "^0.2.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prototype-pollution-security-rules": "^1.0.6",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-security-node": "^1.0.12"
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint-config-airbnb": "^19.0.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
       "optional": true
     }
-  },
-  "engines": {
-    "node": ">= 6"
   }
 }

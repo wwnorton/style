@@ -1,20 +1,13 @@
-/**
- * Overrides for usage with React.
- *
- * Additional dependencies expected:
- * - eslint-plugin-jsx-a11y
- * - eslint-plugin-react
- * - eslint-plugin-react-hooks
- *
- * Note that all of these can be added via `eslint-config-airbnb`.
- */
+const { rules: styleRules } = require('./style');
+
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
 	rules: {
-		/** Enable tabs in JSX. */
-		'react/jsx-indent': ['error', 'tab'],
-		'react/jsx-indent-props': ['error', 'tab'],
-
-		/** Master Eslint Norton Rules */
-		'react/no-find-dom-node': 'warn',
+		// Use tabs for more accessible code.
+		// https://alexandersandberg.com/tabs-for-accessibility/
+		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
+		// https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules/jsx-indent-props.md
+		'react/jsx-indent': styleRules.indent,
+		'react/jsx-indent-props': styleRules.indent,
 	},
 };
