@@ -23,12 +23,14 @@ jobs:
       - name: Update npm
         run: npm i -g npm@${{ env.NPM_VERSION }}
       - uses: actions/cache@v2
+        id: node-cache
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install 📦
+        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: ESLint ✨
         run: npm run eslint
@@ -48,12 +50,14 @@ jobs:
       - name: Update npm
         run: npm i -g npm@${{ env.NPM_VERSION }}
       - uses: actions/cache@v2
+        id: node-cache
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install 📦
+        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Test 🧪
         run: npm run test
