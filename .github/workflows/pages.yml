@@ -12,22 +12,33 @@ on:
     paths:
     - 'guides-website/**'
 
+env:
+  FORCE_COLOR: 2
+  NODE_VERSION: 16
+  NPM_VERSION: 8
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v2
         with:
-          node-version: 12.x
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Update npm
+        run: npm i -g npm@${{ env.NPM_VERSION }}
       - uses: actions/cache@v2
-        id: cache
+        id: node-cache
         with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          path: |
+            ~/.npm
+            node_modules
+            **/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install 📦
-        working-directory: guides-website
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Build docs 📄
         working-directory: guides-website
