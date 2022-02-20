@@ -10,6 +10,11 @@
     "serve:docs": "npm run serve --workspace guides-website",
     "test": "ava"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
   "ava": {
     "files": [
       "**/test/*.js",
@@ -23,6 +28,8 @@
     "@commitlint/load": "^9.1.1",
     "ava": "^4.0.1",
     "eslint": "^8.9.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
     "typescript": "^4.5.5"
   }
 }
