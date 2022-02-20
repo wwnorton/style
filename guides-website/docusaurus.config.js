@@ -4,8 +4,8 @@ const base = baseUrl.replace(/\/$/, '');
 module.exports = {
 	title: 'W. W. Norton & Company Code Guidelines',
 	tagline: 'A collection of guidelines for your coding needs.',
-	url: 'https://wwnorton.github.io/style',
-	baseUrl: baseUrl || '/',
+	url: 'https://wwnorton.github.io',
+	baseUrl,
 	onBrokenLinks: 'warn',
 	favicon: 'img/favicon.ico',
 	organizationName: 'wwnorton', // Usually your GitHub org/user name.
