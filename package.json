@@ -6,11 +6,11 @@
     "guides-website"
   ],
   "scripts": {
-    "eslint": "eslint . --ignore-path .gitignore --ignore-pattern invalid-*",
-    "test": "ava",
-    "dev:docs": "npm run start --workspace guides-website",
     "build:docs": "npm run build --workspace guides-website",
-    "serve:docs": "npm run serve --workspace guides-website"
+    "dev:docs": "npm run start --workspace guides-website",
+    "eslint": "eslint . --ignore-path .gitignore --ignore-pattern invalid-*",
+    "serve:docs": "npm run serve --workspace guides-website",
+    "test": "ava"
   },
   "ava": {
     "files": [
