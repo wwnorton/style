@@ -5,18 +5,18 @@ export default class Foo extends React.Component {
 		super(props);
 		this.state = {
 			isOpen: true,
-		}
+		};
 	}
 
 	render() {
-		const { isOpen } = this.state
-		;if (!isOpen) return null;;
+		const { isOpen } = this.state;
+		if (!isOpen) return null;
 		const { className } = this.props;
 		return (
 			<div
-        className={className}
+				className={className}
 			>
-        foo
+				foo
 			</div>
 		);
 	}

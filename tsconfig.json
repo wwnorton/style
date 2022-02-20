@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
     "module": "ESNext",
+    "target": "ESNext",
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
   },
+  // TypeScript is only used in the eslint tests
+  "include": [
+    "packages/eslint-config-norton/test/fixtures",
+  ],
 }

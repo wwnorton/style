@@ -1,133 +1,156 @@
 # eslint-config-norton
-![release version](https://img.shields.io/github/v/release/wwnorton/style "Release Version")
 
-> An ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [Norton code style](https://github.com/wwnorton/style).
-> Currently defaulted to provide React linting. Usage without React Rules can be found below.
+![npm](https://img.shields.io/npm/v/eslint-config-norton)
 
-A note from [airbnb's JavaScript guide](https://github.com/airbnb/javascript), which this repository extends:
-
-> **Note**: this guide assumes you are using [Babel](https://babeljs.io), and requires that you use [babel-preset-airbnb](https://npmjs.com/babel-preset-airbnb) or the equivalent. It also assumes you are installing shims/polyfills in your app, with [airbnb-browser-shims](https://npmjs.com/airbnb-browser-shims) or the equivalent.
+> The official W. W. Norton ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html), based on [Airbnb](https://github.com/airbnb/javascript) but with support for TypeScript.
 
 ## Installation
 
-As of `v1.2.1`, this repository can be installed from the NPM registry. You'll also need a compatible version of ESLint, [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import), [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and other plugins found in the package.json which are peer dependencies. The preferred way to install requires [npx](https://github.com/zkat/npx), which comes with NPM 5+ and [install-peerdeps](https://www.npmjs.com/package/install-peerdeps). The shell command below will install ESLint version `7.2.0` to your application and other specified peer dependencies. This config is compatible with ESLint versions `^5.16.0 || ^6.8.0 || ^7.2.0`.
-
-> **Note**: you can also manually install your peer dependencies. 
-
-```sh
-npx install-peerdeps --dev eslint-config-norton
-```
-
-Alternatively, you can use [generator-norton-style](https://gitlab.com/wwnorton/style/generator-norton-style) (a [Yeoman](http://yeoman.io/) generator) to automatically add all required files and dependencies. Follow instructions on [generator-norton-style's README](https://gitlab.com/wwnorton/style/generator-norton-style/blob/master/README.md) to install [Yeoman](http://yeoman.io/) and generator-norton-style globally and then just follow the generator's prompts:
+It is highly recommend to use npm v7+, which [will install peer dependencies for you](https://github.blog/2021-02-02-npm-7-is-now-generally-available/).
+Earlier versions of npm will require you to install peer dependencies yourself.
 
 ```sh
-yo norton-style
+npm install eslint-config-norton --save-dev
 ```
 
 ## Usage
 
-Once the `eslint-config-norton` package is installed, you can use it by specifying `norton` or `eslint-config-norton` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring). Note that generator-norton-style automatically sets up this file. You can then override anything you like from there.
-
-### Usage with Prettier
-
-Currently [Prettier](https://prettier.io/) does a much better job at handling formatting than Eslint. `eslint-config-norton` is setup to work alongside our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) which handles our formatting. `eslint-config-norton` extends [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) and `eslint-config-prettier/react` accordingly to turn off Eslint rule conflicts with Prettier. Please incorporate our [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) in your project as well.
-
-### Examples
-
-`.eslintrc.js` with 2 spaces instead of tabs.
+The default config provides rules for JavaScript and TypeScript.
 
 ```js
-module.exports = {
-  extends: ['norton'], // or 'eslint-config-norton'
-  rules: {
-    indent: ['error', 2],
-    'no-tabs': 'error'
-  }
-};
+extends: [
+  'norton',
+],
 ```
 
-The ESLint `env` attribute may need to be configured to handle certain variables based on your use case.
-
-`.eslintrc.json` in a browser environment with jQuery
-
-```json
-{
-  "extends": ["eslint-config-norton"],
-  "env": {
-    "browser": true,
-    "jquery": true
-  }
-}
-```
-
-## For Non React Projects
-
-If you don't want React linting you can simply extend the base.js entry point in our config, `eslint-config-norton/base`.
-
-### Usage without React rules
-
-To use the Norton config in a project that doesn't use [React](https://reactjs.org/), import and use the included base.js config instead of the default one.
+To also use React rules, extend `norton/react` instead.
 
 ```js
-module.exports = {
-	extends: ['eslint-config-norton/base'],
-	rules: {
-    // Override rules here
-	}
-}
+extends: [
+  'norton/react',
+],
 ```
 
-## For TypeScript projects
+## TypeScript support
 
-This package also provides configuration for TypeScript liniting. In order to use our TypeScript linting you need to extend an additional entrypoint based on your needs. Under the hood this configuration disables some base ESLint rules which do not interface well with TypeScript files and Prettier options and subsequently provides TypeScript linting.
+Both [the default entrypoint](./index.js) and [the React entrypoint](./react.js) provide support for TypeScript through [overrides](https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work) that use both [the officially recommended config](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#recommended-configs) and [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript).
+This means that only `.ts(x)?` files will use the TypeScript rules, while `.js(x)?` files will use the JavaScript rules, allowing for mixed TypeScript/JavaScript codebases.
+This is helpful when you want to lint your entire TypeScript codebase but some files have to be JavaScript, such as configs (e.g., `docusaurus.config.js`, `.stylelintrc.js`).
 
-> Expects TypeScript to already be installed on your application side. 
-
-It uses [`@typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) for most of its TypeScript rules.
-
-Note: These configurations are still meant to be used alongside [`prettier-config-norton`](https://github.com/wwnorton/style/tree/master/packages/prettier-config-norton) to facilitate most of the formatting.
-
-### How this works.
-
-The entrypoints below provide TypeScript overrides. 
-
-- **eslint-config-norton/typescript**: this includes an extendable override file providing linting for TypeScript along with React.
-- **eslint-config-norton/typescript-base**: this includes an extendable override file providing linting for *only* TypeScript.
-
-> The TypeScript ruleset relies on Type definitions and being aware of the location of your TSConfig. Make sure your `'./tsconfig.json'` is in your root directory.
-
-### Examples
-
-Incorporating TypeScript and React Linting:
+The `plugin:@typescript-eslint/recommended` config is already enabled so you shouldn't include it, but `plugin:@typescript-eslint/recommended-requiring-type-checking` is not.
+It is highly recommended that you turn it on for a more strict set of rules.
 
 ```js
-module.exports = {
-  extemds: [
-    'norton',
-    'eslint-config-norton/typescript'
-  ]
-}
+extends: [
+  'norton', // or 'norton/react'
+  // 'plugin:@typescript-eslint/recommended', <- this is already enabled by eslint-config-norton so don't add it here
+  'plugin:@typescript-eslint/recommended-requiring-type-checking',
+];
 ```
 
-Incorporating just TypeScript Linting:
+This is not enabled by default because it would not be possible to opt out of it and because it adds non-negligible overhead.
+[@typescript/plugin-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#recommended-configs) specifically recommends the following:
 
-```js
-module.exports = {
-  extemds: [
-    'eslint-config-norton/base',
-    'eslint-config-norton/typescript-base'
-  ]
-}
-```
-
-### **For more information please see...**
-
-TypeScript Lint Setup - https://www.notion.so/Typescript-Lint-Setup-06cef0036d0b4887b4e07b57def202e4
-TypeScript Style Guide - https://www.notion.so/TypeScript-Style-Guide-a73cca890fb342b0a1f99a7ba1ce55d8
-ESLint Plugin TypeScript - https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
-
+> Pro Tip: For larger codebases you may want to consider splitting our linting into two separate stages: 1. fast feedback rules which operate purely based on syntax (no type-checking), 2. rules which are based on semantics (type-checking).
 
 ## Rules
 
-This configuration extends [airbnb's base style guide](https://github.com/airbnb/javascript) ([eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)). It overrides the following rules:
-- [Tabs instead of spaces](https://gitlab.com/wwnorton/style/guide/issues/1).
+This configuration extends [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb), [the officially recommended configs](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#recommended-configs), and the unofficial [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript) (for TypeScript rules), overriding only a small handful of rules from those configs.
+
+### Tabs instead of spaces
+
+This is done purely to promote more accessible and inclusive code.
+Spaces do not allow individual developers to set the visual appearance of indents in their IDE, whereas tabs do.
+
+See https://alexandersandberg.com/tabs-for-accessibility/ for further explanation of why this is helpful for code accessibility.
+
+#### Related rules
+
+- [indent](https://eslint.org/docs/rules/indent)
+- [no-tabs](https://eslint.org/docs/rules/no-tabs)
+- [react/jsx-indent](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md)
+- [react/jsx-indent-props](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md)
+- [@typescript-eslint/indent](https://typescript-eslint.io/rules/indent/)
+
+### Avoid default exports (TypeScript only)
+
+There are a handful of reasons for this, all of which are explained quite well in https://basarat.gitbook.io/typescript/main-1/defaultisbad.
+
+> **Note**: [export default is preferred in JavaScript](https://github.com/airbnb/javascript#modules--prefer-default-export).
+This is the exact opposite of the TypeScript rule.
+
+```ts
+// bad
+export default class Foo {}
+
+// good
+export class Foo {}
+```
+
+#### Related rules
+
+- [import/prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md)
+- [import/no-default-export](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md)
+
+### Allow sequential single-line class fields (TypeScript only)
+
+Since TypeScript supports [class field declarations](https://www.typescriptlang.org/docs/handbook/2/classes.html#fields), it can be helpful to group single-line declarations.
+Airbnb doesn't allow this because it doesn't support class field declarations, so we've overridden it just for TypeScript.
+
+```ts
+class Foo {
+  // allowed: no line between single-line members
+  #foo = 'foo';
+  #bar = 'bar';
+
+  // not allowed: no line between multi-line members
+  get foo() {
+    return this.#foo;
+  } // <- no line between members
+  get (bar) {
+    return this.#bar;
+  }
+}
+```
+
+#### Related rules
+
+- [lines-between-class-members](https://eslint.org/docs/rules/lines-between-class-members)
+- [function-component-definition](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md)
+
+### Prefer static class fields (TypeScript+React only)
+
+TypeScript supports public class fields, so prefer using them for static fields.
+[Airbnb intends to use this rule](https://github.com/airbnb/javascript/blob/b4377fb03089dd7f08955242695860d47f9caab4/packages/eslint-config-airbnb/rules/react.js#L489-L492) when it's supported.
+
+```tsx
+class Foo extends React.Component<FooProps> {
+  // good
+  static defaultProps = defaultProps;
+}
+
+// bad
+Foo.defaultProps = defaultProps;
+```
+
+#### Related rules
+
+- [react/static-property-placement](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md)
+
+## Adding support for {x}
+
+This config is designed to provide a good base for Airbnb-based JavaScript and TypeScript.
+Any additional functionality or overrides should be done in your own config.
+
+For instance, add support for [comments](https://mysticatea.github.io/eslint-plugin-eslint-comments/), [Jest](https://github.com/jest-community/eslint-plugin-jest) and [Prettier](https://github.com/prettier/eslint-plugin-prettier):
+
+```js
+module.exports = {
+  extends: [
+    'norton/react',
+    'plugin:eslint-comments/recommended',
+    'plugin:jest/recommended',
+    'plugin:prettier/recommended',
+  ],
+};
+```
