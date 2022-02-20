@@ -24,6 +24,10 @@
   "dependencies": {
     "@commitlint/config-conventional": "^16.2.1"
   },
+  "devDependencies": {
+    "@commitlint/lint": "^16.2.1",
+    "@commitlint/load": "^16.2.1"
+  },
   "peerDependencies": {
     "@commitlint/cli": "^16.2.1"
   }
