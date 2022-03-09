@@ -53,6 +53,9 @@ overrides: [
     ],
   },
 ],
+parserOptions: {
+  project: './tsconfig.json', // or wherever your tsconfig is located
+},
 ```
 
 \* This is not enabled by default because it would not be possible to opt out of it and because it adds non-negligible overhead.
