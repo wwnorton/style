@@ -160,7 +160,9 @@ module.exports = {
     'norton/react',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
-    'plugin:prettier/recommended',
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended",
   ],
 };
 ```
