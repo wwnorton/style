@@ -1,62 +1,15 @@
 # https://editorconfig.org
-
-# top-most EditorConfig file
 root = true
 
-# Unix-style newlines with a newline ending every file
 [*]
 end_of_line = lf
 insert_final_newline = true
-
-# Whitespace
-[*]
-indent_style = tab
-indent_size = 2
 charset = utf-8
 trim_trailing_whitespace = true
-max_line_length = 80
-
-# Python - 4 space indentation (Python 3 does not allow mixing tabs and spaces)
-# Docstrings and comments use max_line_length = 79
-[*.py]
-indent_style = space
-indent_size = 4
-
-[tests/*.py]
-eclint_max_line_length = off
-
-[*.md]
-max_line_length = off
-
-[*.{md,jade,pug}]
-trim_trailing_whitespace = false
-
-[*.{md,json,yaml,yml,sh}]
-indent_style = space
-indent_size = 2
-insert_final_newline = ignore
-
-# Minified JavaScript files shouldn't be changed
-[**.min.js]
-indent_style = ignore
-insert_final_newline = ignore
-
-[docs/**.txt]
-max_line_length = 79
-
-[CHANGELOG.md]
-indent_size = false
-
-[Makefile]
-indent_size = 8
 indent_style = tab
 
-[{deps}/**]
-charset = unset
-end_of_line = unset
-indent_size = unset
-indent_style = unset
-trim_trailing_whitespace = unset
+[*.{md}]
+trim_trailing_whitespace = false
 
-[{test/fixtures,deps,tools/node_modules,tools/gyp,tools/icu,tools/msvs}/**]
-insert_final_newline = false
+[*.{json,yaml,yml}]
+indent_style = space
