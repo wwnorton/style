@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.2](https://github.com/wwnorton/style/compare/guides-website@1.1.1...guides-website@1.1.2) (2022-03-25)
+
+
+### 🛠 Maintenance
+
+* bump react to v17 ([d023466](https://github.com/wwnorton/style/commit/d023466bcf3428af3d10b473f6c99a859d0be1f7))
+* npx sort-package-json ([806548b](https://github.com/wwnorton/style/commit/806548bbcf0933a71c4d72c1f11205fd1e772809))
+* use recommended url/baseUrl combo ([06aa3f4](https://github.com/wwnorton/style/commit/06aa3f43cf9a4c2023b923f44fa75b9464bfc2cc))
+
+
+
 ### [1.1.1](https://github.com/wwnorton/style/compare/guides-website@1.1.0...guides-website@1.1.1) (2022-02-20)
 
 

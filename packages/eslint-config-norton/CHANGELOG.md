@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/wwnorton/style/compare/eslint-config-norton@5.0.0-alpha.1...eslint-config-norton@5.0.0) (2022-03-25)
+
+
+### 📝 Documentation
+
+* add parserOptions example ([836638d](https://github.com/wwnorton/style/commit/836638d8ad7c9d320e4ef48fae4a1d330af45953))
+* use overrides to enable type checking ([eec68a1](https://github.com/wwnorton/style/commit/eec68a188791795cb7aec3e42b157f8dc8f76276))
+
+
+### 🛠 Maintenance
+
+* add uniform badges to each package ([03af26d](https://github.com/wwnorton/style/commit/03af26dbad8722d14b91c8e4188ec7d14b2e3299))
+* improve prettier example ([28788fb](https://github.com/wwnorton/style/commit/28788fbf3274e1be5b6b2e1a9a87d9a20ed76aad))
+
+
+
 ## [5.0.0-alpha.1](https://github.com/wwnorton/style/compare/eslint-config-norton@4.0.0-beta.7...eslint-config-norton@5.0.0-alpha.1) (2022-02-20)
 
 

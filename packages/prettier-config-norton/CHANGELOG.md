@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.2](https://github.com/wwnorton/style/compare/prettier-config-norton@1.2.1...prettier-config-norton@1.2.2) (2022-03-25)
+
+
+### 🛠 Maintenance
+
+* add config type ([d209466](https://github.com/wwnorton/style/commit/d209466c7e611a4822529af5882e9790cf009643))
+* add uniform badges to each package ([03af26d](https://github.com/wwnorton/style/commit/03af26dbad8722d14b91c8e4188ec7d14b2e3299))
+* use caret syntax for prettier peer ([a30f7f8](https://github.com/wwnorton/style/commit/a30f7f833d3382a6ed5e8495ccaaee5bc507b1ca))
+
+
+
 ### [1.2.1](https://github.com/wwnorton/style/compare/prettier-config-norton@1.2.0...prettier-config-norton@1.2.1) (2022-02-20)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.8](https://github.com/wwnorton/style/compare/commitlint-config-norton@0.2.7...commitlint-config-norton@0.2.8) (2022-03-25)
+
+
+### 🛠 Maintenance
+
+* @commitlint/cli should be a peer ([c1b3a7a](https://github.com/wwnorton/style/commit/c1b3a7ae4c75f5a4878ce351ce26b47fce8dbfd0))
+* add missing test dependencies ([add49c3](https://github.com/wwnorton/style/commit/add49c313eb0a17d33f098113841d1c522831488))
+* add uniform badges to each package ([03af26d](https://github.com/wwnorton/style/commit/03af26dbad8722d14b91c8e4188ec7d14b2e3299))
+* simplify the commitlint docs ([e95e694](https://github.com/wwnorton/style/commit/e95e69465b198c06cbc728b4623ca820da0127fb))
+* update @commitlint/config-conventional to v16 ([c4f540f](https://github.com/wwnorton/style/commit/c4f540f6ba314feeb9a43b94f7fec89b7b6497ea))
+
+
+
 ### [0.2.7](https://github.com/wwnorton/style/compare/commitlint-config-norton@0.2.6...commitlint-config-norton@0.2.7) (2022-02-20)
 
 

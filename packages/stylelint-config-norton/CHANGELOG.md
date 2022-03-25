@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.1](https://github.com/wwnorton/style/compare/stylelint-config-norton@4.1.0...stylelint-config-norton@4.1.1) (2022-03-25)
+
+
+### ♻️ Refactor
+
+* accessibility more accurately describes these rules ([9a54441](https://github.com/wwnorton/style/commit/9a544416c44170ca173b747100eb4a00811ddcb7))
+* deprecate sass in favor of scss entrypoint ([1edc601](https://github.com/wwnorton/style/commit/1edc6010d26c4b319ab77434693eda65f0d3b261))
+* make all rulesets extendable ([4a6febf](https://github.com/wwnorton/style/commit/4a6febf6eaa823c09fcd4aef4a43160c2d9f70fb))
+
+
+### 🛠 Maintenance
+
+* add uniform badges to each package ([03af26d](https://github.com/wwnorton/style/commit/03af26dbad8722d14b91c8e4188ec7d14b2e3299))
+* **deps-dev:** bump stylelint to 14.6.1 ([63e6c08](https://github.com/wwnorton/style/commit/63e6c08a22076ae18c5be6263fac35bd84930a5e))
+* stylelint doesn't need to be a peer ([5967fd1](https://github.com/wwnorton/style/commit/5967fd1bca3ea9e275cd5e4b862490d1101284a0))
+
+
+
 ## [4.1.0](https://github.com/wwnorton/style/compare/stylelint-config-norton@4.0.0...stylelint-config-norton@4.1.0) (2022-02-20)
 
 
