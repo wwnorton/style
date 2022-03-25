@@ -10,6 +10,7 @@
     },
     "version": {
       "allowBranch": ["main", "release/*"],
+      "message": "chore(release): publish %s",
       "conventionalCommits": true,
       "createRelease": "github",
       "changelogPreset": {
