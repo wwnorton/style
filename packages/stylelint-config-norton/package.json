@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "author": "Evan Yamanishi <eyamanishi@wwnorton.com>",
-  "main": "src/sass.js",
+  "main": "src/scss.js",
   "files": [
     "src",
     "test"
