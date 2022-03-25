@@ -1,4 +1,3 @@
-/* eslint-disable-next-line import/no-unresolved */
 const test = require('ava');
 const { default: load } = require('@commitlint/load');
 const { default: commitlint } = require('@commitlint/lint');

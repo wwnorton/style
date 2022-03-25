@@ -1,5 +1,4 @@
-/** @type {import('ava').TestFn} */
-const test = require('ava');	// eslint-disable-line import/no-unresolved
+const test = require('ava');
 const path = require('path');
 const { eslint, createChecker } = require('./helpers');
 

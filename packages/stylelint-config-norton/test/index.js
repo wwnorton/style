@@ -1,5 +1,4 @@
 const fs = require('fs');
-/* eslint-disable-next-line import/no-unresolved */
 const test = require('ava');
 const path = require('path');
 const { lint } = require('stylelint');
