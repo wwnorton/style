@@ -1,15 +1,18 @@
-/** stylelint-scss rules */
+/** @type {import('stylelint').Config} */
 module.exports = {
-	// add deeper nesting to align with Airbnb css/scss style guide
-	'max-nesting-depth': [
-		2,
-		{
-			ignoreAtRules: [
-				'each',
-				'media',
-				'supports',
-				'include',
-			],
-		},
-	],
+	rules: {
+		// add deeper nesting to align with Airbnb scss style guide
+		// https://github.com/airbnb/css#nested-selectors
+		'max-nesting-depth': [
+			2,
+			{
+				ignoreAtRules: [
+					'each',
+					'media',
+					'supports',
+					'include',
+				],
+			},
+		],
+	},
 };

@@ -1,8 +1,6 @@
 // GitHub Primer's property order
 // https://github.com/primer/stylelint-config-primer/blob/master/property-order.js
 
-// add and groups accessibility properties to the bottom.
-
 module.exports = [
 	'all',
 	'position',
