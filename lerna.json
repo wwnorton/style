@@ -1,8 +1,5 @@
 {
-  "packages": [
-    "packages/*",
-    "guides-website"
-  ],
+  "useWorkspaces": true,
   "version": "independent",
   "command": {
     "publish": {
