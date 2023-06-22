@@ -16,7 +16,8 @@
   "ava": {
     "files": [
       "**/test/*.js",
-      "!**/helpers*"
+      "!**/helpers*",
+      "!**/commitlint-config-norton"
     ]
   },
   "devDependencies": {
