@@ -8,8 +8,6 @@ on:
 
 env:
   FORCE_COLOR: 2
-  NODE_VERSION: 16
-  NPM_VERSION: 8
 
 jobs:
   eslint:
@@ -20,20 +18,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Update npm
-        run: npm i -g npm@${{ env.NPM_VERSION }}
-      - uses: actions/cache@v3
-        id: node-cache
-        with:
-          path: |
-            ~/.npm
-            node_modules
-            **/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: 'npm'
       - name: Install 📦
-        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: ESLint ✨
         run: npm run eslint
@@ -50,18 +36,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Update npm
-        run: npm i -g npm@${{ env.NPM_VERSION }}
-      - uses: actions/cache@v3
-        id: node-cache
-        with:
-          path: |
-            ~/.npm
-            node_modules
-            **/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: 'npm'
       - name: Install 📦
         if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
