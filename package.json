@@ -6,28 +6,21 @@
   ],
   "scripts": {
     "eslint": "eslint . --ignore-path .gitignore",
-    "test": "ava"
+    "test": "vitest"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix"
     ]
   },
-  "ava": {
-    "files": [
-      "**/test/*.js",
-      "!**/helpers*",
-      "!**/commitlint-config-norton"
-    ]
-  },
   "devDependencies": {
-    "ava": "^3.15.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "eslint": "^8.43.0",
     "husky": "^7.0.4",
     "lerna": "^5.6.2",
     "lint-staged": "^12.5.0",
     "react": "^18.2.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.32.2"
   }
 }
