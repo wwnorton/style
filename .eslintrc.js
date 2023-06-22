@@ -21,11 +21,14 @@ module.exports = {
 			{
 				packageDir: [
 					'.',
-					'./packages/commitlint-config-norton',
 					'./packages/eslint-config-norton',
 					'./packages/stylelint-config-norton',
 				],
 			},
 		],
 	},
+	ignorePatterns: [
+		'invalid-*',
+		'packages/commitlint-config-norton/**',
+	],
 };
