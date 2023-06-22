@@ -24,7 +24,6 @@ module.exports = {
 					'./packages/commitlint-config-norton',
 					'./packages/eslint-config-norton',
 					'./packages/stylelint-config-norton',
-					'./guides-website',
 				],
 			},
 		],
