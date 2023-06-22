@@ -4,10 +4,7 @@
     "guides-website"
   ],
   "scripts": {
-    "build": "npm run build --workspace guides-website",
     "eslint": "eslint . --ignore-path .gitignore --ignore-pattern invalid-*",
-    "serve": "npm run serve --workspace guides-website",
-    "start": "npm run start --workspace guides-website",
     "test": "ava"
   },
   "lint-staged": {
