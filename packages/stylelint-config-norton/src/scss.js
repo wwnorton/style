@@ -2,7 +2,7 @@
 module.exports = {
 	extends: [
 		// https://github.com/stylelint-scss/stylelint-config-standard-scss
-		'stylelint-config-standard-scss',
+		require.resolve('stylelint-config-standard-scss'),
 
 		// Norton-specific overrides
 		require.resolve('./rules/accessibility'),
