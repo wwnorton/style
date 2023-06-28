@@ -1,3 +1,5 @@
+**No longer maintained**
+
 # prettier-config-norton
 
 [![prettier-config-norton version](https://img.shields.io/npm/v/prettier-config-norton)](https://www.npmjs.com/package/prettier-config-norton)
@@ -14,7 +16,7 @@ npx install-peerdeps --dev prettier-config-norton
 
 ## Usage
 
-Once the `prettier-config-norton` package is installed, you can use it by specifying it in your package.json: 
+Once the `prettier-config-norton` package is installed, you can use it by specifying it in your package.json:
 
 ```
 "prettier": "prettier-config-norton"
@@ -52,17 +54,17 @@ This will already be done if you ran the `install-peerdeps` command specified in
 
 - It's recommended to install the relevant [Editor Addons/Plugins](https://prettier.io/docs/en/editors.html) and enable "Prettier on Save".
 
-- It's recommended to add a prettier script to your `package.json`. An example is below: 
+- It's recommended to add a prettier script to your `package.json`. An example is below:
 
 	```
 	scripts: {
-		"prettier": "prettier '**/*.{js,json,css,scss,html,hbs,md}' --write" 
+		"prettier": "prettier '**/*.{js,json,css,scss,html,hbs,md}' --write"
 	}
 	```
 	You can then run the following, to automatically format your project's code:
 
 	```
-	npm run prettier 
+	npm run prettier
 	```
 - More commands can be found on [Prettier's documentation](https://prettier.io/docs/en/cli.html).
 
@@ -71,7 +73,7 @@ This will already be done if you ran the `install-peerdeps` command specified in
 This configuration is aimed to align with our modified Airbnb Style Guides by overriding a couple of the default rules for Prettier.
 
 - Use [Print Width](https://prettier.io/docs/en/options.html#print-width) at 100
-- Use [Tabs](https://prettier.io/docs/en/options.html#tabs) over spaces 
+- Use [Tabs](https://prettier.io/docs/en/options.html#tabs) over spaces
 - Use [single quotes](https://prettier.io/docs/en/options.html#quotes) true in regards to JavaScript code.
 - Use [Arrow Parens](https://prettier.io/docs/en/options.html#print-width) as always.
 - Use [Trailing Commas](https://prettier.io/docs/en/options.html#trailing-commas) as all.

@@ -1,3 +1,5 @@
+**No longer maintained**
+
 # commitlint-config-norton
 
 [![commitlint-config-norton version](https://img.shields.io/npm/v/commitlint-config-norton)](https://www.npmjs.com/package/commitlint-config-norton)
