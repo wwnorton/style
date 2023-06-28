@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/wwnorton/style/compare/stylelint-config-norton@4.1.1...stylelint-config-norton@5.0.0) (2023-06-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config-norton:** update to stylelint-order@6.0.x
+* **stylelint-config-norton:** remove support for stylelint less than 15.5.0 from peer dependencies
+* **stylelint-config-norton:** update to stylelint-config-standard-scss@9.0.0
+* **stylelint-config-norton:** stylelint-config-standard@32.0.0 added media-feature-range-notation: "context"
+
+### 🛠 Maintenance
+
+* npm update ([bf216ba](https://github.com/wwnorton/style/commit/bf216ba4a74e0c05a18610dff94d44489d1266b6))
+* **stylelint-config-norton:** remove support for stylelint less than 15.5.0 from peer dependencies ([517bc3c](https://github.com/wwnorton/style/commit/517bc3c2d8845760e76cc17063a3adc701e4e1d9))
+* **stylelint-config-norton:** resolve extended packages ([dadacd0](https://github.com/wwnorton/style/commit/dadacd0c909c7c0b69f0176f13e910e08aa97e7a))
+* **stylelint-config-norton:** update to stylelint-config-standard-scss@9.0.0 ([3f0ce76](https://github.com/wwnorton/style/commit/3f0ce7678804cc6299415b41490cd16012c50b62))
+* **stylelint-config-norton:** update to stylelint-config-standard@33.0.0 ([8009fb7](https://github.com/wwnorton/style/commit/8009fb76859421919764ac1156c041356df097c5))
+* **stylelint-config-norton:** update to stylelint-order@6.0.x ([42c2c5e](https://github.com/wwnorton/style/commit/42c2c5e336243f8a540da2dd6072a5d48c28ed82))
+
+
+
 ### [4.1.1](https://github.com/wwnorton/style/compare/stylelint-config-norton@4.1.0...stylelint-config-norton@4.1.1) (2022-03-25)
 
 

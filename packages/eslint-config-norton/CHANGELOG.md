@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/wwnorton/style/compare/eslint-config-norton@5.0.1...eslint-config-norton@5.0.2) (2023-06-28)
+
+
+### 🛠 Maintenance
+
+* npm update ([bf216ba](https://github.com/wwnorton/style/commit/bf216ba4a74e0c05a18610dff94d44489d1266b6))
+
+
+
 ## [5.0.1](https://github.com/wwnorton/style/compare/eslint-config-norton@5.0.0...eslint-config-norton@5.0.1) (2022-10-12)
 
 ### 🐛 Bug Fixes
