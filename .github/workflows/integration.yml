@@ -8,6 +8,8 @@ on:
 
 env:
   FORCE_COLOR: 2
+  NODE_VERSION: lts
+  NPM_VERSION: latest
 
 jobs:
   eslint:
@@ -37,6 +39,8 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           cache: 'npm'
+      - name: Update NPM
+        run: npm install -g npm@${{ env.NPM_VERSION }}
       - name: Install 📦
         if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
