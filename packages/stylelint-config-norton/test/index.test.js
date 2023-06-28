@@ -1,10 +1,10 @@
-const fs = require('fs');
-const test = require('ava');
-const path = require('path');
-const { lint } = require('stylelint');
-const { promisify } = require('util');
-const sassConfig = require('../src/sass');
-const cssConfig = require('../src/css');
+import fs from 'fs';
+import path from 'path';
+import { lint } from 'stylelint';
+import { promisify } from 'util';
+import { beforeAll, expect, test } from 'vitest';
+import sassConfig from '../src/sass';
+import cssConfig from '../src/css';
 
 const readFile = promisify(fs.readFile);
 
@@ -32,7 +32,7 @@ const css = {
 	],
 };
 
-test.before(async () => {
+beforeAll(async () => {
 	sass.invalid = await readFile(path.join(__dirname, 'fixtures/invalid.scss'), 'utf-8');
 	css.invalid = await readFile(path.join(__dirname, 'fixtures/invalid.css'), 'utf-8');
 
@@ -48,36 +48,36 @@ test.before(async () => {
 
 rules.forEach((rule) => {
 	if (sass.rules.includes(rule)) {
-		test(`${rule}: flagged for invalid sass`, async (t) => {
+		test(`${rule}: flagged for invalid sass`, async () => {
 			const [warning] = await getWarnings(sass.invalidResult, rule);
-			t.is(warning.rule, rule);
+			expect(warning.rule).toBe(rule);
 		});
 	}
 
 	if (css.rules.includes(rule)) {
-		test(`${rule}: flagged for invalid css`, async (t) => {
+		test(`${rule}: flagged for invalid css`, async () => {
 			const [warning] = await getWarnings(css.invalidResult, rule);
-			t.is(warning.rule, rule);
+			expect(warning.rule).toBe(rule);
 		});
 	}
 });
 
-test('valid sass did not error', (t) => {
+test('valid sass did not error', () => {
 	const { errored } = sass.validResult;
-	t.falsy(errored);
+	expect(errored).toBeFalsy();
 });
 
-test('valid sass flags no warnings', (t) => {
+test('valid sass flags no warnings', () => {
 	const { results } = sass.validResult;
-	t.is(results[0].warnings.length, 0);
+	expect(results[0].warnings.length).toBe(0);
 });
 
-test('valid css did not error', (t) => {
+test('valid css did not error', () => {
 	const { errored } = css.validResult;
-	t.falsy(errored);
+	expect(errored).toBeFalsy();
 });
 
-test('valid css flags no warnings', (t) => {
+test('valid css flags no warnings', () => {
 	const { results } = css.validResult;
-	t.is(results[0].warnings.length, 0);
+	expect(results[0].warnings.length).toBe(0);
 });

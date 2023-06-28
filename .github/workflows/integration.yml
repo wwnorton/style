@@ -8,8 +8,8 @@ on:
 
 env:
   FORCE_COLOR: 2
-  NODE_VERSION: 16
-  NPM_VERSION: 8
+  NODE_VERSION: 18
+  NPM_VERSION: latest
 
 jobs:
   eslint:
@@ -20,20 +20,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Update npm
-        run: npm i -g npm@${{ env.NPM_VERSION }}
-      - uses: actions/cache@v3
-        id: node-cache
-        with:
-          path: |
-            ~/.npm
-            node_modules
-            **/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: 'npm'
       - name: Install 📦
-        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: ESLint ✨
         run: npm run eslint
@@ -44,26 +32,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [12, 14, 16, 18]
+        node: [14, 16, 18]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Update npm
-        run: npm i -g npm@${{ env.NPM_VERSION }}
-      - uses: actions/cache@v3
-        id: node-cache
-        with:
-          path: |
-            ~/.npm
-            node_modules
-            **/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: 'npm'
+      - name: Update NPM
+        run: npm install -g npm@${{ env.NPM_VERSION }}
       - name: Install 📦
-        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Test 🧪
         run: npm run test
