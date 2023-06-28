@@ -42,8 +42,8 @@
 
 /* Flush single line comment */
 @media
-	screen and (min-resolution: 192dpi),
-	screen and (min-resolution: 2dppx) {
+	screen and (resolution >= 192dpi),
+	screen and (resolution >= 2dppx) {
 	.selector {
 		height: 10rem;
 		margin: 10px;
