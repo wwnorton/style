@@ -1,8 +1,7 @@
 {
   "workspaces": [
-    "packages/*",
-    "!packages/commitlint-config-norton",
-    "!packages/prettier-config-norton"
+    "packages/eslint-config-norton",
+    "packages/stylelint-config-norton"
   ],
   "scripts": {
     "eslint": "eslint . --ignore-path .gitignore",
