@@ -32,7 +32,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [12, 14, 16, 18]
+        node: [14, 16, 18]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -42,7 +42,6 @@ jobs:
       - name: Update NPM
         run: npm install -g npm@${{ env.NPM_VERSION }}
       - name: Install 📦
-        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Test 🧪
         run: npm run test
