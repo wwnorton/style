@@ -16,7 +16,7 @@
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^6.1.0",
     "eslint": "^8.43.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.3",
     "lerna": "^7.1.1",
     "lint-staged": "^12.5.0",
     "react": "^18.2.0",
